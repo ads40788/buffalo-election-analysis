@@ -2,7 +2,7 @@
 
 Interactive Streamlit dashboard exploring neighborhood-level vote returns in Buffalo, NY mayoral races from 2001 through 2025.
 
-**Live app:** [buffalo-election-analysis.streamlit.app](https://buffalo-election-analysis.streamlit.app) 
+**Live app:** [buffalo-elections.streamlit.app](https://buffalo-elections.streamlit.app) 
 
 ## What's inside
 
