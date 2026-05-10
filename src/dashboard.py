@@ -8,7 +8,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 import streamlit as st
-from utils.analytics import inject_ga
+from utils.analytics import inject_ga, add_footer
 
 st.set_page_config(
     page_title="Buffalo Mayoral Elections",
@@ -26,3 +26,4 @@ pg = st.navigation([
     # st.Page("pages/3_Preliminary_Results.py", title="Preliminary Results", icon="📈"),
 ])
 pg.run()
+add_footer()
