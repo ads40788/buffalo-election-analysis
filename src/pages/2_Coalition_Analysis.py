@@ -173,8 +173,6 @@ if demo_df is None:
 # ── Sidebar ────────────────────────────────────────────────────────────────────
 
 with st.sidebar:
-    st.title("Coalition\nAnalysis")
-    st.divider()
     view = st.radio("Geography", ["Neighborhood", "Election District"])
     st.divider()
     st.markdown("**Demographic thresholds**")

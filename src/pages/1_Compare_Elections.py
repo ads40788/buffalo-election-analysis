@@ -231,9 +231,6 @@ for k, v in [("cmp_selected", None), ("cmp_last_idx", -1)]:
 # ── Sidebar ────────────────────────────────────────────────────────────────────
 
 with st.sidebar:
-    st.title("Compare\nElections")
-    st.divider()
-
     view = st.radio("Geography", ["Neighborhood", "Election District"])
     st.divider()
 
