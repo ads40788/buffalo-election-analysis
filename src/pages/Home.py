@@ -291,7 +291,7 @@ if sel_type == "primary" and has_missing:
     n_missing = int(geo["_note"].str.len().gt(0).sum())
     st.info(
         f"{n_missing} area(s) have no individual results — ballots were consolidated "
-        f"for this primary. Hover over grey areas for likely host districts.",
+        f"for this primary. See the note below the map for estimated host districts.",
         icon="ℹ️",
     )
 
@@ -397,24 +397,28 @@ with map_col:
         st.caption("Click a polygon or use the sidebar to compare areas.")
 
     if has_missing:
-        with st.expander("ℹ️ About missing areas", expanded=False):
+        missing_geo = geo[geo["_note"] != ""][[id_col, "_note"]].copy()
+        area_label  = "Election District" if view == "Election District" else "Neighborhood"
+        missing_geo.columns = [area_label, "Votes likely reported in (estimated)"]
+        if view == "Election District":
+            missing_geo[area_label] = missing_geo[area_label].str.replace("Buffalo ", "", regex=False)
+
+        n_missing = len(missing_geo)
+        with st.expander(f"ℹ️ {n_missing} area(s) have no individual results — click to see estimates", expanded=False):
             st.markdown(
-                """
-                **Why are some areas grey with no data?**
-
-                For primary elections, the Board of Elections physically consolidates
-                multiple election districts into a single polling place. Only the *host*
-                district gets its own row in the official canvass book — the merged
-                districts have no individually published results.
-
-                **How the "votes likely in" estimates work**
-
-                Grey areas are matched to adjacent districts that *do* have data using
-                geographic proximity in the shapefile. These are **spatial estimates only**,
-                not official BOE consolidation records. The actual host district may differ.
-                When no immediate neighbor has data, the nearest district by centroid
-                distance is used as a fallback.
-                """
+                "Grey areas had ballots **consolidated** into a nearby polling place for this "
+                "primary. The table below shows our best spatial estimate of where their votes "
+                "were likely counted. These are **educated guesses based on geographic adjacency** "
+                "— not official BOE records."
+            )
+            st.dataframe(
+                missing_geo.reset_index(drop=True),
+                hide_index=True,
+                use_container_width=True,
+            )
+            st.caption(
+                "Estimates are made by finding adjacent districts with published results. "
+                "The actual consolidation host may differ."
             )
 
 
