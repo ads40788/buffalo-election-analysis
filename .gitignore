@@ -1,0 +1,48 @@
+# Raw data — large BOE Excel canvass books (not committed; run parsers locally to regenerate CSVs)
+Elections Data Congressional and Presidential/
+Buffalo Mayoral Data/
+BuffaloMayoralElectionData/
+NYS_Election_Districts/
+
+# Generated geojsons that are too large and not needed by the app
+data/geo/buffalo_eds_elections.geojson
+data/geo/buffalo_nbhd_elections.geojson
+
+# Raw shapefiles not needed at runtime (app uses buffalo_eds.geojson)
+data/geo/block_groups/
+data/geo/council_districts/
+data/geo/neighborhoods/
+
+# Ward map PDFs
+*.pdf
+
+# Paper/writing artifacts
+docs/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+venv/
+env/
+.venv/
+
+# Streamlit secrets (add your GA4 ID here, never commit)
+.streamlit/secrets.toml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Zip archives in source data
+*.zip

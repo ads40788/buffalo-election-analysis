@@ -1,0 +1,690 @@
+year,race_type,race_label,dem_candidate,rep_candidate,nbhdname,dem_votes,rep_votes,other_votes,total_votes,dem_pct,rep_pct
+2002,congress,CD-27,Peter Crotty,Jack Quinn,Allentown,9,17,2.0,28.0,32.14,60.71
+2002,congress,CD-27,Peter Crotty,Jack Quinn,Black Rock,241,386,32.0,659.0,36.57,58.57
+2002,congress,CD-27,Peter Crotty,Jack Quinn,Broadway Fillmore,158,153,14.0,325.0,48.62,47.08
+2002,congress,CD-27,Peter Crotty,Jack Quinn,Central,27,36,2.0,65.0,41.54,55.38
+2002,congress,CD-27,Peter Crotty,Jack Quinn,Central Park,2789,9110,393.0,12292.0,22.69,74.11
+2002,congress,CD-27,Peter Crotty,Jack Quinn,Ellicott,69,31,1.0,101.0,68.32,30.69
+2002,congress,CD-27,Peter Crotty,Jack Quinn,Elmwood Bidwell,548,699,96.0,1343.0,40.8,52.05
+2002,congress,CD-27,Peter Crotty,Jack Quinn,Elmwood Bryant,275,192,39.0,506.0,54.35,37.94
+2002,congress,CD-27,Peter Crotty,Jack Quinn,First Ward,80,109,8.0,197.0,40.61,55.33
+2002,congress,CD-27,Peter Crotty,Jack Quinn,Genesee-Moselle,256,435,22.0,713.0,35.9,61.01
+2002,congress,CD-27,Peter Crotty,Jack Quinn,Grant-Amherst,128,201,15.0,344.0,37.21,58.43
+2002,congress,CD-27,Peter Crotty,Jack Quinn,Hopkins-Tifft,332,704,29.0,1065.0,31.17,66.1
+2002,congress,CD-27,Peter Crotty,Jack Quinn,Kaisertown,195,402,24.0,621.0,31.4,64.73
+2002,congress,CD-27,Peter Crotty,Jack Quinn,Kenfield,2369,7501,369.0,10239.0,23.14,73.26
+2002,congress,CD-27,Peter Crotty,Jack Quinn,Kensington-Bailey,3936,11827,509.0,16272.0,24.19,72.68
+2002,congress,CD-27,Peter Crotty,Jack Quinn,Lovejoy,261,448,33.0,742.0,35.18,60.38
+2002,congress,CD-27,Peter Crotty,Jack Quinn,Lower West Side,74,55,24.0,153.0,48.37,35.95
+2002,congress,CD-27,Peter Crotty,Jack Quinn,MLK Park,56,75,4.0,135.0,41.48,55.56
+2002,congress,CD-27,Peter Crotty,Jack Quinn,Masten Park,75,72,9.0,156.0,48.08,46.15
+2002,congress,CD-27,Peter Crotty,Jack Quinn,North Park,1243,1725,167.0,3135.0,39.65,55.02
+2002,congress,CD-27,Peter Crotty,Jack Quinn,Parkside,560,756,75.0,1391.0,40.26,54.35
+2002,congress,CD-27,Peter Crotty,Jack Quinn,Riverside,627,878,71.0,1576.0,39.78,55.71
+2002,congress,CD-27,Peter Crotty,Jack Quinn,Schiller Park,303,595,40.0,938.0,32.3,63.43
+2002,congress,CD-27,Peter Crotty,Jack Quinn,Seneca-Cazenovia,514,1130,39.0,1683.0,30.54,67.14
+2002,congress,CD-27,Peter Crotty,Jack Quinn,South Park,1004,2284,90.0,3378.0,29.72,67.61
+2002,congress,CD-27,Peter Crotty,Jack Quinn,University Heights,5188,15819,724.0,21731.0,23.87,72.79
+2002,congress,CD-27,Peter Crotty,Jack Quinn,Upper West Side,521,466,106.0,1093.0,47.67,42.63
+2002,congress,CD-27,Peter Crotty,Jack Quinn,West Hertel,424,651,75.0,1150.0,36.87,56.61
+2002,congress,CD-27,Peter Crotty,Jack Quinn,West Side,600,681,97.0,1378.0,43.54,49.42
+2004,president,President,John F. Kerry John Edwards,George W. Bush Dick Cheney,Allentown,129,33,3.0,165.0,78.18,20.0
+2004,president,President,John F. Kerry John Edwards,George W. Bush Dick Cheney,Black Rock,799,355,53.0,1207.0,66.2,29.41
+2004,president,President,John F. Kerry John Edwards,George W. Bush Dick Cheney,Broadway Fillmore,2018,293,47.0,2358.0,85.58,12.43
+2004,president,President,John F. Kerry John Edwards,George W. Bush Dick Cheney,Central,308,88,14.0,410.0,75.12,21.46
+2004,president,President,John F. Kerry John Edwards,George W. Bush Dick Cheney,Central Park,15439,15792,667.0,31898.0,48.4,49.51
+2004,president,President,John F. Kerry John Edwards,George W. Bush Dick Cheney,Delavan Grider,1317,79,38.0,1434.0,91.84,5.51
+2004,president,President,John F. Kerry John Edwards,George W. Bush Dick Cheney,Ellicott,474,97,13.0,584.0,81.16,16.61
+2004,president,President,John F. Kerry John Edwards,George W. Bush Dick Cheney,Elmwood Bidwell,2189,773,114.0,3076.0,71.16,25.13
+2004,president,President,John F. Kerry John Edwards,George W. Bush Dick Cheney,Elmwood Bryant,1795,441,62.0,2298.0,78.11,19.19
+2004,president,President,John F. Kerry John Edwards,George W. Bush Dick Cheney,Fillmore-Leroy,1341,98,60.0,1499.0,89.46,6.54
+2004,president,President,John F. Kerry John Edwards,George W. Bush Dick Cheney,First Ward,900,262,20.0,1182.0,76.14,22.17
+2004,president,President,John F. Kerry John Edwards,George W. Bush Dick Cheney,Fruit Belt,659,112,31.0,802.0,82.17,13.97
+2004,president,President,John F. Kerry John Edwards,George W. Bush Dick Cheney,Genesee-Moselle,1055,440,46.0,1541.0,68.46,28.55
+2004,president,President,John F. Kerry John Edwards,George W. Bush Dick Cheney,Grant-Amherst,444,218,22.0,684.0,64.91,31.87
+2004,president,President,John F. Kerry John Edwards,George W. Bush Dick Cheney,Hamlin Park,699,63,29.0,791.0,88.37,7.96
+2004,president,President,John F. Kerry John Edwards,George W. Bush Dick Cheney,Hopkins-Tifft,1093,608,49.0,1750.0,62.46,34.74
+2004,president,President,John F. Kerry John Edwards,George W. Bush Dick Cheney,Kaisertown,805,374,26.0,1205.0,66.8,31.04
+2004,president,President,John F. Kerry John Edwards,George W. Bush Dick Cheney,Kenfield,14939,14563,700.0,30202.0,49.46,48.22
+2004,president,President,John F. Kerry John Edwards,George W. Bush Dick Cheney,Kensington-Bailey,26232,24433,1115.0,51780.0,50.66,47.19
+2004,president,President,John F. Kerry John Edwards,George W. Bush Dick Cheney,Lovejoy,1395,516,70.0,1981.0,70.42,26.05
+2004,president,President,John F. Kerry John Edwards,George W. Bush Dick Cheney,Lower West Side,356,142,18.0,516.0,68.99,27.52
+2004,president,President,John F. Kerry John Edwards,George W. Bush Dick Cheney,MLK Park,935,127,41.0,1103.0,84.77,11.51
+2004,president,President,John F. Kerry John Edwards,George W. Bush Dick Cheney,Masten Park,3160,302,89.0,3551.0,88.99,8.5
+2004,president,President,John F. Kerry John Edwards,George W. Bush Dick Cheney,North Park,4353,1651,227.0,6231.0,69.86,26.5
+2004,president,President,John F. Kerry John Edwards,George W. Bush Dick Cheney,Parkside,1856,700,92.0,2648.0,70.09,26.44
+2004,president,President,John F. Kerry John Edwards,George W. Bush Dick Cheney,Pratt-Willert,1141,70,49.0,1260.0,90.56,5.56
+2004,president,President,John F. Kerry John Edwards,George W. Bush Dick Cheney,Riverside,1811,864,93.0,2768.0,65.43,31.21
+2004,president,President,John F. Kerry John Edwards,George W. Bush Dick Cheney,Schiller Park,1233,560,63.0,1856.0,66.43,30.17
+2004,president,President,John F. Kerry John Edwards,George W. Bush Dick Cheney,Seneca Babcock,598,82,27.0,707.0,84.58,11.6
+2004,president,President,John F. Kerry John Edwards,George W. Bush Dick Cheney,Seneca-Cazenovia,1760,926,90.0,2776.0,63.4,33.36
+2004,president,President,John F. Kerry John Edwards,George W. Bush Dick Cheney,South Park,3177,1685,144.0,5006.0,63.46,33.66
+2004,president,President,John F. Kerry John Edwards,George W. Bush Dick Cheney,University Heights,30989,29551,1418.0,61958.0,50.02,47.7
+2004,president,President,John F. Kerry John Edwards,George W. Bush Dick Cheney,Upper West Side,2085,499,141.0,2725.0,76.51,18.31
+2004,president,President,John F. Kerry John Edwards,George W. Bush Dick Cheney,West Hertel,1248,566,73.0,1887.0,66.14,29.99
+2004,president,President,John F. Kerry John Edwards,George W. Bush Dick Cheney,West Side,2041,695,125.0,2861.0,71.34,24.29
+2004,congress,CD-27,Brian M. Higgins,Nancy A. Naples,Allentown,34,7,0.0,41.0,82.93,17.07
+2004,congress,CD-27,Brian M. Higgins,Nancy A. Naples,Black Rock,718,396,0.0,1114.0,64.45,35.55
+2004,congress,CD-27,Brian M. Higgins,Nancy A. Naples,Broadway Fillmore,425,151,0.0,576.0,73.78,26.22
+2004,congress,CD-27,Brian M. Higgins,Nancy A. Naples,Central,64,22,0.0,86.0,74.42,25.58
+2004,congress,CD-27,Brian M. Higgins,Nancy A. Naples,Central Park,8541,11020,0.0,19561.0,43.66,56.34
+2004,congress,CD-27,Brian M. Higgins,Nancy A. Naples,Ellicott,292,62,0.0,354.0,82.49,17.51
+2004,congress,CD-27,Brian M. Higgins,Nancy A. Naples,Elmwood Bidwell,1336,675,0.0,2011.0,66.43,33.57
+2004,congress,CD-27,Brian M. Higgins,Nancy A. Naples,Elmwood Bryant,528,147,0.0,675.0,78.22,21.78
+2004,congress,CD-27,Brian M. Higgins,Nancy A. Naples,First Ward,366,210,0.0,576.0,63.54,36.46
+2004,congress,CD-27,Brian M. Higgins,Nancy A. Naples,Genesee-Moselle,714,417,0.0,1131.0,63.13,36.87
+2004,congress,CD-27,Brian M. Higgins,Nancy A. Naples,Grant-Amherst,397,228,0.0,625.0,63.52,36.48
+2004,congress,CD-27,Brian M. Higgins,Nancy A. Naples,Hopkins-Tifft,1061,435,0.0,1496.0,70.92,29.08
+2004,congress,CD-27,Brian M. Higgins,Nancy A. Naples,Kaisertown,569,401,0.0,970.0,58.66,41.34
+2004,congress,CD-27,Brian M. Higgins,Nancy A. Naples,Kenfield,7012,9034,0.0,16046.0,43.7,56.3
+2004,congress,CD-27,Brian M. Higgins,Nancy A. Naples,Kensington-Bailey,12847,14069,0.0,26916.0,47.73,52.27
+2004,congress,CD-27,Brian M. Higgins,Nancy A. Naples,Lovejoy,648,419,0.0,1067.0,60.73,39.27
+2004,congress,CD-27,Brian M. Higgins,Nancy A. Naples,Lower West Side,212,111,0.0,323.0,65.63,34.37
+2004,congress,CD-27,Brian M. Higgins,Nancy A. Naples,MLK Park,231,46,0.0,277.0,83.39,16.61
+2004,congress,CD-27,Brian M. Higgins,Nancy A. Naples,Masten Park,221,77,0.0,298.0,74.16,25.84
+2004,congress,CD-27,Brian M. Higgins,Nancy A. Naples,North Park,3397,1721,0.0,5118.0,66.37,33.63
+2004,congress,CD-27,Brian M. Higgins,Nancy A. Naples,Parkside,1463,715,0.0,2178.0,67.17,32.83
+2004,congress,CD-27,Brian M. Higgins,Nancy A. Naples,Riverside,1597,971,0.0,2568.0,62.19,37.81
+2004,congress,CD-27,Brian M. Higgins,Nancy A. Naples,Schiller Park,902,597,0.0,1499.0,60.17,39.83
+2004,congress,CD-27,Brian M. Higgins,Nancy A. Naples,Seneca-Cazenovia,1915,818,0.0,2733.0,70.07,29.93
+2004,congress,CD-27,Brian M. Higgins,Nancy A. Naples,South Park,3430,1403,0.0,4833.0,70.97,29.03
+2004,congress,CD-27,Brian M. Higgins,Nancy A. Naples,University Heights,16043,19438,0.0,35481.0,45.22,54.78
+2004,congress,CD-27,Brian M. Higgins,Nancy A. Naples,Upper West Side,1694,479,0.0,2173.0,77.96,22.04
+2004,congress,CD-27,Brian M. Higgins,Nancy A. Naples,West Hertel,1125,644,0.0,1769.0,63.6,36.4
+2004,congress,CD-27,Brian M. Higgins,Nancy A. Naples,West Side,1877,748,0.0,2625.0,71.5,28.5
+2004,congress,CD-28,Louise M. Slaughter,Michael D. Laba,Allentown,84,8,1.0,93.0,90.32,8.6
+2004,congress,CD-28,Louise M. Slaughter,Michael D. Laba,Broadway Fillmore,1147,56,28.0,1231.0,93.18,4.55
+2004,congress,CD-28,Louise M. Slaughter,Michael D. Laba,Central,205,24,8.0,237.0,86.5,10.13
+2004,congress,CD-28,Louise M. Slaughter,Michael D. Laba,Central Park,2700,1144,125.0,3969.0,68.03,28.82
+2004,congress,CD-28,Louise M. Slaughter,Michael D. Laba,Delavan Grider,967,46,22.0,1035.0,93.43,4.44
+2004,congress,CD-28,Louise M. Slaughter,Michael D. Laba,Ellicott,123,6,5.0,134.0,91.79,4.48
+2004,congress,CD-28,Louise M. Slaughter,Michael D. Laba,Elmwood Bidwell,613,142,22.0,777.0,78.89,18.28
+2004,congress,CD-28,Louise M. Slaughter,Michael D. Laba,Elmwood Bryant,978,215,40.0,1233.0,79.32,17.44
+2004,congress,CD-28,Louise M. Slaughter,Michael D. Laba,Fillmore-Leroy,1015,33,42.0,1090.0,93.12,3.03
+2004,congress,CD-28,Louise M. Slaughter,Michael D. Laba,First Ward,397,32,6.0,435.0,91.26,7.36
+2004,congress,CD-28,Louise M. Slaughter,Michael D. Laba,Fruit Belt,539,65,14.0,618.0,87.22,10.52
+2004,congress,CD-28,Louise M. Slaughter,Michael D. Laba,Genesee-Moselle,238,6,3.0,247.0,96.36,2.43
+2004,congress,CD-28,Louise M. Slaughter,Michael D. Laba,Hamlin Park,512,31,12.0,555.0,92.25,5.59
+2004,congress,CD-28,Louise M. Slaughter,Michael D. Laba,Hopkins-Tifft,136,12,3.0,151.0,90.07,7.95
+2004,congress,CD-28,Louise M. Slaughter,Michael D. Laba,Kaisertown,131,16,2.0,149.0,87.92,10.74
+2004,congress,CD-28,Louise M. Slaughter,Michael D. Laba,Kenfield,3365,1321,160.0,4846.0,69.44,27.26
+2004,congress,CD-28,Louise M. Slaughter,Michael D. Laba,Kensington-Bailey,6193,2490,287.0,8970.0,69.04,27.76
+2004,congress,CD-28,Louise M. Slaughter,Michael D. Laba,Lovejoy,535,64,15.0,614.0,87.13,10.42
+2004,congress,CD-28,Louise M. Slaughter,Michael D. Laba,Lower West Side,112,23,2.0,137.0,81.75,16.79
+2004,congress,CD-28,Louise M. Slaughter,Michael D. Laba,MLK Park,537,35,9.0,581.0,92.43,6.02
+2004,congress,CD-28,Louise M. Slaughter,Michael D. Laba,Masten Park,2208,80,56.0,2344.0,94.2,3.41
+2004,congress,CD-28,Louise M. Slaughter,Michael D. Laba,North Park,508,100,23.0,631.0,80.51,15.85
+2004,congress,CD-28,Louise M. Slaughter,Michael D. Laba,Parkside,199,67,7.0,273.0,72.89,24.54
+2004,congress,CD-28,Louise M. Slaughter,Michael D. Laba,Pratt-Willert,846,30,34.0,910.0,92.97,3.3
+2004,congress,CD-28,Louise M. Slaughter,Michael D. Laba,Schiller Park,197,15,8.0,220.0,89.55,6.82
+2004,congress,CD-28,Louise M. Slaughter,Michael D. Laba,Seneca Babcock,478,30,15.0,523.0,91.4,5.74
+2004,congress,CD-28,Louise M. Slaughter,Michael D. Laba,University Heights,7162,3019,347.0,10528.0,68.03,28.68
+2004,congress,CD-28,Louise M. Slaughter,Michael D. Laba,Upper West Side,281,55,8.0,344.0,81.69,15.99
+2006,senate,US Senate,Hillary Rodham Clinton,John Spencer,Allentown,69,15,0.0,84.0,82.14,17.86
+2006,senate,US Senate,Hillary Rodham Clinton,John Spencer,Black Rock,1116,426,36.0,1578.0,70.72,27.0
+2006,senate,US Senate,Hillary Rodham Clinton,John Spencer,Broadway Fillmore,1027,86,13.0,1126.0,91.21,7.64
+2006,senate,US Senate,Hillary Rodham Clinton,John Spencer,Central,152,31,8.0,191.0,79.58,16.23
+2006,senate,US Senate,Hillary Rodham Clinton,John Spencer,Central Park,11750,8585,377.0,20712.0,56.73,41.45
+2006,senate,US Senate,Hillary Rodham Clinton,John Spencer,Delavan Grider,710,26,9.0,745.0,95.3,3.49
+2006,senate,US Senate,Hillary Rodham Clinton,John Spencer,Ellicott,146,24,2.0,172.0,84.88,13.95
+2006,senate,US Senate,Hillary Rodham Clinton,John Spencer,Elmwood Bidwell,1430,398,89.0,1917.0,74.6,20.76
+2006,senate,US Senate,Hillary Rodham Clinton,John Spencer,Elmwood Bryant,952,189,49.0,1190.0,80.0,15.88
+2006,senate,US Senate,Hillary Rodham Clinton,John Spencer,Fillmore-Leroy,766,23,11.0,800.0,95.75,2.88
+2006,senate,US Senate,Hillary Rodham Clinton,John Spencer,First Ward,534,127,8.0,669.0,79.82,18.98
+2006,senate,US Senate,Hillary Rodham Clinton,John Spencer,Fruit Belt,420,54,18.0,492.0,85.37,10.98
+2006,senate,US Senate,Hillary Rodham Clinton,John Spencer,Genesee-Moselle,650,144,20.0,814.0,79.85,17.69
+2006,senate,US Senate,Hillary Rodham Clinton,John Spencer,Grant-Amherst,483,153,16.0,652.0,74.08,23.47
+2006,senate,US Senate,Hillary Rodham Clinton,John Spencer,Hamlin Park,440,27,9.0,476.0,92.44,5.67
+2006,senate,US Senate,Hillary Rodham Clinton,John Spencer,Hopkins-Tifft,104,7,4.0,115.0,90.43,6.09
+2006,senate,US Senate,Hillary Rodham Clinton,John Spencer,Kaisertown,479,174,14.0,667.0,71.81,26.09
+2006,senate,US Senate,Hillary Rodham Clinton,John Spencer,Kenfield,11128,7993,334.0,19455.0,57.2,41.08
+2006,senate,US Senate,Hillary Rodham Clinton,John Spencer,Kensington-Bailey,19671,12993,598.0,33262.0,59.14,39.06
+2006,senate,US Senate,Hillary Rodham Clinton,John Spencer,Lovejoy,793,170,26.0,989.0,80.18,17.19
+2006,senate,US Senate,Hillary Rodham Clinton,John Spencer,Lower West Side,208,56,10.0,274.0,75.91,20.44
+2006,senate,US Senate,Hillary Rodham Clinton,John Spencer,MLK Park,537,43,26.0,606.0,88.61,7.1
+2006,senate,US Senate,Hillary Rodham Clinton,John Spencer,Masten Park,1678,103,36.0,1817.0,92.35,5.67
+2006,senate,US Senate,Hillary Rodham Clinton,John Spencer,North Park,3446,958,141.0,4545.0,75.82,21.08
+2006,senate,US Senate,Hillary Rodham Clinton,John Spencer,Parkside,1541,431,70.0,2042.0,75.47,21.11
+2006,senate,US Senate,Hillary Rodham Clinton,John Spencer,Pratt-Willert,654,22,14.0,690.0,94.78,3.19
+2006,senate,US Senate,Hillary Rodham Clinton,John Spencer,Riverside,2630,799,92.0,3521.0,74.69,22.69
+2006,senate,US Senate,Hillary Rodham Clinton,John Spencer,Schiller Park,762,221,26.0,1009.0,75.52,21.9
+2006,senate,US Senate,Hillary Rodham Clinton,John Spencer,Seneca Babcock,355,25,11.0,391.0,90.79,6.39
+2006,senate,US Senate,Hillary Rodham Clinton,John Spencer,Seneca-Cazenovia,199,64,7.0,270.0,73.7,23.7
+2006,senate,US Senate,Hillary Rodham Clinton,John Spencer,University Heights,23076,15988,785.0,39849.0,57.91,40.12
+2006,senate,US Senate,Hillary Rodham Clinton,John Spencer,Upper West Side,1253,210,88.0,1551.0,80.79,13.54
+2006,senate,US Senate,Hillary Rodham Clinton,John Spencer,West Hertel,1749,533,83.0,2365.0,73.95,22.54
+2006,senate,US Senate,Hillary Rodham Clinton,John Spencer,West Side,1096,222,63.0,1381.0,79.36,16.08
+2008,president,President,Barack Obama,John McCain,Allentown,129,32,0.0,161.0,80.12,19.88
+2008,president,President,Barack Obama,John McCain,Black Rock,827,345,18.0,1190.0,69.5,28.99
+2008,president,President,Barack Obama,John McCain,Broadway Fillmore,2317,191,13.0,2521.0,91.91,7.58
+2008,president,President,Barack Obama,John McCain,Central,307,71,3.0,381.0,80.58,18.64
+2008,president,President,Barack Obama,John McCain,Central Park,15865,15431,512.0,31808.0,49.88,48.51
+2008,president,President,Barack Obama,John McCain,Delavan Grider,1522,33,5.0,1560.0,97.56,2.12
+2008,president,President,Barack Obama,John McCain,Ellicott,528,51,1.0,580.0,91.03,8.79
+2008,president,President,Barack Obama,John McCain,Elmwood Bidwell,2341,669,63.0,3073.0,76.18,21.77
+2008,president,President,Barack Obama,John McCain,Elmwood Bryant,1909,364,23.0,2296.0,83.14,15.85
+2008,president,President,Barack Obama,John McCain,Fillmore-Leroy,1663,28,2.0,1693.0,98.23,1.65
+2008,president,President,Barack Obama,John McCain,First Ward,946,213,12.0,1171.0,80.79,18.19
+2008,president,President,Barack Obama,John McCain,Fruit Belt,926,77,3.0,1006.0,92.05,7.65
+2008,president,President,Barack Obama,John McCain,Genesee-Moselle,1065,379,23.0,1467.0,72.6,25.84
+2008,president,President,Barack Obama,John McCain,Grant-Amherst,359,194,13.0,566.0,63.43,34.28
+2008,president,President,Barack Obama,John McCain,Hamlin Park,854,18,3.0,875.0,97.6,2.06
+2008,president,President,Barack Obama,John McCain,Hopkins-Tifft,1089,611,30.0,1730.0,62.95,35.32
+2008,president,President,Barack Obama,John McCain,Kaisertown,738,412,20.0,1170.0,63.08,35.21
+2008,president,President,Barack Obama,John McCain,Kenfield,15178,14119,476.0,29773.0,50.98,47.42
+2008,president,President,Barack Obama,John McCain,Kensington-Bailey,26478,24219,818.0,51515.0,51.4,47.01
+2008,president,President,Barack Obama,John McCain,Lovejoy,1459,476,25.0,1960.0,74.44,24.29
+2008,president,President,Barack Obama,John McCain,Lower West Side,400,104,4.0,508.0,78.74,20.47
+2008,president,President,Barack Obama,John McCain,MLK Park,1126,81,15.0,1222.0,92.14,6.63
+2008,president,President,Barack Obama,John McCain,Masten Park,3772,133,7.0,3912.0,96.42,3.4
+2008,president,President,Barack Obama,John McCain,North Park,4470,1519,120.0,6109.0,73.17,24.86
+2008,president,President,Barack Obama,John McCain,Parkside,1932,602,63.0,2597.0,74.39,23.18
+2008,president,President,Barack Obama,John McCain,Pratt-Willert,1364,25,1.0,1390.0,98.13,1.8
+2008,president,President,Barack Obama,John McCain,Riverside,1635,729,50.0,2414.0,67.73,30.2
+2008,president,President,Barack Obama,John McCain,Schiller Park,1144,576,38.0,1758.0,65.07,32.76
+2008,president,President,Barack Obama,John McCain,Seneca Babcock,785,30,7.0,822.0,95.5,3.65
+2008,president,President,Barack Obama,John McCain,Seneca-Cazenovia,1595,919,48.0,2562.0,62.26,35.87
+2008,president,President,Barack Obama,John McCain,South Park,2796,1710,100.0,4606.0,60.7,37.13
+2008,president,President,Barack Obama,John McCain,University Heights,31431,29046,1017.0,61494.0,51.11,47.23
+2008,president,President,Barack Obama,John McCain,Upper West Side,2265,399,66.0,2730.0,82.97,14.62
+2008,president,President,Barack Obama,John McCain,West Hertel,1182,543,49.0,1774.0,66.63,30.61
+2008,president,President,Barack Obama,John McCain,West Side,2119,486,59.0,2664.0,79.54,18.24
+2008,congress,CD-27,Brian Higgins,Daniel J. Humiston,Allentown,28,5,6.0,39.0,71.79,12.82
+2008,congress,CD-27,Brian Higgins,Daniel J. Humiston,Black Rock,738,153,69.0,960.0,76.88,15.94
+2008,congress,CD-27,Brian Higgins,Daniel J. Humiston,Broadway Fillmore,411,35,38.0,484.0,84.92,7.23
+2008,congress,CD-27,Brian Higgins,Daniel J. Humiston,Central,57,8,9.0,74.0,77.03,10.81
+2008,congress,CD-27,Brian Higgins,Daniel J. Humiston,Central Park,11140,4497,1834.0,17471.0,63.76,25.74
+2008,congress,CD-27,Brian Higgins,Daniel J. Humiston,Ellicott,274,25,11.0,310.0,88.39,8.06
+2008,congress,CD-27,Brian Higgins,Daniel J. Humiston,Elmwood Bidwell,1431,210,138.0,1779.0,80.44,11.8
+2008,congress,CD-27,Brian Higgins,Daniel J. Humiston,Elmwood Bryant,505,56,41.0,602.0,83.89,9.3
+2008,congress,CD-27,Brian Higgins,Daniel J. Humiston,First Ward,378,78,21.0,477.0,79.25,16.35
+2008,congress,CD-27,Brian Higgins,Daniel J. Humiston,Genesee-Moselle,750,117,88.0,955.0,78.53,12.25
+2008,congress,CD-27,Brian Higgins,Daniel J. Humiston,Grant-Amherst,327,65,57.0,449.0,72.83,14.48
+2008,congress,CD-27,Brian Higgins,Daniel J. Humiston,Hopkins-Tifft,1039,175,118.0,1332.0,78.0,13.14
+2008,congress,CD-27,Brian Higgins,Daniel J. Humiston,Kaisertown,580,115,97.0,792.0,73.23,14.52
+2008,congress,CD-27,Brian Higgins,Daniel J. Humiston,Kenfield,9124,3685,1585.0,14394.0,63.39,25.6
+2008,congress,CD-27,Brian Higgins,Daniel J. Humiston,Kensington-Bailey,15985,5410,2491.0,23886.0,66.92,22.65
+2008,congress,CD-27,Brian Higgins,Daniel J. Humiston,Lovejoy,628,88,97.0,813.0,77.24,10.82
+2008,congress,CD-27,Brian Higgins,Daniel J. Humiston,Lower West Side,194,34,27.0,255.0,76.08,13.33
+2008,congress,CD-27,Brian Higgins,Daniel J. Humiston,MLK Park,225,26,29.0,280.0,80.36,9.29
+2008,congress,CD-27,Brian Higgins,Daniel J. Humiston,Masten Park,195,25,23.0,243.0,80.25,10.29
+2008,congress,CD-27,Brian Higgins,Daniel J. Humiston,North Park,3501,617,372.0,4490.0,77.97,13.74
+2008,congress,CD-27,Brian Higgins,Daniel J. Humiston,Parkside,1520,253,182.0,1955.0,77.75,12.94
+2008,congress,CD-27,Brian Higgins,Daniel J. Humiston,Riverside,1491,307,200.0,1998.0,74.62,15.37
+2008,congress,CD-27,Brian Higgins,Daniel J. Humiston,Schiller Park,896,168,149.0,1213.0,73.87,13.85
+2008,congress,CD-27,Brian Higgins,Daniel J. Humiston,Seneca-Cazenovia,1940,234,213.0,2387.0,81.27,9.8
+2008,congress,CD-27,Brian Higgins,Daniel J. Humiston,South Park,3477,429,378.0,4284.0,81.16,10.01
+2008,congress,CD-27,Brian Higgins,Daniel J. Humiston,University Heights,20523,7937,3297.0,31757.0,64.63,24.99
+2008,congress,CD-27,Brian Higgins,Daniel J. Humiston,Upper West Side,1547,181,220.0,1948.0,79.41,9.29
+2008,congress,CD-27,Brian Higgins,Daniel J. Humiston,West Hertel,1080,219,151.0,1450.0,74.48,15.1
+2008,congress,CD-27,Brian Higgins,Daniel J. Humiston,West Side,1750,218,201.0,2169.0,80.68,10.05
+2008,congress,CD-28,Louise M. Slaughter,David W. Crimmen,Allentown,71,5,0.0,76.0,93.42,6.58
+2008,congress,CD-28,Louise M. Slaughter,David W. Crimmen,Broadway Fillmore,1273,51,0.0,1324.0,96.15,3.85
+2008,congress,CD-28,Louise M. Slaughter,David W. Crimmen,Central,183,16,0.0,199.0,91.96,8.04
+2008,congress,CD-28,Louise M. Slaughter,David W. Crimmen,Central Park,2845,1036,0.0,3881.0,73.31,26.69
+2008,congress,CD-28,Louise M. Slaughter,David W. Crimmen,Delavan Grider,1074,28,0.0,1102.0,97.46,2.54
+2008,congress,CD-28,Louise M. Slaughter,David W. Crimmen,Ellicott,115,8,0.0,123.0,93.5,6.5
+2008,congress,CD-28,Louise M. Slaughter,David W. Crimmen,Elmwood Bidwell,658,129,0.0,787.0,83.61,16.39
+2008,congress,CD-28,Louise M. Slaughter,David W. Crimmen,Elmwood Bryant,1026,172,0.0,1198.0,85.64,14.36
+2008,congress,CD-28,Louise M. Slaughter,David W. Crimmen,Fillmore-Leroy,1187,35,0.0,1222.0,97.14,2.86
+2008,congress,CD-28,Louise M. Slaughter,David W. Crimmen,First Ward,435,18,0.0,453.0,96.03,3.97
+2008,congress,CD-28,Louise M. Slaughter,David W. Crimmen,Fruit Belt,720,55,0.0,775.0,92.9,7.1
+2008,congress,CD-28,Louise M. Slaughter,David W. Crimmen,Genesee-Moselle,240,3,0.0,243.0,98.77,1.23
+2008,congress,CD-28,Louise M. Slaughter,David W. Crimmen,Hamlin Park,598,14,0.0,612.0,97.71,2.29
+2008,congress,CD-28,Louise M. Slaughter,David W. Crimmen,Hopkins-Tifft,193,11,0.0,204.0,94.61,5.39
+2008,congress,CD-28,Louise M. Slaughter,David W. Crimmen,Kaisertown,152,14,0.0,166.0,91.57,8.43
+2008,congress,CD-28,Louise M. Slaughter,David W. Crimmen,Kenfield,3490,1230,0.0,4720.0,73.94,26.06
+2008,congress,CD-28,Louise M. Slaughter,David W. Crimmen,Kensington-Bailey,6346,2330,0.0,8676.0,73.14,26.86
+2008,congress,CD-28,Louise M. Slaughter,David W. Crimmen,Lovejoy,648,47,0.0,695.0,93.24,6.76
+2008,congress,CD-28,Louise M. Slaughter,David W. Crimmen,Lower West Side,95,16,0.0,111.0,85.59,14.41
+2008,congress,CD-28,Louise M. Slaughter,David W. Crimmen,MLK Park,618,21,0.0,639.0,96.71,3.29
+2008,congress,CD-28,Louise M. Slaughter,David W. Crimmen,Masten Park,2610,61,0.0,2671.0,97.72,2.28
+2008,congress,CD-28,Louise M. Slaughter,David W. Crimmen,North Park,545,88,0.0,633.0,86.1,13.9
+2008,congress,CD-28,Louise M. Slaughter,David W. Crimmen,Parkside,181,58,0.0,239.0,75.73,24.27
+2008,congress,CD-28,Louise M. Slaughter,David W. Crimmen,Pratt-Willert,958,17,0.0,975.0,98.26,1.74
+2008,congress,CD-28,Louise M. Slaughter,David W. Crimmen,Schiller Park,241,5,0.0,246.0,97.97,2.03
+2008,congress,CD-28,Louise M. Slaughter,David W. Crimmen,Seneca Babcock,523,20,0.0,543.0,96.32,3.68
+2008,congress,CD-28,Louise M. Slaughter,David W. Crimmen,University Heights,7054,2801,0.0,9855.0,71.58,28.42
+2008,congress,CD-28,Louise M. Slaughter,David W. Crimmen,Upper West Side,284,45,0.0,329.0,86.32,13.68
+2010,congress,CD-27,Brian Higgins,Leonard A. Roberto,Allentown,20,4,1.0,25.0,80.0,16.0
+2010,congress,CD-27,Brian Higgins,Leonard A. Roberto,Black Rock,548,171,24.0,743.0,73.76,23.01
+2010,congress,CD-27,Brian Higgins,Leonard A. Roberto,Broadway Fillmore,240,32,9.0,281.0,85.41,11.39
+2010,congress,CD-27,Brian Higgins,Leonard A. Roberto,Central,27,10,2.0,39.0,69.23,25.64
+2010,congress,CD-27,Brian Higgins,Leonard A. Roberto,Central Park,8064,5125,1196.0,14385.0,56.06,35.63
+2010,congress,CD-27,Brian Higgins,Leonard A. Roberto,Ellicott,136,25,1.0,162.0,83.95,15.43
+2010,congress,CD-27,Brian Higgins,Leonard A. Roberto,Elmwood Bidwell,1114,235,48.0,1397.0,79.74,16.82
+2010,congress,CD-27,Brian Higgins,Leonard A. Roberto,Elmwood Bryant,290,53,5.0,348.0,83.33,15.23
+2010,congress,CD-27,Brian Higgins,Leonard A. Roberto,First Ward,374,66,14.0,454.0,82.38,14.54
+2010,congress,CD-27,Brian Higgins,Leonard A. Roberto,Genesee-Moselle,482,150,37.0,669.0,72.05,22.42
+2010,congress,CD-27,Brian Higgins,Leonard A. Roberto,Grant-Amherst,202,57,17.0,276.0,73.19,20.65
+2010,congress,CD-27,Brian Higgins,Leonard A. Roberto,Hopkins-Tifft,793,241,48.0,1082.0,73.29,22.27
+2010,congress,CD-27,Brian Higgins,Leonard A. Roberto,Kaisertown,407,155,32.0,594.0,68.52,26.09
+2010,congress,CD-27,Brian Higgins,Leonard A. Roberto,Kenfield,6387,4239,1013.0,11639.0,54.88,36.42
+2010,congress,CD-27,Brian Higgins,Leonard A. Roberto,Kensington-Bailey,11444,6488,1545.0,19477.0,58.76,33.31
+2010,congress,CD-27,Brian Higgins,Leonard A. Roberto,Lovejoy,442,97,22.0,561.0,78.79,17.29
+2010,congress,CD-27,Brian Higgins,Leonard A. Roberto,Lower West Side,140,49,7.0,196.0,71.43,25.0
+2010,congress,CD-27,Brian Higgins,Leonard A. Roberto,MLK Park,153,16,6.0,175.0,87.43,9.14
+2010,congress,CD-27,Brian Higgins,Leonard A. Roberto,Masten Park,136,22,1.0,159.0,85.53,13.84
+2010,congress,CD-27,Brian Higgins,Leonard A. Roberto,North Park,2576,678,114.0,3368.0,76.48,20.13
+2010,congress,CD-27,Brian Higgins,Leonard A. Roberto,Parkside,1153,254,43.0,1450.0,79.52,17.52
+2010,congress,CD-27,Brian Higgins,Leonard A. Roberto,Riverside,1020,287,56.0,1363.0,74.83,21.06
+2010,congress,CD-27,Brian Higgins,Leonard A. Roberto,Schiller Park,653,238,32.0,923.0,70.75,25.79
+2010,congress,CD-27,Brian Higgins,Leonard A. Roberto,Seneca-Cazenovia,1433,338,67.0,1838.0,77.97,18.39
+2010,congress,CD-27,Brian Higgins,Leonard A. Roberto,South Park,2663,575,137.0,3375.0,78.9,17.04
+2010,congress,CD-27,Brian Higgins,Leonard A. Roberto,University Heights,14585,8950,2201.0,25736.0,56.67,34.78
+2010,congress,CD-27,Brian Higgins,Leonard A. Roberto,Upper West Side,1128,158,40.0,1326.0,85.07,11.92
+2010,congress,CD-27,Brian Higgins,Leonard A. Roberto,West Hertel,824,216,55.0,1095.0,75.25,19.73
+2010,congress,CD-27,Brian Higgins,Leonard A. Roberto,West Side,1134,223,52.0,1409.0,80.48,15.83
+2010,congress,CD-28,Louise M. Slaughter,Jill A. Rowland,Allentown,48,4,0.0,52.0,92.31,7.69
+2010,congress,CD-28,Louise M. Slaughter,Jill A. Rowland,Broadway Fillmore,1043,84,0.0,1127.0,92.55,7.45
+2010,congress,CD-28,Louise M. Slaughter,Jill A. Rowland,Central,108,17,0.0,125.0,86.4,13.6
+2010,congress,CD-28,Louise M. Slaughter,Jill A. Rowland,Central Park,1766,1282,0.0,3048.0,57.94,42.06
+2010,congress,CD-28,Louise M. Slaughter,Jill A. Rowland,Delavan Grider,655,20,0.0,675.0,97.04,2.96
+2010,congress,CD-28,Louise M. Slaughter,Jill A. Rowland,Ellicott,208,34,0.0,242.0,85.95,14.05
+2010,congress,CD-28,Louise M. Slaughter,Jill A. Rowland,Elmwood Bidwell,566,202,0.0,768.0,73.7,26.3
+2010,congress,CD-28,Louise M. Slaughter,Jill A. Rowland,Elmwood Bryant,810,230,0.0,1040.0,77.88,22.12
+2010,congress,CD-28,Louise M. Slaughter,Jill A. Rowland,Fillmore-Leroy,875,24,0.0,899.0,97.33,2.67
+2010,congress,CD-28,Louise M. Slaughter,Jill A. Rowland,First Ward,263,19,0.0,282.0,93.26,6.74
+2010,congress,CD-28,Louise M. Slaughter,Jill A. Rowland,Fruit Belt,483,62,0.0,545.0,88.62,11.38
+2010,congress,CD-28,Louise M. Slaughter,Jill A. Rowland,Genesee-Moselle,283,39,0.0,322.0,87.89,12.11
+2010,congress,CD-28,Louise M. Slaughter,Jill A. Rowland,Hamlin Park,402,23,0.0,425.0,94.59,5.41
+2010,congress,CD-28,Louise M. Slaughter,Jill A. Rowland,Hopkins-Tifft,108,9,0.0,117.0,92.31,7.69
+2010,congress,CD-28,Louise M. Slaughter,Jill A. Rowland,Kaisertown,85,11,0.0,96.0,88.54,11.46
+2010,congress,CD-28,Louise M. Slaughter,Jill A. Rowland,Kenfield,2296,1433,0.0,3729.0,61.57,38.43
+2010,congress,CD-28,Louise M. Slaughter,Jill A. Rowland,Kensington-Bailey,4042,2977,0.0,7019.0,57.59,42.41
+2010,congress,CD-28,Louise M. Slaughter,Jill A. Rowland,Lovejoy,371,42,0.0,413.0,89.83,10.17
+2010,congress,CD-28,Louise M. Slaughter,Jill A. Rowland,Lower West Side,76,16,0.0,92.0,82.61,17.39
+2010,congress,CD-28,Louise M. Slaughter,Jill A. Rowland,MLK Park,425,20,0.0,445.0,95.51,4.49
+2010,congress,CD-28,Louise M. Slaughter,Jill A. Rowland,Masten Park,1742,97,0.0,1839.0,94.73,5.27
+2010,congress,CD-28,Louise M. Slaughter,Jill A. Rowland,North Park,374,93,0.0,467.0,80.09,19.91
+2010,congress,CD-28,Louise M. Slaughter,Jill A. Rowland,Parkside,139,59,0.0,198.0,70.2,29.8
+2010,congress,CD-28,Louise M. Slaughter,Jill A. Rowland,Pratt-Willert,669,12,0.0,681.0,98.24,1.76
+2010,congress,CD-28,Louise M. Slaughter,Jill A. Rowland,Schiller Park,147,12,0.0,159.0,92.45,7.55
+2010,congress,CD-28,Louise M. Slaughter,Jill A. Rowland,Seneca Babcock,390,18,0.0,408.0,95.59,4.41
+2010,congress,CD-28,Louise M. Slaughter,Jill A. Rowland,University Heights,4448,3450,0.0,7898.0,56.32,43.68
+2010,congress,CD-28,Louise M. Slaughter,Jill A. Rowland,Upper West Side,198,52,0.0,250.0,79.2,20.8
+2012,president,President,Barack Obama,Mitt Romney,Allentown,626,121,40.0,787.0,79.54,15.37
+2012,president,President,Barack Obama,Mitt Romney,Black Rock,689,185,13.0,887.0,77.68,20.86
+2012,president,President,Barack Obama,Mitt Romney,Broadway Fillmore,2599,357,50.0,3006.0,86.46,11.88
+2012,president,President,Barack Obama,Mitt Romney,Central,912,195,24.0,1131.0,80.64,17.24
+2012,president,President,Barack Obama,Mitt Romney,Central Park,15872,17434,617.0,33923.0,46.79,51.39
+2012,president,President,Barack Obama,Mitt Romney,Delavan Grider,1443,22,3.0,1468.0,98.3,1.5
+2012,president,President,Barack Obama,Mitt Romney,Ellicott,802,64,7.0,873.0,91.87,7.33
+2012,president,President,Barack Obama,Mitt Romney,Elmwood Bidwell,2621,587,86.0,3294.0,79.57,17.82
+2012,president,President,Barack Obama,Mitt Romney,Elmwood Bryant,2788,309,70.0,3167.0,88.03,9.76
+2012,president,President,Barack Obama,Mitt Romney,Fillmore-Leroy,1699,35,6.0,1740.0,97.64,2.01
+2012,president,President,Barack Obama,Mitt Romney,First Ward,555,145,8.0,708.0,78.39,20.48
+2012,president,President,Barack Obama,Mitt Romney,Fruit Belt,1028,10,3.0,1041.0,98.75,0.96
+2012,president,President,Barack Obama,Mitt Romney,Genesee-Moselle,1239,60,7.0,1306.0,94.87,4.59
+2012,president,President,Barack Obama,Mitt Romney,Grant-Amherst,367,104,7.0,478.0,76.78,21.76
+2012,president,President,Barack Obama,Mitt Romney,Hamlin Park,1059,24,6.0,1089.0,97.25,2.2
+2012,president,President,Barack Obama,Mitt Romney,Hopkins-Tifft,1123,480,43.0,1646.0,68.23,29.16
+2012,president,President,Barack Obama,Mitt Romney,Kaisertown,1165,49,3.0,1217.0,95.73,4.03
+2012,president,President,Barack Obama,Mitt Romney,Kenfield,14327,14552,542.0,29421.0,48.7,49.46
+2012,president,President,Barack Obama,Mitt Romney,Kensington-Bailey,28018,24843,870.0,53731.0,52.14,46.24
+2012,president,President,Barack Obama,Mitt Romney,Lovejoy,922,429,24.0,1375.0,67.05,31.2
+2012,president,President,Barack Obama,Mitt Romney,Lower West Side,994,232,63.0,1289.0,77.11,18.0
+2012,president,President,Barack Obama,Mitt Romney,MLK Park,1281,35,3.0,1319.0,97.12,2.65
+2012,president,President,Barack Obama,Mitt Romney,Masten Park,3492,48,14.0,3554.0,98.26,1.35
+2012,president,President,Barack Obama,Mitt Romney,North Park,4556,1574,170.0,6300.0,72.32,24.98
+2012,president,President,Barack Obama,Mitt Romney,Parkside,1931,552,70.0,2553.0,75.64,21.62
+2012,president,President,Barack Obama,Mitt Romney,Pratt-Willert,889,63,2.0,954.0,93.19,6.6
+2012,president,President,Barack Obama,Mitt Romney,Riverside,1987,703,53.0,2743.0,72.44,25.63
+2012,president,President,Barack Obama,Mitt Romney,Schiller Park,1916,92,7.0,2015.0,95.09,4.57
+2012,president,President,Barack Obama,Mitt Romney,Seneca Babcock,773,197,5.0,975.0,79.28,20.21
+2012,president,President,Barack Obama,Mitt Romney,Seneca-Cazenovia,1876,724,58.0,2658.0,70.58,27.24
+2012,president,President,Barack Obama,Mitt Romney,South Park,2278,1037,91.0,3406.0,66.88,30.45
+2012,president,President,Barack Obama,Mitt Romney,University Heights,30896,29326,1109.0,61331.0,50.38,47.82
+2012,president,President,Barack Obama,Mitt Romney,Upper West Side,1594,360,77.0,2031.0,78.48,17.73
+2012,president,President,Barack Obama,Mitt Romney,West Hertel,717,189,11.0,917.0,78.19,20.61
+2012,president,President,Barack Obama,Mitt Romney,West Side,1922,373,46.0,2341.0,82.1,15.93
+2012,congress,CD-26,Brian Higgins,Michael H. Madigan,Allentown,659,93,0.0,752.0,87.63,12.37
+2012,congress,CD-26,Brian Higgins,Michael H. Madigan,Black Rock,718,120,0.0,838.0,85.68,14.32
+2012,congress,CD-26,Brian Higgins,Michael H. Madigan,Broadway Fillmore,2471,253,0.0,2724.0,90.71,9.29
+2012,congress,CD-26,Brian Higgins,Michael H. Madigan,Central,905,148,0.0,1053.0,85.94,14.06
+2012,congress,CD-26,Brian Higgins,Michael H. Madigan,Central Park,7614,3422,0.0,11036.0,68.99,31.01
+2012,congress,CD-26,Brian Higgins,Michael H. Madigan,Delavan Grider,1237,27,0.0,1264.0,97.86,2.14
+2012,congress,CD-26,Brian Higgins,Michael H. Madigan,Ellicott,754,37,0.0,791.0,95.32,4.68
+2012,congress,CD-26,Brian Higgins,Michael H. Madigan,Elmwood Bidwell,2687,423,0.0,3110.0,86.4,13.6
+2012,congress,CD-26,Brian Higgins,Michael H. Madigan,Elmwood Bryant,2643,247,0.0,2890.0,91.45,8.55
+2012,congress,CD-26,Brian Higgins,Michael H. Madigan,Fillmore-Leroy,1507,34,0.0,1541.0,97.79,2.21
+2012,congress,CD-26,Brian Higgins,Michael H. Madigan,First Ward,594,76,0.0,670.0,88.66,11.34
+2012,congress,CD-26,Brian Higgins,Michael H. Madigan,Fruit Belt,852,14,0.0,866.0,98.38,1.62
+2012,congress,CD-26,Brian Higgins,Michael H. Madigan,Genesee-Moselle,1063,62,0.0,1125.0,94.49,5.51
+2012,congress,CD-26,Brian Higgins,Michael H. Madigan,Grant-Amherst,364,74,0.0,438.0,83.11,16.89
+2012,congress,CD-26,Brian Higgins,Michael H. Madigan,Hamlin Park,921,25,0.0,946.0,97.36,2.64
+2012,congress,CD-26,Brian Higgins,Michael H. Madigan,Hopkins-Tifft,1326,254,0.0,1580.0,83.92,16.08
+2012,congress,CD-26,Brian Higgins,Michael H. Madigan,Kaisertown,1031,44,0.0,1075.0,95.91,4.09
+2012,congress,CD-26,Brian Higgins,Michael H. Madigan,Kenfield,7732,3419,0.0,11151.0,69.34,30.66
+2012,congress,CD-26,Brian Higgins,Michael H. Madigan,Kensington-Bailey,16747,6140,0.0,22887.0,73.17,26.83
+2012,congress,CD-26,Brian Higgins,Michael H. Madigan,Lovejoy,1010,247,0.0,1257.0,80.35,19.65
+2012,congress,CD-26,Brian Higgins,Michael H. Madigan,Lower West Side,1047,166,0.0,1213.0,86.31,13.69
+2012,congress,CD-26,Brian Higgins,Michael H. Madigan,MLK Park,1108,35,0.0,1143.0,96.94,3.06
+2012,congress,CD-26,Brian Higgins,Michael H. Madigan,Masten Park,2992,79,0.0,3071.0,97.43,2.57
+2012,congress,CD-26,Brian Higgins,Michael H. Madigan,North Park,4879,1005,0.0,5884.0,82.92,17.08
+2012,congress,CD-26,Brian Higgins,Michael H. Madigan,Parkside,2064,395,0.0,2459.0,83.94,16.06
+2012,congress,CD-26,Brian Higgins,Michael H. Madigan,Pratt-Willert,789,51,0.0,840.0,93.93,6.07
+2012,congress,CD-26,Brian Higgins,Michael H. Madigan,Riverside,2052,491,0.0,2543.0,80.69,19.31
+2012,congress,CD-26,Brian Higgins,Michael H. Madigan,Schiller Park,1655,72,0.0,1727.0,95.83,4.17
+2012,congress,CD-26,Brian Higgins,Michael H. Madigan,Seneca Babcock,761,112,0.0,873.0,87.17,12.83
+2012,congress,CD-26,Brian Higgins,Michael H. Madigan,Seneca-Cazenovia,2084,412,0.0,2496.0,83.49,16.51
+2012,congress,CD-26,Brian Higgins,Michael H. Madigan,South Park,2798,526,0.0,3324.0,84.18,15.82
+2012,congress,CD-26,Brian Higgins,Michael H. Madigan,University Heights,17861,7044,0.0,24905.0,71.72,28.28
+2012,congress,CD-26,Brian Higgins,Michael H. Madigan,Upper West Side,1622,288,0.0,1910.0,84.92,15.08
+2012,congress,CD-26,Brian Higgins,Michael H. Madigan,West Hertel,708,131,0.0,839.0,84.39,15.61
+2012,congress,CD-26,Brian Higgins,Michael H. Madigan,West Side,1866,279,0.0,2145.0,86.99,13.01
+2014,congress,CD-26,Brian Higgins,Kathleen A. Weppner,Allentown,342,56,0.0,398.0,85.93,14.07
+2014,congress,CD-26,Brian Higgins,Kathleen A. Weppner,Black Rock,328,102,0.0,430.0,76.28,23.72
+2014,congress,CD-26,Brian Higgins,Kathleen A. Weppner,Broadway Fillmore,1111,168,0.0,1279.0,86.86,13.14
+2014,congress,CD-26,Brian Higgins,Kathleen A. Weppner,Central,490,105,0.0,595.0,82.35,17.65
+2014,congress,CD-26,Brian Higgins,Kathleen A. Weppner,Central Park,4281,2518,0.0,6799.0,62.97,37.03
+2014,congress,CD-26,Brian Higgins,Kathleen A. Weppner,Delavan Grider,590,17,0.0,607.0,97.2,2.8
+2014,congress,CD-26,Brian Higgins,Kathleen A. Weppner,Ellicott,367,36,0.0,403.0,91.07,8.93
+2014,congress,CD-26,Brian Higgins,Kathleen A. Weppner,Elmwood Bidwell,1604,302,0.0,1906.0,84.16,15.84
+2014,congress,CD-26,Brian Higgins,Kathleen A. Weppner,Elmwood Bryant,1285,139,0.0,1424.0,90.24,9.76
+2014,congress,CD-26,Brian Higgins,Kathleen A. Weppner,Fillmore-Leroy,619,22,0.0,641.0,96.57,3.43
+2014,congress,CD-26,Brian Higgins,Kathleen A. Weppner,First Ward,279,59,0.0,338.0,82.54,17.46
+2014,congress,CD-26,Brian Higgins,Kathleen A. Weppner,Fruit Belt,392,20,0.0,412.0,95.15,4.85
+2014,congress,CD-26,Brian Higgins,Kathleen A. Weppner,Genesee-Moselle,405,33,0.0,438.0,92.47,7.53
+2014,congress,CD-26,Brian Higgins,Kathleen A. Weppner,Grant-Amherst,171,51,0.0,222.0,77.03,22.97
+2014,congress,CD-26,Brian Higgins,Kathleen A. Weppner,Hamlin Park,445,15,0.0,460.0,96.74,3.26
+2014,congress,CD-26,Brian Higgins,Kathleen A. Weppner,Hopkins-Tifft,683,198,0.0,881.0,77.53,22.47
+2014,congress,CD-26,Brian Higgins,Kathleen A. Weppner,Kaisertown,317,29,0.0,346.0,91.62,8.38
+2014,congress,CD-26,Brian Higgins,Kathleen A. Weppner,Kenfield,4325,2410,0.0,6735.0,64.22,35.78
+2014,congress,CD-26,Brian Higgins,Kathleen A. Weppner,Kensington-Bailey,9335,4586,0.0,13921.0,67.06,32.94
+2014,congress,CD-26,Brian Higgins,Kathleen A. Weppner,Lovejoy,425,167,0.0,592.0,71.79,28.21
+2014,congress,CD-26,Brian Higgins,Kathleen A. Weppner,Lower West Side,584,100,0.0,684.0,85.38,14.62
+2014,congress,CD-26,Brian Higgins,Kathleen A. Weppner,MLK Park,509,17,0.0,526.0,96.77,3.23
+2014,congress,CD-26,Brian Higgins,Kathleen A. Weppner,Masten Park,1353,49,0.0,1402.0,96.5,3.5
+2014,congress,CD-26,Brian Higgins,Kathleen A. Weppner,North Park,2817,760,0.0,3577.0,78.75,21.25
+2014,congress,CD-26,Brian Higgins,Kathleen A. Weppner,Parkside,1278,256,0.0,1534.0,83.31,16.69
+2014,congress,CD-26,Brian Higgins,Kathleen A. Weppner,Pratt-Willert,329,26,0.0,355.0,92.68,7.32
+2014,congress,CD-26,Brian Higgins,Kathleen A. Weppner,Riverside,902,315,0.0,1217.0,74.12,25.88
+2014,congress,CD-26,Brian Higgins,Kathleen A. Weppner,Schiller Park,579,49,0.0,628.0,92.2,7.8
+2014,congress,CD-26,Brian Higgins,Kathleen A. Weppner,Seneca Babcock,337,79,0.0,416.0,81.01,18.99
+2014,congress,CD-26,Brian Higgins,Kathleen A. Weppner,Seneca-Cazenovia,998,309,0.0,1307.0,76.36,23.64
+2014,congress,CD-26,Brian Higgins,Kathleen A. Weppner,South Park,1626,421,0.0,2047.0,79.43,20.57
+2014,congress,CD-26,Brian Higgins,Kathleen A. Weppner,University Heights,9541,5044,0.0,14585.0,65.42,34.58
+2014,congress,CD-26,Brian Higgins,Kathleen A. Weppner,Upper West Side,759,173,0.0,932.0,81.44,18.56
+2014,congress,CD-26,Brian Higgins,Kathleen A. Weppner,West Hertel,311,98,0.0,409.0,76.04,23.96
+2014,congress,CD-26,Brian Higgins,Kathleen A. Weppner,West Side,826,169,0.0,995.0,83.02,16.98
+2016,president,President,Hillary Clinton,Donald J Trump,Allentown,651,108,44.0,803.0,81.07,13.45
+2016,president,President,Hillary Clinton,Donald J Trump,Black Rock,583,254,47.0,884.0,65.95,28.73
+2016,president,President,Hillary Clinton,Donald J Trump,Broadway Fillmore,2241,540,96.0,2877.0,77.89,18.77
+2016,president,President,Hillary Clinton,Donald J Trump,Central,826,191,55.0,1072.0,77.05,17.82
+2016,president,President,Hillary Clinton,Donald J Trump,Central Park,1081,274,66.0,1421.0,76.07,19.28
+2016,president,President,Hillary Clinton,Donald J Trump,Delavan Grider,1224,27,26.0,1277.0,95.85,2.11
+2016,president,President,Hillary Clinton,Donald J Trump,Ellicott,692,110,33.0,835.0,82.87,13.17
+2016,president,President,Hillary Clinton,Donald J Trump,Elmwood Bidwell,2732,570,188.0,3490.0,78.28,16.33
+2016,president,President,Hillary Clinton,Donald J Trump,Elmwood Bryant,2702,286,157.0,3145.0,85.91,9.09
+2016,president,President,Hillary Clinton,Donald J Trump,Fillmore-Leroy,1435,54,19.0,1508.0,95.16,3.58
+2016,president,President,Hillary Clinton,Donald J Trump,First Ward,405,268,23.0,696.0,58.19,38.51
+2016,president,President,Hillary Clinton,Donald J Trump,Fruit Belt,925,26,7.0,958.0,96.56,2.71
+2016,president,President,Hillary Clinton,Donald J Trump,Genesee-Moselle,1056,63,18.0,1137.0,92.88,5.54
+2016,president,President,Hillary Clinton,Donald J Trump,Grant-Amherst,329,104,29.0,462.0,71.21,22.51
+2016,president,President,Hillary Clinton,Donald J Trump,Hamlin Park,929,14,21.0,964.0,96.37,1.45
+2016,president,President,Hillary Clinton,Donald J Trump,Hopkins-Tifft,932,680,86.0,1698.0,54.89,40.05
+2016,president,President,Hillary Clinton,Donald J Trump,Kaisertown,967,45,16.0,1028.0,94.07,4.38
+2016,president,President,Hillary Clinton,Donald J Trump,Kenfield,1341,199,60.0,1600.0,83.81,12.44
+2016,president,President,Hillary Clinton,Donald J Trump,Kensington-Bailey,3515,265,92.0,3872.0,90.78,6.84
+2016,president,President,Hillary Clinton,Donald J Trump,Lovejoy,725,528,57.0,1310.0,55.34,40.31
+2016,president,President,Hillary Clinton,Donald J Trump,Lower West Side,1049,161,91.0,1301.0,80.63,12.38
+2016,president,President,Hillary Clinton,Donald J Trump,MLK Park,1181,53,13.0,1247.0,94.71,4.25
+2016,president,President,Hillary Clinton,Donald J Trump,Masten Park,3143,108,45.0,3296.0,95.36,3.28
+2016,president,President,Hillary Clinton,Donald J Trump,North Park,4460,1613,345.0,6418.0,69.49,25.13
+2016,president,President,Hillary Clinton,Donald J Trump,Parkside,1996,567,122.0,2685.0,74.34,21.12
+2016,president,President,Hillary Clinton,Donald J Trump,Pratt-Willert,834,39,9.0,882.0,94.56,4.42
+2016,president,President,Hillary Clinton,Donald J Trump,Riverside,1701,838,122.0,2661.0,63.92,31.49
+2016,president,President,Hillary Clinton,Donald J Trump,Schiller Park,1627,81,23.0,1731.0,93.99,4.68
+2016,president,President,Hillary Clinton,Donald J Trump,Seneca Babcock,665,247,20.0,932.0,71.35,26.5
+2016,president,President,Hillary Clinton,Donald J Trump,Seneca-Cazenovia,1598,1000,164.0,2762.0,57.86,36.21
+2016,president,President,Hillary Clinton,Donald J Trump,South Park,1888,1306,205.0,3399.0,55.55,38.42
+2016,president,President,Hillary Clinton,Donald J Trump,University Heights,2437,273,113.0,2823.0,86.33,9.67
+2016,president,President,Hillary Clinton,Donald J Trump,Upper West Side,1657,395,131.0,2183.0,75.9,18.09
+2016,president,President,Hillary Clinton,Donald J Trump,West Hertel,613,254,26.0,893.0,68.65,28.44
+2016,president,President,Hillary Clinton,Donald J Trump,West Side,1921,390,132.0,2443.0,78.63,15.96
+2016,congress,CD-26,Brian Higgins,Shelly Schratz,Allentown,677,84,0.0,761.0,88.96,11.04
+2016,congress,CD-26,Brian Higgins,Shelly Schratz,Black Rock,670,122,0.0,792.0,84.6,15.4
+2016,congress,CD-26,Brian Higgins,Shelly Schratz,Broadway Fillmore,2347,292,0.0,2639.0,88.94,11.06
+2016,congress,CD-26,Brian Higgins,Shelly Schratz,Central,877,125,0.0,1002.0,87.52,12.48
+2016,congress,CD-26,Brian Higgins,Shelly Schratz,Central Park,1177,189,0.0,1366.0,86.16,13.84
+2016,congress,CD-26,Brian Higgins,Shelly Schratz,Delavan Grider,1119,27,0.0,1146.0,97.64,2.36
+2016,congress,CD-26,Brian Higgins,Shelly Schratz,Ellicott,710,68,0.0,778.0,91.26,8.74
+2016,congress,CD-26,Brian Higgins,Shelly Schratz,Elmwood Bidwell,2924,405,0.0,3329.0,87.83,12.17
+2016,congress,CD-26,Brian Higgins,Shelly Schratz,Elmwood Bryant,2670,253,0.0,2923.0,91.34,8.66
+2016,congress,CD-26,Brian Higgins,Shelly Schratz,Fillmore-Leroy,1350,42,0.0,1392.0,96.98,3.02
+2016,congress,CD-26,Brian Higgins,Shelly Schratz,First Ward,568,100,0.0,668.0,85.03,14.97
+2016,congress,CD-26,Brian Higgins,Shelly Schratz,Fruit Belt,812,22,0.0,834.0,97.36,2.64
+2016,congress,CD-26,Brian Higgins,Shelly Schratz,Genesee-Moselle,996,48,0.0,1044.0,95.4,4.6
+2016,congress,CD-26,Brian Higgins,Shelly Schratz,Grant-Amherst,367,62,0.0,429.0,85.55,14.45
+2016,congress,CD-26,Brian Higgins,Shelly Schratz,Hamlin Park,879,15,0.0,894.0,98.32,1.68
+2016,congress,CD-26,Brian Higgins,Shelly Schratz,Hopkins-Tifft,1319,311,0.0,1630.0,80.92,19.08
+2016,congress,CD-26,Brian Higgins,Shelly Schratz,Kaisertown,917,39,0.0,956.0,95.92,4.08
+2016,congress,CD-26,Brian Higgins,Shelly Schratz,Kenfield,1324,165,0.0,1489.0,88.92,11.08
+2016,congress,CD-26,Brian Higgins,Shelly Schratz,Kensington-Bailey,3387,199,0.0,3586.0,94.45,5.55
+2016,congress,CD-26,Brian Higgins,Shelly Schratz,Lovejoy,954,257,0.0,1211.0,78.78,21.22
+2016,congress,CD-26,Brian Higgins,Shelly Schratz,Lower West Side,1094,142,0.0,1236.0,88.51,11.49
+2016,congress,CD-26,Brian Higgins,Shelly Schratz,MLK Park,1105,34,0.0,1139.0,97.01,2.99
+2016,congress,CD-26,Brian Higgins,Shelly Schratz,Masten Park,2931,95,0.0,3026.0,96.86,3.14
+2016,congress,CD-26,Brian Higgins,Shelly Schratz,North Park,5091,1019,0.0,6110.0,83.32,16.68
+2016,congress,CD-26,Brian Higgins,Shelly Schratz,Parkside,2179,396,0.0,2575.0,84.62,15.38
+2016,congress,CD-26,Brian Higgins,Shelly Schratz,Pratt-Willert,769,36,0.0,805.0,95.53,4.47
+2016,congress,CD-26,Brian Higgins,Shelly Schratz,Riverside,1979,492,0.0,2471.0,80.09,19.91
+2016,congress,CD-26,Brian Higgins,Shelly Schratz,Schiller Park,1537,75,0.0,1612.0,95.35,4.65
+2016,congress,CD-26,Brian Higgins,Shelly Schratz,Seneca Babcock,743,122,0.0,865.0,85.9,14.1
+2016,congress,CD-26,Brian Higgins,Shelly Schratz,Seneca-Cazenovia,2212,430,0.0,2642.0,83.72,16.28
+2016,congress,CD-26,Brian Higgins,Shelly Schratz,South Park,2796,527,0.0,3323.0,84.14,15.86
+2016,congress,CD-26,Brian Higgins,Shelly Schratz,University Heights,2401,205,0.0,2606.0,92.13,7.87
+2016,congress,CD-26,Brian Higgins,Shelly Schratz,Upper West Side,1797,257,0.0,2054.0,87.49,12.51
+2016,congress,CD-26,Brian Higgins,Shelly Schratz,West Hertel,659,164,0.0,823.0,80.07,19.93
+2016,congress,CD-26,Brian Higgins,Shelly Schratz,West Side,1980,271,0.0,2251.0,87.96,12.04
+2018,congress,CD-26,Brian Higgins,Renee M Zeno,Allentown,620,84,0.0,704.0,88.07,11.93
+2018,congress,CD-26,Brian Higgins,Renee M Zeno,Black Rock,477,101,0.0,578.0,82.53,17.47
+2018,congress,CD-26,Brian Higgins,Renee M Zeno,Broadway Fillmore,1715,222,0.0,1937.0,88.54,11.46
+2018,congress,CD-26,Brian Higgins,Renee M Zeno,Central,740,123,0.0,863.0,85.75,14.25
+2018,congress,CD-26,Brian Higgins,Renee M Zeno,Central Park,989,158,0.0,1147.0,86.22,13.78
+2018,congress,CD-26,Brian Higgins,Renee M Zeno,Delavan Grider,842,18,0.0,860.0,97.91,2.09
+2018,congress,CD-26,Brian Higgins,Renee M Zeno,Ellicott,559,44,0.0,603.0,92.7,7.3
+2018,congress,CD-26,Brian Higgins,Renee M Zeno,Elmwood Bidwell,2538,312,0.0,2850.0,89.05,10.95
+2018,congress,CD-26,Brian Higgins,Renee M Zeno,Elmwood Bryant,2149,173,0.0,2322.0,92.55,7.45
+2018,congress,CD-26,Brian Higgins,Renee M Zeno,Fillmore-Leroy,1023,32,0.0,1055.0,96.97,3.03
+2018,congress,CD-26,Brian Higgins,Renee M Zeno,First Ward,350,103,0.0,453.0,77.26,22.74
+2018,congress,CD-26,Brian Higgins,Renee M Zeno,Fruit Belt,620,19,0.0,639.0,97.03,2.97
+2018,congress,CD-26,Brian Higgins,Renee M Zeno,Genesee-Moselle,653,39,0.0,692.0,94.36,5.64
+2018,congress,CD-26,Brian Higgins,Renee M Zeno,Grant-Amherst,253,58,0.0,311.0,81.35,18.65
+2018,congress,CD-26,Brian Higgins,Renee M Zeno,Hamlin Park,700,13,0.0,713.0,98.18,1.82
+2018,congress,CD-26,Brian Higgins,Renee M Zeno,Hopkins-Tifft,934,271,0.0,1205.0,77.51,22.49
+2018,congress,CD-26,Brian Higgins,Renee M Zeno,Kaisertown,610,32,0.0,642.0,95.02,4.98
+2018,congress,CD-26,Brian Higgins,Renee M Zeno,Kenfield,1132,125,0.0,1257.0,90.06,9.94
+2018,congress,CD-26,Brian Higgins,Renee M Zeno,Kensington-Bailey,2621,138,0.0,2759.0,95.0,5.0
+2018,congress,CD-26,Brian Higgins,Renee M Zeno,Lovejoy,616,220,0.0,836.0,73.68,26.32
+2018,congress,CD-26,Brian Higgins,Renee M Zeno,Lower West Side,963,106,0.0,1069.0,90.08,9.92
+2018,congress,CD-26,Brian Higgins,Renee M Zeno,MLK Park,798,30,0.0,828.0,96.38,3.62
+2018,congress,CD-26,Brian Higgins,Renee M Zeno,Masten Park,2198,76,0.0,2274.0,96.66,3.34
+2018,congress,CD-26,Brian Higgins,Renee M Zeno,North Park,4413,776,0.0,5189.0,85.05,14.95
+2018,congress,CD-26,Brian Higgins,Renee M Zeno,Parkside,1938,292,0.0,2230.0,86.91,13.09
+2018,congress,CD-26,Brian Higgins,Renee M Zeno,Pratt-Willert,590,44,0.0,634.0,93.06,6.94
+2018,congress,CD-26,Brian Higgins,Renee M Zeno,Riverside,1279,360,0.0,1639.0,78.04,21.96
+2018,congress,CD-26,Brian Higgins,Renee M Zeno,Schiller Park,1099,52,0.0,1151.0,95.48,4.52
+2018,congress,CD-26,Brian Higgins,Renee M Zeno,Seneca Babcock,495,110,0.0,605.0,81.82,18.18
+2018,congress,CD-26,Brian Higgins,Renee M Zeno,Seneca-Cazenovia,1601,400,0.0,2001.0,80.01,19.99
+2018,congress,CD-26,Brian Higgins,Renee M Zeno,South Park,2296,519,0.0,2815.0,81.56,18.44
+2018,congress,CD-26,Brian Higgins,Renee M Zeno,University Heights,1862,121,0.0,1983.0,93.9,6.1
+2018,congress,CD-26,Brian Higgins,Renee M Zeno,Upper West Side,1440,198,0.0,1638.0,87.91,12.09
+2018,congress,CD-26,Brian Higgins,Renee M Zeno,West Hertel,452,114,0.0,566.0,79.86,20.14
+2018,congress,CD-26,Brian Higgins,Renee M Zeno,West Side,1546,208,0.0,1754.0,88.14,11.86
+2020,president,President,Joseph R. Biden,Donald J. Trump,Allentown,817,126,22.0,965.0,84.66,13.06
+2020,president,President,Joseph R. Biden,Donald J. Trump,Black Rock,627,305,17.0,949.0,66.07,32.14
+2020,president,President,Joseph R. Biden,Donald J. Trump,Broadway Fillmore,2265,651,35.0,2951.0,76.75,22.06
+2020,president,President,Joseph R. Biden,Donald J. Trump,Central,932,247,28.0,1207.0,77.22,20.46
+2020,president,President,Joseph R. Biden,Donald J. Trump,Central Park,1235,238,29.0,1502.0,82.22,15.85
+2020,president,President,Joseph R. Biden,Donald J. Trump,Delavan Grider,1131,54,17.0,1202.0,94.09,4.49
+2020,president,President,Joseph R. Biden,Donald J. Trump,Ellicott,800,98,12.0,910.0,87.91,10.77
+2020,president,President,Joseph R. Biden,Donald J. Trump,Elmwood Bidwell,3279,612,95.0,3986.0,82.26,15.35
+2020,president,President,Joseph R. Biden,Donald J. Trump,Elmwood Bryant,2856,377,74.0,3307.0,86.36,11.4
+2020,president,President,Joseph R. Biden,Donald J. Trump,Fillmore-Leroy,1494,75,17.0,1586.0,94.2,4.73
+2020,president,President,Joseph R. Biden,Donald J. Trump,First Ward,466,295,11.0,772.0,60.36,38.21
+2020,president,President,Joseph R. Biden,Donald J. Trump,Fruit Belt,852,42,8.0,902.0,94.46,4.66
+2020,president,President,Joseph R. Biden,Donald J. Trump,Genesee-Moselle,1045,78,11.0,1134.0,92.15,6.88
+2020,president,President,Joseph R. Biden,Donald J. Trump,Grant-Amherst,373,169,6.0,548.0,68.07,30.84
+2020,president,President,Joseph R. Biden,Donald J. Trump,Hamlin Park,946,32,8.0,986.0,95.94,3.25
+2020,president,President,Joseph R. Biden,Donald J. Trump,Hopkins-Tifft,1038,746,40.0,1824.0,56.91,40.9
+2020,president,President,Joseph R. Biden,Donald J. Trump,Kaisertown,993,82,5.0,1080.0,91.94,7.59
+2020,president,President,Joseph R. Biden,Donald J. Trump,Kenfield,1457,212,27.0,1696.0,85.91,12.5
+2020,president,President,Joseph R. Biden,Donald J. Trump,Kensington-Bailey,3705,291,25.0,4021.0,92.14,7.24
+2020,president,President,Joseph R. Biden,Donald J. Trump,Lovejoy,894,533,25.0,1452.0,61.57,36.71
+2020,president,President,Joseph R. Biden,Donald J. Trump,Lower West Side,1224,218,39.0,1481.0,82.65,14.72
+2020,president,President,Joseph R. Biden,Donald J. Trump,MLK Park,1225,79,8.0,1312.0,93.37,6.02
+2020,president,President,Joseph R. Biden,Donald J. Trump,Masten Park,3077,187,29.0,3293.0,93.44,5.68
+2020,president,President,Joseph R. Biden,Donald J. Trump,North Park,5478,1582,134.0,7194.0,76.15,21.99
+2020,president,President,Joseph R. Biden,Donald J. Trump,Parkside,2388,554,70.0,3012.0,79.28,18.39
+2020,president,President,Joseph R. Biden,Donald J. Trump,Pratt-Willert,855,88,11.0,954.0,89.62,9.22
+2020,president,President,Joseph R. Biden,Donald J. Trump,Riverside,1813,916,54.0,2783.0,65.15,32.91
+2020,president,President,Joseph R. Biden,Donald J. Trump,Schiller Park,1653,102,15.0,1770.0,93.39,5.76
+2020,president,President,Joseph R. Biden,Donald J. Trump,Seneca Babcock,729,259,13.0,1001.0,72.83,25.87
+2020,president,President,Joseph R. Biden,Donald J. Trump,Seneca-Cazenovia,1855,1104,61.0,3020.0,61.42,36.56
+2020,president,President,Joseph R. Biden,Donald J. Trump,South Park,2363,1383,67.0,3813.0,61.97,36.27
+2020,president,President,Joseph R. Biden,Donald J. Trump,University Heights,2599,295,36.0,2930.0,88.7,10.07
+2020,president,President,Joseph R. Biden,Donald J. Trump,Upper West Side,2126,439,73.0,2638.0,80.59,16.64
+2020,president,President,Joseph R. Biden,Donald J. Trump,West Hertel,625,273,13.0,911.0,68.61,29.97
+2020,president,President,Joseph R. Biden,Donald J. Trump,West Side,2264,503,72.0,2839.0,79.75,17.72
+2020,congress,CD-26,Brian Higgins,Ricky T. Donovan Sr.,Allentown,785,121,33.0,939.0,83.6,12.89
+2020,congress,CD-26,Brian Higgins,Ricky T. Donovan Sr.,Black Rock,655,221,21.0,897.0,73.02,24.64
+2020,congress,CD-26,Brian Higgins,Ricky T. Donovan Sr.,Broadway Fillmore,2297,412,52.0,2761.0,83.19,14.92
+2020,congress,CD-26,Brian Higgins,Ricky T. Donovan Sr.,Central,955,167,35.0,1157.0,82.54,14.43
+2020,congress,CD-26,Brian Higgins,Ricky T. Donovan Sr.,Central Park,1235,191,35.0,1461.0,84.53,13.07
+2020,congress,CD-26,Brian Higgins,Ricky T. Donovan Sr.,Delavan Grider,1098,36,16.0,1150.0,95.48,3.13
+2020,congress,CD-26,Brian Higgins,Ricky T. Donovan Sr.,Ellicott,789,63,19.0,871.0,90.59,7.23
+2020,congress,CD-26,Brian Higgins,Ricky T. Donovan Sr.,Elmwood Bidwell,3290,443,108.0,3841.0,85.65,11.53
+2020,congress,CD-26,Brian Higgins,Ricky T. Donovan Sr.,Elmwood Bryant,2752,322,98.0,3172.0,86.76,10.15
+2020,congress,CD-26,Brian Higgins,Ricky T. Donovan Sr.,Fillmore-Leroy,1424,53,24.0,1501.0,94.87,3.53
+2020,congress,CD-26,Brian Higgins,Ricky T. Donovan Sr.,First Ward,548,184,10.0,742.0,73.85,24.8
+2020,congress,CD-26,Brian Higgins,Ricky T. Donovan Sr.,Fruit Belt,808,22,10.0,840.0,96.19,2.62
+2020,congress,CD-26,Brian Higgins,Ricky T. Donovan Sr.,Genesee-Moselle,987,66,15.0,1068.0,92.42,6.18
+2020,congress,CD-26,Brian Higgins,Ricky T. Donovan Sr.,Grant-Amherst,385,119,5.0,509.0,75.64,23.38
+2020,congress,CD-26,Brian Higgins,Ricky T. Donovan Sr.,Hamlin Park,905,25,20.0,950.0,95.26,2.63
+2020,congress,CD-26,Brian Higgins,Ricky T. Donovan Sr.,Hopkins-Tifft,1274,459,30.0,1763.0,72.26,26.04
+2020,congress,CD-26,Brian Higgins,Ricky T. Donovan Sr.,Kaisertown,951,54,11.0,1016.0,93.6,5.31
+2020,congress,CD-26,Brian Higgins,Ricky T. Donovan Sr.,Kenfield,1451,164,31.0,1646.0,88.15,9.96
+2020,congress,CD-26,Brian Higgins,Ricky T. Donovan Sr.,Kensington-Bailey,3592,238,35.0,3865.0,92.94,6.16
+2020,congress,CD-26,Brian Higgins,Ricky T. Donovan Sr.,Lovejoy,945,389,34.0,1368.0,69.08,28.44
+2020,congress,CD-26,Brian Higgins,Ricky T. Donovan Sr.,Lower West Side,1219,167,44.0,1430.0,85.24,11.68
+2020,congress,CD-26,Brian Higgins,Ricky T. Donovan Sr.,MLK Park,1176,59,10.0,1245.0,94.46,4.74
+2020,congress,CD-26,Brian Higgins,Ricky T. Donovan Sr.,Masten Park,2945,138,39.0,3122.0,94.33,4.42
+2020,congress,CD-26,Brian Higgins,Ricky T. Donovan Sr.,North Park,5630,1134,145.0,6909.0,81.49,16.41
+2020,congress,CD-26,Brian Higgins,Ricky T. Donovan Sr.,Parkside,2407,428,58.0,2893.0,83.2,14.79
+2020,congress,CD-26,Brian Higgins,Ricky T. Donovan Sr.,Pratt-Willert,821,75,16.0,912.0,90.02,8.22
+2020,congress,CD-26,Brian Higgins,Ricky T. Donovan Sr.,Riverside,1863,653,63.0,2579.0,72.24,25.32
+2020,congress,CD-26,Brian Higgins,Ricky T. Donovan Sr.,Schiller Park,1608,74,12.0,1694.0,94.92,4.37
+2020,congress,CD-26,Brian Higgins,Ricky T. Donovan Sr.,Seneca Babcock,759,170,15.0,944.0,80.4,18.01
+2020,congress,CD-26,Brian Higgins,Ricky T. Donovan Sr.,Seneca-Cazenovia,2118,724,61.0,2903.0,72.96,24.94
+2020,congress,CD-26,Brian Higgins,Ricky T. Donovan Sr.,South Park,2804,826,50.0,3680.0,76.2,22.45
+2020,congress,CD-26,Brian Higgins,Ricky T. Donovan Sr.,University Heights,2554,210,50.0,2814.0,90.76,7.46
+2020,congress,CD-26,Brian Higgins,Ricky T. Donovan Sr.,Upper West Side,2082,317,107.0,2506.0,83.08,12.65
+2020,congress,CD-26,Brian Higgins,Ricky T. Donovan Sr.,West Hertel,652,177,14.0,843.0,77.34,21.0
+2020,congress,CD-26,Brian Higgins,Ricky T. Donovan Sr.,West Side,2243,346,117.0,2706.0,82.89,12.79
+2022,congress,CD-26,Brian Higgins,Steven L. Sams II,Allentown,641,90,0.0,731.0,87.69,12.31
+2022,congress,CD-26,Brian Higgins,Steven L. Sams II,Black Rock,369,164,0.0,533.0,69.23,30.77
+2022,congress,CD-26,Brian Higgins,Steven L. Sams II,Broadway Fillmore,1289,269,0.0,1558.0,82.73,17.27
+2022,congress,CD-26,Brian Higgins,Steven L. Sams II,Central,504,102,0.0,606.0,83.17,16.83
+2022,congress,CD-26,Brian Higgins,Steven L. Sams II,Central Park,900,147,0.0,1047.0,85.96,14.04
+2022,congress,CD-26,Brian Higgins,Steven L. Sams II,Delavan Grider,630,20,0.0,650.0,96.92,3.08
+2022,congress,CD-26,Brian Higgins,Steven L. Sams II,Ellicott,450,40,0.0,490.0,91.84,8.16
+2022,congress,CD-26,Brian Higgins,Steven L. Sams II,Elmwood Bidwell,2450,381,0.0,2831.0,86.54,13.46
+2022,congress,CD-26,Brian Higgins,Steven L. Sams II,Elmwood Bryant,1842,210,0.0,2052.0,89.77,10.23
+2022,congress,CD-26,Brian Higgins,Steven L. Sams II,Fillmore-Leroy,812,26,0.0,838.0,96.9,3.1
+2022,congress,CD-26,Brian Higgins,Steven L. Sams II,First Ward,346,167,0.0,513.0,67.45,32.55
+2022,congress,CD-26,Brian Higgins,Steven L. Sams II,Fruit Belt,447,10,0.0,457.0,97.81,2.19
+2022,congress,CD-26,Brian Higgins,Steven L. Sams II,Genesee-Moselle,540,40,0.0,580.0,93.1,6.9
+2022,congress,CD-26,Brian Higgins,Steven L. Sams II,Grant-Amherst,254,75,0.0,329.0,77.2,22.8
+2022,congress,CD-26,Brian Higgins,Steven L. Sams II,Hamlin Park,561,15,0.0,576.0,97.4,2.6
+2022,congress,CD-26,Brian Higgins,Steven L. Sams II,Hopkins-Tifft,797,347,0.0,1144.0,69.67,30.33
+2022,congress,CD-26,Brian Higgins,Steven L. Sams II,Kaisertown,398,32,0.0,430.0,92.56,7.44
+2022,congress,CD-26,Brian Higgins,Steven L. Sams II,Kenfield,895,115,0.0,1010.0,88.61,11.39
+2022,congress,CD-26,Brian Higgins,Steven L. Sams II,Kensington-Bailey,2049,182,0.0,2231.0,91.84,8.16
+2022,congress,CD-26,Brian Higgins,Steven L. Sams II,Lovejoy,520,276,0.0,796.0,65.33,34.67
+2022,congress,CD-26,Brian Higgins,Steven L. Sams II,Lower West Side,854,117,0.0,971.0,87.95,12.05
+2022,congress,CD-26,Brian Higgins,Steven L. Sams II,MLK Park,653,32,0.0,685.0,95.33,4.67
+2022,congress,CD-26,Brian Higgins,Steven L. Sams II,Masten Park,1683,100,0.0,1783.0,94.39,5.61
+2022,congress,CD-26,Brian Higgins,Steven L. Sams II,North Park,4039,966,0.0,5005.0,80.7,19.3
+2022,congress,CD-26,Brian Higgins,Steven L. Sams II,Parkside,1861,344,0.0,2205.0,84.4,15.6
+2022,congress,CD-26,Brian Higgins,Steven L. Sams II,Pratt-Willert,515,54,0.0,569.0,90.51,9.49
+2022,congress,CD-26,Brian Higgins,Steven L. Sams II,Riverside,915,407,0.0,1322.0,69.21,30.79
+2022,congress,CD-26,Brian Higgins,Steven L. Sams II,Schiller Park,821,43,0.0,864.0,95.02,4.98
+2022,congress,CD-26,Brian Higgins,Steven L. Sams II,Seneca Babcock,441,124,0.0,565.0,78.05,21.95
+2022,congress,CD-26,Brian Higgins,Steven L. Sams II,Seneca-Cazenovia,1309,593,0.0,1902.0,68.82,31.18
+2022,congress,CD-26,Brian Higgins,Steven L. Sams II,South Park,2032,731,0.0,2763.0,73.54,26.46
+2022,congress,CD-26,Brian Higgins,Steven L. Sams II,University Heights,1482,161,0.0,1643.0,90.2,9.8
+2022,congress,CD-26,Brian Higgins,Steven L. Sams II,Upper West Side,1394,260,0.0,1654.0,84.28,15.72
+2022,congress,CD-26,Brian Higgins,Steven L. Sams II,West Hertel,355,150,0.0,505.0,70.3,29.7
+2022,congress,CD-26,Brian Higgins,Steven L. Sams II,West Side,1451,257,0.0,1708.0,84.95,15.05
+2024,president,President,Kamala D. Harris,Donald J. Trump,Allentown,1305,249,24.0,1578.0,82.7,15.78
+2024,president,President,Kamala D. Harris,Donald J. Trump,Black Rock,547,351,9.0,907.0,60.31,38.7
+2024,president,President,Kamala D. Harris,Donald J. Trump,Broadway Fillmore,2280,484,116.0,2880.0,79.17,16.81
+2024,president,President,Kamala D. Harris,Donald J. Trump,Central,1384,470,17.0,1871.0,73.97,25.12
+2024,president,President,Kamala D. Harris,Donald J. Trump,Central Park,1880,471,14.0,2365.0,79.49,19.92
+2024,president,President,Kamala D. Harris,Donald J. Trump,Delavan Grider,1942,182,35.0,2159.0,89.95,8.43
+2024,president,President,Kamala D. Harris,Donald J. Trump,Ellicott,466,108,2.0,576.0,80.9,18.75
+2024,president,President,Kamala D. Harris,Donald J. Trump,Elmwood Bidwell,5532,981,85.0,6598.0,83.84,14.87
+2024,president,President,Kamala D. Harris,Donald J. Trump,Elmwood Bryant,3273,519,54.0,3846.0,85.1,13.49
+2024,president,President,Kamala D. Harris,Donald J. Trump,Fillmore-Leroy,1964,215,41.0,2220.0,88.47,9.68
+2024,president,President,Kamala D. Harris,Donald J. Trump,First Ward,349,333,4.0,686.0,50.87,48.54
+2024,president,President,Kamala D. Harris,Donald J. Trump,Fruit Belt,867,78,6.0,951.0,91.17,8.2
+2024,president,President,Kamala D. Harris,Donald J. Trump,Genesee-Moselle,988,198,64.0,1250.0,79.04,15.84
+2024,president,President,Kamala D. Harris,Donald J. Trump,Grant-Amherst,618,271,5.0,894.0,69.13,30.31
+2024,president,President,Kamala D. Harris,Donald J. Trump,Hamlin Park,1581,105,8.0,1694.0,93.33,6.2
+2024,president,President,Kamala D. Harris,Donald J. Trump,Hopkins-Tifft,1230,1011,14.0,2255.0,54.55,44.83
+2024,president,President,Kamala D. Harris,Donald J. Trump,Kaisertown,1086,974,6.0,2066.0,52.57,47.14
+2024,president,President,Kamala D. Harris,Donald J. Trump,Kenfield,2463,228,20.0,2711.0,90.85,8.41
+2024,president,President,Kamala D. Harris,Donald J. Trump,Kensington-Bailey,3411,362,59.0,3832.0,89.01,9.45
+2024,president,President,Kamala D. Harris,Donald J. Trump,Lovejoy,1483,1121,48.0,2652.0,55.92,42.27
+2024,president,President,Kamala D. Harris,Donald J. Trump,Lower West Side,1128,369,7.0,1504.0,75.0,24.53
+2024,president,President,Kamala D. Harris,Donald J. Trump,MLK Park,1148,147,20.0,1315.0,87.3,11.18
+2024,president,President,Kamala D. Harris,Donald J. Trump,Masten Park,2576,253,47.0,2876.0,89.57,8.8
+2024,president,President,Kamala D. Harris,Donald J. Trump,North Park,6588,2026,94.0,8708.0,75.65,23.27
+2024,president,President,Kamala D. Harris,Donald J. Trump,Parkside,3064,676,33.0,3773.0,81.21,17.92
+2024,president,President,Kamala D. Harris,Donald J. Trump,Pratt-Willert,1575,171,8.0,1754.0,89.79,9.75
+2024,president,President,Kamala D. Harris,Donald J. Trump,Riverside,1646,984,13.0,2643.0,62.28,37.23
+2024,president,President,Kamala D. Harris,Donald J. Trump,Schiller Park,2508,383,74.0,2965.0,84.59,12.92
+2024,president,President,Kamala D. Harris,Donald J. Trump,Seneca Babcock,266,284,1.0,551.0,48.28,51.54
+2024,president,President,Kamala D. Harris,Donald J. Trump,Seneca-Cazenovia,1600,1278,17.0,2895.0,55.27,44.15
+2024,president,President,Kamala D. Harris,Donald J. Trump,South Park,4374,3185,40.0,7599.0,57.56,41.91
+2024,president,President,Kamala D. Harris,Donald J. Trump,University Heights,2874,515,54.0,3443.0,83.47,14.96
+2024,president,President,Kamala D. Harris,Donald J. Trump,Upper West Side,2046,574,65.0,2685.0,76.2,21.38
+2024,president,President,Kamala D. Harris,Donald J. Trump,West Hertel,756,462,4.0,1222.0,61.87,37.81
+2024,president,President,Kamala D. Harris,Donald J. Trump,West Side,2485,703,74.0,3262.0,76.18,21.55
+2024,congress,CD-26,Timothy M. Kennedy,Anthony G. Marecki,Allentown,1298,205,0.0,1503.0,86.36,13.64
+2024,congress,CD-26,Timothy M. Kennedy,Anthony G. Marecki,Black Rock,593,249,0.0,842.0,70.43,29.57
+2024,congress,CD-26,Timothy M. Kennedy,Anthony G. Marecki,Broadway Fillmore,2234,333,0.0,2567.0,87.03,12.97
+2024,congress,CD-26,Timothy M. Kennedy,Anthony G. Marecki,Central,1407,375,0.0,1782.0,78.96,21.04
+2024,congress,CD-26,Timothy M. Kennedy,Anthony G. Marecki,Central Park,1941,368,0.0,2309.0,84.06,15.94
+2024,congress,CD-26,Timothy M. Kennedy,Anthony G. Marecki,Delavan Grider,1879,116,0.0,1995.0,94.19,5.81
+2024,congress,CD-26,Timothy M. Kennedy,Anthony G. Marecki,Ellicott,465,78,0.0,543.0,85.64,14.36
+2024,congress,CD-26,Timothy M. Kennedy,Anthony G. Marecki,Elmwood Bidwell,5473,870,0.0,6343.0,86.28,13.72
+2024,congress,CD-26,Timothy M. Kennedy,Anthony G. Marecki,Elmwood Bryant,3266,448,0.0,3714.0,87.94,12.06
+2024,congress,CD-26,Timothy M. Kennedy,Anthony G. Marecki,Fillmore-Leroy,1908,161,0.0,2069.0,92.22,7.78
+2024,congress,CD-26,Timothy M. Kennedy,Anthony G. Marecki,First Ward,415,223,0.0,638.0,65.05,34.95
+2024,congress,CD-26,Timothy M. Kennedy,Anthony G. Marecki,Fruit Belt,815,53,0.0,868.0,93.89,6.11
+2024,congress,CD-26,Timothy M. Kennedy,Anthony G. Marecki,Genesee-Moselle,994,148,0.0,1142.0,87.04,12.96
+2024,congress,CD-26,Timothy M. Kennedy,Anthony G. Marecki,Grant-Amherst,646,207,0.0,853.0,75.73,24.27
+2024,congress,CD-26,Timothy M. Kennedy,Anthony G. Marecki,Hamlin Park,1542,79,0.0,1621.0,95.13,4.87
+2024,congress,CD-26,Timothy M. Kennedy,Anthony G. Marecki,Hopkins-Tifft,1453,680,0.0,2133.0,68.12,31.88
+2024,congress,CD-26,Timothy M. Kennedy,Anthony G. Marecki,Kaisertown,1229,720,0.0,1949.0,63.06,36.94
+2024,congress,CD-26,Timothy M. Kennedy,Anthony G. Marecki,Kenfield,2354,155,0.0,2509.0,93.82,6.18
+2024,congress,CD-26,Timothy M. Kennedy,Anthony G. Marecki,Kensington-Bailey,3305,264,0.0,3569.0,92.6,7.4
+2024,congress,CD-26,Timothy M. Kennedy,Anthony G. Marecki,Lovejoy,1608,800,0.0,2408.0,66.78,33.22
+2024,congress,CD-26,Timothy M. Kennedy,Anthony G. Marecki,Lower West Side,1108,292,0.0,1400.0,79.14,20.86
+2024,congress,CD-26,Timothy M. Kennedy,Anthony G. Marecki,MLK Park,1113,93,0.0,1206.0,92.29,7.71
+2024,congress,CD-26,Timothy M. Kennedy,Anthony G. Marecki,Masten Park,2437,162,0.0,2599.0,93.77,6.23
+2024,congress,CD-26,Timothy M. Kennedy,Anthony G. Marecki,North Park,6775,1570,0.0,8345.0,81.19,18.81
+2024,congress,CD-26,Timothy M. Kennedy,Anthony G. Marecki,Parkside,3115,561,0.0,3676.0,84.74,15.26
+2024,congress,CD-26,Timothy M. Kennedy,Anthony G. Marecki,Pratt-Willert,1527,114,0.0,1641.0,93.05,6.95
+2024,congress,CD-26,Timothy M. Kennedy,Anthony G. Marecki,Riverside,1702,693,0.0,2395.0,71.06,28.94
+2024,congress,CD-26,Timothy M. Kennedy,Anthony G. Marecki,Schiller Park,2409,286,0.0,2695.0,89.39,10.61
+2024,congress,CD-26,Timothy M. Kennedy,Anthony G. Marecki,Seneca Babcock,325,185,0.0,510.0,63.73,36.27
+2024,congress,CD-26,Timothy M. Kennedy,Anthony G. Marecki,Seneca-Cazenovia,1874,882,0.0,2756.0,68.0,32.0
+2024,congress,CD-26,Timothy M. Kennedy,Anthony G. Marecki,South Park,5220,2090,0.0,7310.0,71.41,28.59
+2024,congress,CD-26,Timothy M. Kennedy,Anthony G. Marecki,University Heights,2823,396,0.0,3219.0,87.7,12.3
+2024,congress,CD-26,Timothy M. Kennedy,Anthony G. Marecki,Upper West Side,2103,420,0.0,2523.0,83.35,16.65
+2024,congress,CD-26,Timothy M. Kennedy,Anthony G. Marecki,West Hertel,785,327,0.0,1112.0,70.59,29.41
+2024,congress,CD-26,Timothy M. Kennedy,Anthony G. Marecki,West Side,2545,523,0.0,3068.0,82.95,17.05

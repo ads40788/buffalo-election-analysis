@@ -1,0 +1,22 @@
+year,race_type,race_label,dem_candidate,rep_candidate,dem_votes,rep_votes,other_votes,total_votes,dem_pct,rep_pct
+2002,congress,CD-27,Peter Crotty,Jack Quinn,22862,57438,3109,83409,27.41,68.86
+2004,congress,CD-27,Brian M. Higgins,Nancy A. Naples,69659,65461,0,135120,51.55,48.45
+2004,congress,CD-28,Louise M. Slaughter,Michael D. Laba,32406,9165,1304,42875,75.58,21.38
+2004,president,President,John F. Kerry John Edwards,George W. Bush Dick Cheney,130773,98058,5869,234700,55.72,41.78
+2006,senate,US Senate,Hillary Rodham Clinton,John Spencer,92004,51320,3093,146417,62.84,35.05
+2008,congress,CD-27,Brian Higgins,Daniel J. Humiston,81734,25370,12142,119246,68.54,21.28
+2008,congress,CD-28,Louise M. Slaughter,David W. Crimmen,34363,8334,0,42697,80.48,19.52
+2008,president,President,Barack Obama,John McCain,134516,94835,3707,233058,57.72,40.69
+2010,congress,CD-27,Brian Higgins,Leonard A. Roberto,58568,29152,6825,94545,61.95,30.83
+2010,congress,CD-28,Louise M. Slaughter,Jill A. Rowland,23020,10341,0,33361,69.0,31.0
+2012,congress,CD-26,Brian Higgins,Michael H. Madigan,97121,26245,0,123366,78.73,21.27
+2012,president,President,Barack Obama,Mitt Romney,136956,95510,4208,236674,57.87,40.36
+2014,congress,CD-26,Brian Higgins,Kathleen A. Weppner,50543,18898,0,69441,72.79,27.21
+2016,congress,CD-26,Brian Higgins,Shelly Schratz,55317,7090,0,62407,88.64,11.36
+2016,president,President,Hillary Clinton,Donald J Trump,52061,11931,2701,66693,78.06,17.89
+2018,congress,CD-26,Brian Higgins,Renee M Zeno,43111,5691,0,48802,88.34,11.66
+2020,congress,CD-26,Brian Higgins,Ricky T. Donovan Sr.,58007,9247,1443,68697,84.44,13.46
+2020,president,President,Joseph R. Biden,Donald J. Trump,57479,13245,1207,71931,79.91,18.41
+2022,congress,CD-26,Brian Higgins,Steven L. Sams II,36499,7047,0,43546,83.82,16.18
+2024,congress,CD-26,Timothy M. Kennedy,Anthony G. Marecki,70686,15126,0,85812,82.37,17.63
+2024,president,President,Kamala D. Harris,Donald J. Trump,69283,20721,1182,91186,75.98,22.72

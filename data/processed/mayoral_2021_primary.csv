@@ -1,0 +1,118 @@
+year,election_type,ward,ed_num,ed_label,shapefile_key,India B. Walton,Le'Candice M. Durham,Byron W. Brown,Blank,Void,Scattering,Total
+2021,primary,DEL,1,DEL 1 (2 & NOR 4),Buffalo DEL 1,157,4,103,0,0,0,264
+2021,primary,DEL,3,DEL 3 (7 & UNI 1),Buffalo DEL 3,169,5,132,3,0,0,309
+2021,primary,DEL,4,"DEL 4 (5, 6)",Buffalo DEL 4,131,8,96,2,2,0,239
+2021,primary,DEL,8,"DEL 8 (9, 10, 15)",Buffalo DEL 8,297,6,195,4,0,2,504
+2021,primary,DEL,11,DEL 11 (12),Buffalo DEL 11,144,9,98,2,0,1,254
+2021,primary,DEL,13,"DEL 13 (14 & NOR 10, 11)",Buffalo DEL 13,175,4,117,1,0,2,299
+2021,primary,DEL,16,DEL 16 (17),Buffalo DEL 16,212,8,128,0,0,2,350
+2021,primary,DEL,18,"DEL 18 (22, 26)",Buffalo DEL 18,125,1,83,1,0,0,210
+2021,primary,DEL,19,DEL 19 (23),Buffalo DEL 19,166,2,96,1,0,0,265
+2021,primary,DEL,20,DEL 20 (21 & MAS 2),Buffalo DEL 20,178,4,114,3,0,0,299
+2021,primary,DEL,24,"DEL 24 (25, 28)",Buffalo DEL 24,288,6,114,2,0,3,413
+2021,primary,DEL,27,DEL 27,Buffalo DEL 27,26,2,42,0,0,0,70
+2021,primary,DEL,29,DEL 29 (NIA 5),Buffalo DEL 29,236,0,68,7,0,1,312
+2021,primary,DEL,30,DEL 30 (31),Buffalo DEL 30,327,6,115,3,0,0,451
+2021,primary,DEL,32,"DEL 32 (33, 34 & NIA 15)",Buffalo DEL 32,369,3,144,6,0,0,522
+2021,primary,ELL,1,ELL 1,Buffalo ELL 1,173,8,110,0,0,2,293
+2021,primary,ELL,2,ELL 2 (FIL 5),Buffalo ELL 2,120,1,60,2,0,0,183
+2021,primary,ELL,3,"ELL 3 (8, 9)",Buffalo ELL 3,118,3,76,1,0,1,199
+2021,primary,ELL,4,"ELL 4 (5, 6, 10)",Buffalo ELL 4,101,11,121,3,0,0,236
+2021,primary,ELL,7,"ELL 7 (MAS 30, 39, 40)",Buffalo ELL 7,67,11,121,1,1,1,202
+2021,primary,ELL,11,"ELL 11 (12, 13, 17)",Buffalo ELL 11,148,11,193,2,3,1,358
+2021,primary,ELL,14,ELL 14,Buffalo ELL 14,44,1,17,0,0,0,62
+2021,primary,ELL,15,ELL 15 (FIL 1),Buffalo ELL 15,134,0,51,4,0,1,190
+2021,primary,ELL,16,ELL 16,Buffalo ELL 16,36,1,41,1,1,0,80
+2021,primary,ELL,18,ELL 18 (FIL 3),Buffalo ELL 18,72,5,40,0,0,0,117
+2021,primary,ELL,19,ELL 19 (20),Buffalo ELL 19,93,4,111,4,0,1,213
+2021,primary,ELL,21,ELL 21,Buffalo ELL 21,56,6,41,2,0,0,105
+2021,primary,ELL,22,ELL 22 (23),Buffalo ELL 22,65,13,98,1,0,0,177
+2021,primary,ELL,24,"ELL 24 (FIL 2, 4, 6, 7)",Buffalo ELL 24,203,4,72,2,1,0,282
+2021,primary,ELL,25,ELL 25 (26),Buffalo ELL 25,90,7,136,2,0,1,236
+2021,primary,ELL,27,ELL 27,Buffalo ELL 27,38,0,43,1,0,1,83
+2021,primary,ELL,28,ELL 28 (32),Buffalo ELL 28,44,3,76,3,0,0,126
+2021,primary,ELL,29,"ELL 29 (30, 31)",Buffalo ELL 29,143,15,217,1,2,1,379
+2021,primary,ELL,33,ELL 33 (FIL 8),Buffalo ELL 33,86,4,101,6,0,2,199
+2021,primary,ELL,34,"ELL 34 (35, 36)",Buffalo ELL 34,85,3,83,0,3,1,175
+2021,primary,FIL,9,"FIL 9 (LOV 6, 7)",Buffalo FIL 9,81,9,77,0,0,0,167
+2021,primary,FIL,10,"FIL 10 (15, 18)",Buffalo FIL 10,85,10,104,4,0,3,206
+2021,primary,FIL,11,FIL 11 (35),Buffalo FIL 11,70,8,117,3,1,0,199
+2021,primary,FIL,12,FIL 12 (13),Buffalo FIL 12,46,2,82,3,0,0,133
+2021,primary,FIL,14,FIL 14 (16),Buffalo FIL 14,42,5,33,1,0,0,81
+2021,primary,FIL,17,FIL 17 (LOV 23),Buffalo FIL 17,11,2,26,0,0,1,40
+2021,primary,FIL,19,FIL 19,Buffalo FIL 19,19,3,40,0,0,2,64
+2021,primary,FIL,20,"FIL 20 (22, 34)",Buffalo FIL 20,53,8,90,0,1,0,152
+2021,primary,FIL,21,FIL 21 (24),Buffalo FIL 21,26,1,28,0,0,1,56
+2021,primary,FIL,23,"FIL 23 (26, 27)",Buffalo FIL 23,36,6,64,4,1,0,111
+2021,primary,FIL,25,FIL 25 (28),Buffalo FIL 25,39,4,40,0,0,0,83
+2021,primary,FIL,29,FIL 29 (30),Buffalo FIL 29,53,8,101,0,1,0,163
+2021,primary,FIL,31,FIL 31,Buffalo FIL 31,24,2,24,1,0,0,51
+2021,primary,FIL,32,FIL 32 (33),Buffalo FIL 32,42,6,36,2,0,0,86
+2021,primary,LOV,1,"LOV 1 (2, 3)",Buffalo LOV 1,63,10,61,1,0,0,135
+2021,primary,LOV,4,LOV 4 (5),Buffalo LOV 4,89,6,60,1,1,1,158
+2021,primary,LOV,8,"LOV 8 (9, 10)",Buffalo LOV 8,67,8,62,2,0,0,139
+2021,primary,LOV,11,"LOV 11 (12, 13, 14)",Buffalo LOV 11,128,12,175,1,1,0,317
+2021,primary,LOV,15,"LOV 15 (16, 17, 18, 19, 20, 21)",Buffalo LOV 15,92,14,98,4,2,0,210
+2021,primary,LOV,22,LOV 22,Buffalo LOV 22,2,1,0,0,0,0,3
+2021,primary,LOV,24,LOV 24 (28),Buffalo LOV 24,53,19,70,1,0,0,143
+2021,primary,LOV,25,LOV 25 (26),Buffalo LOV 25,8,1,17,0,0,0,26
+2021,primary,LOV,27,LOV 27 (31 & SOU 4),Buffalo LOV 27,59,3,66,3,0,0,131
+2021,primary,LOV,29,"LOV 29 (30, 32)",Buffalo LOV 29,44,10,82,3,0,1,140
+2021,primary,MAS,1,"MAS 1 (3, 8, 9, 10)",Buffalo MAS 1,164,10,233,1,1,2,411
+2021,primary,MAS,4,MAS 4 (11),Buffalo MAS 4,71,16,114,1,0,1,203
+2021,primary,MAS,5,"MAS 5 (6, 7 & UNI 15, 18)",Buffalo MAS 5,147,21,160,5,4,1,338
+2021,primary,MAS,12,"MAS 12 (17, 18)",Buffalo MAS 12,87,26,151,4,2,1,271
+2021,primary,MAS,13,MAS 13 (20 & UNI 24),Buffalo MAS 13,143,9,190,1,0,0,343
+2021,primary,MAS,14,"MAS 14 (15, 21, 22)",Buffalo MAS 14,75,7,162,2,2,0,248
+2021,primary,MAS,16,MAS 16 (24),Buffalo MAS 16,93,9,114,2,0,0,218
+2021,primary,MAS,19,"MAS 19 (23, 25, 26)",Buffalo MAS 19,138,19,197,3,0,3,360
+2021,primary,MAS,27,MAS 27 (34),Buffalo MAS 27,94,4,89,1,0,0,188
+2021,primary,MAS,28,MAS 28 (29),Buffalo MAS 28,67,10,114,2,0,0,193
+2021,primary,MAS,31,MAS 31 (32),Buffalo MAS 31,51,6,74,2,0,0,133
+2021,primary,MAS,33,MAS 33,Buffalo MAS 33,46,7,43,1,0,0,97
+2021,primary,MAS,35,"MAS 35 (36, 37, 38)",Buffalo MAS 35,110,10,141,5,0,1,267
+2021,primary,MAS,41,MAS 41 (42),Buffalo MAS 41,33,2,67,2,0,0,104
+2021,primary,NIA,1,"NIA 1 (2, 4 & NOR 25)",Buffalo NIA 1,162,5,53,1,1,0,222
+2021,primary,NIA,3,NIA 3 (NOR 26),Buffalo NIA 3,34,0,8,0,0,0,42
+2021,primary,NIA,6,NIA 6 (9),Buffalo NIA 6,223,0,62,3,0,0,288
+2021,primary,NIA,7,"NIA 7 (8, 10, 11)",Buffalo NIA 7,210,7,93,2,0,3,315
+2021,primary,NIA,12,"NIA 12 (13, 16, 20)",Buffalo NIA 12,140,4,75,2,1,0,222
+2021,primary,NIA,14,NIA 14 (18),Buffalo NIA 14,285,2,71,4,0,0,362
+2021,primary,NIA,17,NIA 17 (24),Buffalo NIA 17,135,3,27,0,1,0,166
+2021,primary,NIA,19,NIA 19 (25),Buffalo NIA 19,243,5,142,4,1,1,396
+2021,primary,NIA,21,NIA 21 (22),Buffalo NIA 21,110,2,61,0,0,0,173
+2021,primary,NIA,23,"NIA 23 (27, 28)",Buffalo NIA 23,148,0,36,1,0,0,185
+2021,primary,NIA,26,NIA 26,Buffalo NIA 26,49,0,22,0,0,0,71
+2021,primary,NOR,1,NOR 1 (2),Buffalo NOR 1,59,4,79,0,0,1,143
+2021,primary,NOR,3,NOR 3,Buffalo NOR 3,15,5,15,0,0,0,35
+2021,primary,NOR,5,NOR 5 (6),Buffalo NOR 5,43,5,46,1,0,0,95
+2021,primary,NOR,7,NOR 7 (13),Buffalo NOR 7,38,13,70,1,0,0,122
+2021,primary,NOR,8,"NOR 8 (9, 15, 16, 19)",Buffalo NOR 8,80,7,82,1,0,0,170
+2021,primary,NOR,12,NOR 12 (14),Buffalo NOR 12,37,8,72,1,2,0,120
+2021,primary,NOR,17,NOR 17,Buffalo NOR 17,17,5,34,0,0,0,56
+2021,primary,NOR,18,NOR 18 (21),Buffalo NOR 18,37,7,55,4,0,0,103
+2021,primary,NOR,20,NOR 20 (24),Buffalo NOR 20,154,4,100,1,0,1,260
+2021,primary,NOR,22,"NOR 22 (23, 27)",Buffalo NOR 22,116,0,81,0,0,0,197
+2021,primary,SOU,1,SOU 1 (3),Buffalo SOU 1,19,0,47,0,0,0,66
+2021,primary,SOU,2,SOU 2 (8),Buffalo SOU 2,56,3,63,2,1,1,126
+2021,primary,SOU,5,SOU 5 (6),Buffalo SOU 5,65,3,63,2,0,0,133
+2021,primary,SOU,7,"SOU 7 (9, 10, 14)",Buffalo SOU 7,91,4,137,3,1,3,239
+2021,primary,SOU,11,SOU 11,Buffalo SOU 11,51,4,56,0,0,1,112
+2021,primary,SOU,12,SOU 12,Buffalo SOU 12,20,5,31,3,0,0,59
+2021,primary,SOU,13,SOU 13 (17),Buffalo SOU 13,46,7,93,0,0,1,147
+2021,primary,SOU,15,"SOU 15 (16, 19, 20)",Buffalo SOU 15,65,2,90,1,0,1,159
+2021,primary,SOU,18,SOU 18 (21),Buffalo SOU 18,56,1,116,1,0,2,176
+2021,primary,SOU,22,"SOU 22 (23, 26, 27, 29)",Buffalo SOU 22,115,5,184,6,0,3,313
+2021,primary,SOU,24,SOU 24 (25),Buffalo SOU 24,74,0,179,2,0,0,255
+2021,primary,SOU,28,SOU 28 (30),Buffalo SOU 28,72,13,185,1,0,3,274
+2021,primary,UNI,2,UNI 2 (3),Buffalo UNI 2,148,4,113,0,0,5,270
+2021,primary,UNI,4,"UNI 4 (6, 8)",Buffalo UNI 4,105,2,67,2,1,0,177
+2021,primary,UNI,5,UNI 5 (7),Buffalo UNI 5,137,6,121,3,0,1,268
+2021,primary,UNI,9,UNI 9 (10),Buffalo UNI 9,107,10,110,0,1,0,228
+2021,primary,UNI,11,UNI 11 (13),Buffalo UNI 11,109,15,135,1,0,0,260
+2021,primary,UNI,12,UNI 12 (14),Buffalo UNI 12,120,6,147,8,2,0,283
+2021,primary,UNI,16,UNI 16,Buffalo UNI 16,59,9,57,0,0,1,126
+2021,primary,UNI,17,UNI 17 (20),Buffalo UNI 17,96,12,117,2,2,0,229
+2021,primary,UNI,19,UNI 19 (21),Buffalo UNI 19,101,4,135,3,0,0,243
+2021,primary,UNI,22,UNI 22 (23),Buffalo UNI 22,80,15,96,2,0,0,193
+2021,primary,UNI,25,"UNI 25 (26, 27)",Buffalo UNI 25,124,20,188,2,2,0,336

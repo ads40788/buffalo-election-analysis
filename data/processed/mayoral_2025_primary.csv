@@ -1,0 +1,104 @@
+year,election_type,ward,ed_num,ed_label,shapefile_key,Christopher P. Scanlon,Anthony J.P. Tyson-Thompson,Rasheed N.C. Wyatt,Garnell Whitfield Jr.,Sean M. Ryan,Michael Gainer,Blank,Void,Scattering,Total
+2025,primary,DEL,1,"DEL 1 (11, 14 & NOR 10)",Buffalo DEL 1,160,4,14,21,327,0,2,1,1,530
+2025,primary,DEL,2,DEL 2 (NOR 11),Buffalo DEL 2,38,4,8,12,115,0,0,0,0,177
+2025,primary,DEL,3,"DEL 3 (UNI 1, 5, 18)",Buffalo DEL 3,279,11,32,34,405,0,0,1,0,762
+2025,primary,DEL,4,"DEL 4 (6, 12)",Buffalo DEL 4,136,4,16,15,266,0,2,0,1,440
+2025,primary,DEL,5,"DEL 5 (16, 17)",Buffalo DEL 5,217,16,15,32,515,0,1,0,2,798
+2025,primary,DEL,7,DEL 7 (NIA 9),Buffalo DEL 7,84,7,8,11,493,0,0,0,3,606
+2025,primary,DEL,8,"DEL 8 (9, 10)",Buffalo DEL 8,318,9,10,13,479,0,0,0,0,829
+2025,primary,DEL,13,DEL 13 (NIA 4),Buffalo DEL 13,102,3,4,11,504,1,0,0,1,626
+2025,primary,DEL,15,DEL 15,Buffalo DEL 15,77,0,2,13,180,0,0,0,2,274
+2025,primary,DEL,18,"DEL 18 (NOR 14, 20)",Buffalo DEL 18,141,6,11,32,368,0,0,0,1,559
+2025,primary,DEL,19,DEL 19,Buffalo DEL 19,25,3,4,6,26,0,0,0,0,64
+2025,primary,DEL,20,DEL 20,Buffalo DEL 20,45,2,0,5,156,0,0,0,0,208
+2025,primary,DEL,21,DEL 21,Buffalo DEL 21,3,0,0,2,3,0,0,0,0,8
+2025,primary,DEL,22,"DEL 22 (NIA 1, 2)",Buffalo DEL 22,33,4,9,16,176,0,0,0,0,238
+2025,primary,DEL,23,DEL 23 (24),Buffalo DEL 23,137,10,8,26,531,0,0,0,3,715
+2025,primary,ELL,1,ELL 1 (2),Buffalo ELL 1,47,5,26,18,240,0,0,0,0,336
+2025,primary,ELL,3,ELL 3 (FIL 10),Buffalo ELL 3,60,2,12,18,159,0,0,1,2,254
+2025,primary,ELL,4,ELL 4 (6),Buffalo ELL 4,40,8,24,46,49,0,0,0,1,168
+2025,primary,ELL,5,ELL 5,Buffalo ELL 5,97,6,6,10,373,0,0,1,0,493
+2025,primary,ELL,7,"ELL 7 (MAS 21, 23)",Buffalo ELL 7,26,5,21,46,37,0,0,1,0,136
+2025,primary,ELL,8,"ELL 8 (26 & FIL 15, 18)",Buffalo ELL 8,52,9,23,26,97,0,1,0,0,208
+2025,primary,ELL,9,"ELL 9 (LOV 2, 6, 7)",Buffalo ELL 9,59,12,51,43,52,0,0,1,0,218
+2025,primary,ELL,10,ELL 10 (FIL 4),Buffalo ELL 10,111,5,3,17,366,0,0,1,0,503
+2025,primary,ELL,11,ELL 11 (12),Buffalo ELL 11,54,9,75,67,79,1,1,2,0,288
+2025,primary,ELL,13,"ELL 13 (FIL 1, 7)",Buffalo ELL 13,75,3,6,22,414,1,0,0,2,523
+2025,primary,ELL,14,ELL 14,Buffalo ELL 14,33,3,19,27,31,0,0,0,0,113
+2025,primary,ELL,15,ELL 15,Buffalo ELL 15,10,2,6,7,10,0,0,0,0,35
+2025,primary,ELL,16,ELL 16 (24),Buffalo ELL 16,19,7,12,22,40,0,0,1,0,101
+2025,primary,ELL,17,ELL 17,Buffalo ELL 17,23,5,19,15,24,0,0,0,0,86
+2025,primary,ELL,18,ELL 18 (FIL 3),Buffalo ELL 18,52,4,11,25,188,0,0,0,1,281
+2025,primary,ELL,19,ELL 19,Buffalo ELL 19,29,4,31,28,51,0,0,0,0,143
+2025,primary,ELL,20,ELL 20 (23),Buffalo ELL 20,69,18,41,65,80,0,0,0,0,273
+2025,primary,ELL,21,ELL 21,Buffalo ELL 21,25,6,23,14,33,0,0,0,1,102
+2025,primary,ELL,22,ELL 22,Buffalo ELL 22,36,7,32,38,53,0,0,0,0,166
+2025,primary,ELL,25,ELL 25,Buffalo ELL 25,44,10,29,41,77,0,0,0,0,201
+2025,primary,ELL,27,ELL 27,Buffalo ELL 27,14,4,8,26,17,0,0,0,0,69
+2025,primary,FIL,2,FIL 2 (6),Buffalo FIL 2,117,10,10,23,350,0,0,0,0,510
+2025,primary,FIL,5,FIL 5 (NIA 19),Buffalo FIL 5,48,2,5,7,61,0,1,0,0,124
+2025,primary,FIL,8,"FIL 8 (9, 24)",Buffalo FIL 8,119,6,6,13,104,0,0,0,0,248
+2025,primary,FIL,11,FIL 11,Buffalo FIL 11,19,5,8,10,19,0,0,0,0,61
+2025,primary,FIL,12,FIL 12,Buffalo FIL 12,0,0,0,0,0,0,0,0,0,0
+2025,primary,FIL,13,FIL 13,Buffalo FIL 13,158,1,2,3,47,0,0,0,0,211
+2025,primary,FIL,14,FIL 14,Buffalo FIL 14,4,0,0,1,0,0,0,0,0,5
+2025,primary,FIL,16,FIL 16,Buffalo FIL 16,11,0,1,0,2,0,0,0,0,14
+2025,primary,FIL,17,FIL 17,Buffalo FIL 17,57,2,2,4,9,0,0,0,1,75
+2025,primary,FIL,19,FIL 19,Buffalo FIL 19,20,0,7,4,12,0,1,0,0,44
+2025,primary,FIL,20,FIL 20,Buffalo FIL 20,25,6,16,22,45,0,0,0,0,114
+2025,primary,FIL,21,FIL 21,Buffalo FIL 21,14,1,8,4,22,1,0,0,0,50
+2025,primary,FIL,22,FIL 22,Buffalo FIL 22,6,0,0,1,6,0,0,0,0,13
+2025,primary,FIL,23,FIL 23,Buffalo FIL 23,0,0,0,0,0,0,0,0,0,0
+2025,primary,FIL,25,FIL 25,Buffalo FIL 25,22,6,5,4,13,0,0,0,0,50
+2025,primary,LOV,1,LOV 1 (3),Buffalo LOV 1,22,3,25,28,29,0,0,0,1,108
+2025,primary,LOV,4,"LOV 4 (UNI 8, 9)",Buffalo LOV 4,99,22,108,74,77,0,0,0,0,380
+2025,primary,LOV,5,LOV 5 (8),Buffalo LOV 5,143,7,3,4,56,0,0,0,0,213
+2025,primary,LOV,9,LOV 9 (10),Buffalo LOV 9,162,5,2,8,62,0,0,0,1,240
+2025,primary,LOV,11,LOV 11 (13),Buffalo LOV 11,84,11,45,39,71,1,2,0,2,255
+2025,primary,LOV,12,"LOV 12 (20 & SOU 4, 5, 6)",Buffalo LOV 12,275,6,6,5,87,0,0,0,0,379
+2025,primary,LOV,14,LOV 14 (17),Buffalo LOV 14,75,3,5,1,26,0,1,0,0,111
+2025,primary,LOV,15,LOV 15 (18),Buffalo LOV 15,85,4,5,5,27,0,0,0,1,127
+2025,primary,LOV,16,LOV 16 (19),Buffalo LOV 16,86,4,7,7,40,0,0,0,0,144
+2025,primary,MAS,1,"MAS 1 (8, 9)",Buffalo MAS 1,83,15,49,64,130,0,0,2,1,344
+2025,primary,MAS,2,"MAS 2 (3, 10, 15, 17, 27)",Buffalo MAS 2,30,7,34,36,54,1,0,0,1,163
+2025,primary,MAS,4,"MAS 4 (11, 12)",Buffalo MAS 4,112,11,75,96,107,0,0,1,0,402
+2025,primary,MAS,5,"MAS 5 (6, 7 & UNI 15)",Buffalo MAS 5,53,14,71,50,61,0,0,0,0,249
+2025,primary,MAS,13,MAS 13 (UNI 7),Buffalo MAS 13,56,17,93,55,67,0,0,0,1,289
+2025,primary,MAS,14,MAS 14,Buffalo MAS 14,40,21,37,55,83,0,0,0,1,237
+2025,primary,MAS,16,MAS 16 (19),Buffalo MAS 16,72,22,67,68,83,0,0,0,0,312
+2025,primary,MAS,18,MAS 18 (20),Buffalo MAS 18,38,13,27,49,53,0,0,0,0,180
+2025,primary,MAS,22,MAS 22,Buffalo MAS 22,28,5,14,33,33,0,0,0,0,113
+2025,primary,MAS,24,MAS 24 (28),Buffalo MAS 24,69,37,31,83,107,0,5,0,0,332
+2025,primary,MAS,25,MAS 25,Buffalo MAS 25,23,7,12,20,16,0,0,0,0,78
+2025,primary,MAS,26,MAS 26,Buffalo MAS 26,7,1,18,24,17,0,0,0,0,67
+2025,primary,NIA,3,NIA 3 (5),Buffalo NIA 3,58,2,1,8,289,0,0,0,0,358
+2025,primary,NIA,6,"NIA 6 (14, 17, 18)",Buffalo NIA 6,64,8,3,19,559,2,0,0,1,656
+2025,primary,NIA,7,"NIA 7 (8, 10)",Buffalo NIA 7,60,9,6,11,250,1,0,0,1,338
+2025,primary,NIA,11,"NIA 11 (15, 20)",Buffalo NIA 11,50,8,4,13,196,0,0,1,0,272
+2025,primary,NIA,12,"NIA 12 (13, 16)",Buffalo NIA 12,66,8,6,11,187,0,0,0,0,278
+2025,primary,NIA,21,NIA 21,Buffalo NIA 21,55,2,2,5,130,0,0,0,1,195
+2025,primary,NOR,1,"NOR 1 (5, 15, 16)",Buffalo NOR 1,111,3,3,9,61,0,1,0,0,188
+2025,primary,NOR,2,NOR 2 (6),Buffalo NOR 2,47,0,3,5,39,0,0,0,0,94
+2025,primary,NOR,3,NOR 3,Buffalo NOR 3,11,1,1,8,15,0,0,0,0,36
+2025,primary,NOR,4,NOR 4,Buffalo NOR 4,14,3,8,6,38,0,0,0,0,69
+2025,primary,NOR,7,NOR 7,Buffalo NOR 7,44,0,5,6,37,0,0,1,0,93
+2025,primary,NOR,8,NOR 8,Buffalo NOR 8,5,0,0,2,6,0,0,0,0,13
+2025,primary,NOR,9,NOR 9 (19),Buffalo NOR 9,98,4,5,15,66,0,0,0,0,188
+2025,primary,NOR,12,NOR 12,Buffalo NOR 12,66,1,7,5,53,0,0,0,0,132
+2025,primary,NOR,13,NOR 13,Buffalo NOR 13,50,2,2,7,103,1,0,0,0,165
+2025,primary,NOR,17,NOR 17,Buffalo NOR 17,21,2,1,5,15,0,0,0,0,44
+2025,primary,NOR,18,NOR 18 (21),Buffalo NOR 18,64,2,3,6,75,0,1,0,0,151
+2025,primary,NOR,22,NOR 22,Buffalo NOR 22,9,1,1,2,19,0,0,0,0,32
+2025,primary,SOU,1,"SOU 1 (2, 3)",Buffalo SOU 1,307,4,4,9,112,0,0,0,1,437
+2025,primary,SOU,7,"SOU 7 (9, 16, 19)",Buffalo SOU 7,613,8,5,5,143,0,0,1,1,776
+2025,primary,SOU,8,"SOU 8 (10, 12, 15)",Buffalo SOU 8,547,4,7,3,133,0,0,1,3,698
+2025,primary,SOU,11,SOU 11,Buffalo SOU 11,147,1,1,2,43,0,0,1,1,196
+2025,primary,SOU,13,SOU 13,Buffalo SOU 13,235,0,1,5,54,0,0,0,0,295
+2025,primary,SOU,14,SOU 14,Buffalo SOU 14,458,4,4,4,59,0,0,0,0,529
+2025,primary,SOU,17,"SOU 17 (18, 20)",Buffalo SOU 17,798,5,2,6,85,0,1,0,0,897
+2025,primary,UNI,2,UNI 2,Buffalo UNI 2,89,4,26,16,204,0,1,0,0,340
+2025,primary,UNI,3,"UNI 3 (16, 19)",Buffalo UNI 3,53,11,132,71,71,0,1,1,0,340
+2025,primary,UNI,4,UNI 4 (6),Buffalo UNI 4,43,9,38,20,118,0,0,0,0,228
+2025,primary,UNI,10,"UNI 10 (11, 13)",Buffalo UNI 10,66,20,115,63,129,0,2,1,0,396
+2025,primary,UNI,12,"UNI 12 (14, 17)",Buffalo UNI 12,107,20,184,61,133,0,1,0,1,507
+2025,primary,UNI,20,UNI 20,Buffalo UNI 20,42,5,63,26,27,0,1,0,0,164
