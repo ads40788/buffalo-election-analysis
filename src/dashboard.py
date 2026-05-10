@@ -13,7 +13,7 @@ from utils.analytics import inject_ga, add_footer
 st.set_page_config(
     page_title="Buffalo Mayoral Elections",
     layout="wide",
-    initial_sidebar_state="expanded",
+    initial_sidebar_state="auto",
     page_icon="🗳️",
 )
 inject_ga()

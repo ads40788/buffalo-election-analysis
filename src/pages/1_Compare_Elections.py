@@ -22,12 +22,24 @@ st.markdown("""
 h1 { font-weight: 800 !important; letter-spacing: -0.5px; margin-bottom: 0.1rem !important; }
 h2 { font-weight: 700 !important; border-bottom: 2px solid #e8e8e8; padding-bottom: 5px; margin-top: 1.4rem !important; }
 h3 { font-weight: 600 !important; color: #222 !important;
-     border-left: 3px solid #4e79a7; padding-left: 9px;
      margin-top: 1.1rem !important; margin-bottom: 0.4rem !important; }
 section[data-testid="stSidebar"] h1 { font-size: 1.25rem !important; letter-spacing: 0; }
 div[data-testid="stMetricValue"] { font-size: 1.5rem !important; font-weight: 700 !important; }
+@media (max-width: 768px) {
+    .block-container { padding-left: 0.75rem !important; padding-right: 0.75rem !important; padding-top: 1rem !important; }
+    div[data-testid="stMetricValue"] { font-size: 1.2rem !important; }
+}
 </style>
 """, unsafe_allow_html=True)
+
+_SUFFIXES = {"jr", "sr", "ii", "iii", "iv", "jr.", "sr.", "esq", "esq."}
+
+def last_name(full: str) -> str:
+    parts = full.split()
+    if len(parts) > 1 and parts[-1].lower().rstrip(".") in _SUFFIXES:
+        return parts[-2]
+    return parts[-1] if parts else full
+
 
 BUFFALO_CENTER = {"lat": 42.886, "lon": -78.878}
 META_COLS = {"year", "election_type", "ward", "ed_num", "ed_label", "shapefile_key"}
@@ -164,7 +176,7 @@ def make_choropleth(
         center=BUFFALO_CENTER,
         opacity=0.75,
         hover_name=id_col,
-        hover_data={color_col: True, other_col: True},
+        hover_data={color_col: True, other_col: True, id_col: False, "nbhdnum": False},
         labels={color_col: label, other_col: other_label},
         title=title,
         height=height,
@@ -306,9 +318,9 @@ st.caption(
 
 c1, c2, c3 = st.columns(3)
 c1.metric("Pearson r", f"{corr:.3f}", help="Correlation between X and Y across areas")
-c2.metric(f"X avg · {x_cand.split()[-1]}",
+c2.metric(f"X avg · {last_name(x_cand)}",
           f"{joined['x_val'].mean():.1f}{x_unit}" if x_met == "Vote %" else f"{int(joined['x_val'].sum()):,}")
-c3.metric(f"Y avg · {y_cand.split()[-1]}",
+c3.metric(f"Y avg · {last_name(y_cand)}",
           f"{joined['y_val'].mean():.1f}{y_unit}" if y_met == "Vote %" else f"{int(joined['y_val'].sum()):,}")
 
 st.divider()
@@ -360,7 +372,7 @@ with scatter_col:
         joined,
         x="x_val", y="y_val",
         hover_name=id_col,
-        hover_data={"x_val": False, "y_val": False, "x_total": False, "y_total": False},
+        hover_data={"x_val": False, "y_val": False, "x_total": False, "y_total": False, id_col: False, "nbhdnum": False},
         labels={
             "x_val": f"X: {x_label}{' (%)' if x_met == 'Vote %' else ''}",
             "y_val": f"Y: {y_label}{' (%)' if y_met == 'Vote %' else ''}",
@@ -435,9 +447,9 @@ with info_col:
     if selected_area and selected_area in joined[id_col].values:
         sel_row = joined[joined[id_col] == selected_area].iloc[0]
         st.markdown(f"**{sel_row[id_col]}**")
-        st.metric(f"X · {x_cand.split()[-1]}", f"{sel_row['x_val']:.1f}{x_unit}")
+        st.metric(f"X · {last_name(x_cand)}", f"{sel_row['x_val']:.1f}{x_unit}")
         st.metric(
-            f"Y · {y_cand.split()[-1]}",
+            f"Y · {last_name(y_cand)}",
             f"{sel_row['y_val']:.1f}{y_unit}",
             delta=(
                 f"{sel_row['y_val'] - sel_row['x_val']:+.1f}"

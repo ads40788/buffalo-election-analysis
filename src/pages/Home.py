@@ -20,12 +20,25 @@ st.markdown("""
 h1 { font-weight: 800 !important; letter-spacing: -0.5px; margin-bottom: 0.1rem !important; }
 h2 { font-weight: 700 !important; border-bottom: 2px solid #e8e8e8; padding-bottom: 5px; margin-top: 1.4rem !important; }
 h3 { font-weight: 600 !important; color: #222 !important;
-     border-left: 3px solid #4e79a7; padding-left: 9px;
      margin-top: 1.1rem !important; margin-bottom: 0.4rem !important; }
 section[data-testid="stSidebar"] h1 { font-size: 1.25rem !important; letter-spacing: 0; }
 div[data-testid="stMetricValue"] { font-size: 1.5rem !important; font-weight: 700 !important; }
+@media (max-width: 768px) {
+    .block-container { padding-left: 0.75rem !important; padding-right: 0.75rem !important; padding-top: 1rem !important; }
+    div[data-testid="stMetricValue"] { font-size: 1.2rem !important; }
+    div[data-testid="stMetricLabel"] { font-size: 0.75rem !important; }
+}
 </style>
 """, unsafe_allow_html=True)
+
+_SUFFIXES = {"jr", "sr", "ii", "iii", "iv", "jr.", "sr.", "esq", "esq."}
+
+def last_name(full: str) -> str:
+    parts = full.split()
+    if len(parts) > 1 and parts[-1].lower().rstrip(".") in _SUFFIXES:
+        return parts[-2]
+    return parts[-1] if parts else full
+
 
 BUFFALO_CENTER = {"lat": 42.886, "lon": -78.878}
 META_COLS = {"year", "election_type", "ward", "ed_num", "ed_label", "shapefile_key"}
@@ -227,7 +240,7 @@ sorted_cands = sorted(city_avg.items(), key=lambda x: x[1], reverse=True)
 metric_cols  = st.columns(min(len(sorted_cands), 4))
 for i, (cand, pct) in enumerate(sorted_cands[:4]):
     votes = pd.to_numeric(sel_elections[cand], errors="coerce").fillna(0).sum()
-    metric_cols[i].metric(cand.split()[-1], f"{votes:,.0f}", f"{pct:.1f}%")
+    metric_cols[i].metric(last_name(cand), f"{votes:,.0f}", f"{pct:.1f}%")
 
 
 # ── Map + right panel ─────────────────────────────────────────────────────────
@@ -252,8 +265,11 @@ with map_col:
         hover_name=name_col,
         hover_data={
             **hover_h,
-            color_col: False,
-            "_total": False,
+            color_col:  False,
+            "_total":   False,
+            id_col:     False,
+            name_col:   False,
+            "nbhdnum":  False,
             **{f"pct_{c}": False for c in candidates},
         },
         labels={f"_h_{c}": c for c in candidates},
@@ -367,7 +383,7 @@ with right_col:
                 area_data.append((name, pcts, votes))
 
         if area_data:
-            labels = [a[0].split()[-1] if view == "Election District" else a[0]
+            labels = [last_name(a[0]) if view == "Election District" else a[0]
                       for a in area_data]
             st.markdown(f"**Comparing:** {' vs '.join(labels)} vs City Avg")
 
@@ -401,21 +417,21 @@ with right_col:
                 yaxis=dict(title=None, autorange="reversed", gridcolor=GRID_COLOR),
                 plot_bgcolor="white",
                 paper_bgcolor="white",
-                legend=dict(orientation="h", y=1.12),
-                height=max(240, len(candidates) * 48),
-                margin={"r": 10, "t": 60, "l": 10, "b": 30},
+                legend=dict(orientation="h", yanchor="top", y=-0.15, xanchor="center", x=0.5),
+                height=max(260, len(candidates) * 48),
+                margin={"r": 10, "t": 30, "l": 10, "b": 60},
             )
             st.plotly_chart(fig_cmp, width="stretch", config={"displaylogo": False})
 
             for (name, pcts, _), color in zip(area_data, AREA_COLORS):
-                label = name.split()[-1] if view == "Election District" else name
+                label = last_name(name) if view == "Election District" else name
                 st.markdown(f"<span style='color:{color};font-weight:bold'>■ {label}</span>",
                             unsafe_allow_html=True)
                 metric_row = st.columns(min(len(candidates), 3))
                 for i, c in enumerate(candidates):
                     delta = pcts.get(c, 0) - city_avg.get(c, 0)
                     metric_row[i % 3].metric(
-                        label=c.split()[-1],
+                        label=last_name(c),
                         value=f"{pcts.get(c,0):.1f}%",
                         delta=f"{delta:+.1f}pp",
                     )

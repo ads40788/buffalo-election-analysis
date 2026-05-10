@@ -23,10 +23,13 @@ st.markdown("""
 h1 { font-weight: 800 !important; letter-spacing: -0.5px; margin-bottom: 0.1rem !important; }
 h2 { font-weight: 700 !important; border-bottom: 2px solid #e8e8e8; padding-bottom: 5px; margin-top: 1.4rem !important; }
 h3 { font-weight: 600 !important; color: #222 !important;
-     border-left: 3px solid #4e79a7; padding-left: 9px;
      margin-top: 1.1rem !important; margin-bottom: 0.4rem !important; }
 section[data-testid="stSidebar"] h1 { font-size: 1.25rem !important; letter-spacing: 0; }
 div[data-testid="stMetricValue"] { font-size: 1.5rem !important; font-weight: 700 !important; }
+@media (max-width: 768px) {
+    .block-container { padding-left: 0.75rem !important; padding-right: 0.75rem !important; padding-top: 1rem !important; }
+    div[data-testid="stMetricValue"] { font-size: 1.2rem !important; }
+}
 </style>
 """, unsafe_allow_html=True)
 
