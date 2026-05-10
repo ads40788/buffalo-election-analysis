@@ -63,6 +63,49 @@ def load_elections() -> pd.DataFrame:
 def build_nbhd_geo(_eds: gpd.GeoDataFrame) -> gpd.GeoDataFrame:
     return _eds.dissolve(by="nbhdname").reset_index()[["nbhdname", "nbhdnum", "geometry"]]
 
+@st.cache_data
+def build_ed_adjacency(_eds: gpd.GeoDataFrame) -> dict:
+    adj = {}
+    for _, row in _eds.iterrows():
+        buf = row.geometry.buffer(0.0001)
+        neighbors = _eds[
+            _eds.geometry.intersects(buf) & (_eds["ed_key"] != row["ed_key"])
+        ]["ed_key"].tolist()
+        adj[row["ed_key"]] = neighbors
+    return adj
+
+@st.cache_data
+def build_nbhd_adjacency(_nbhd: gpd.GeoDataFrame) -> dict:
+    adj = {}
+    for _, row in _nbhd.iterrows():
+        buf = row.geometry.buffer(0.0001)
+        neighbors = _nbhd[
+            _nbhd.geometry.intersects(buf) & (_nbhd["nbhdname"] != row["nbhdname"])
+        ]["nbhdname"].tolist()
+        adj[row["nbhdname"]] = neighbors
+    return adj
+
+def find_hosts(key: str, keys_with_data: set, adjacency: dict) -> list:
+    immediate = [k for k in adjacency.get(key, []) if k in keys_with_data]
+    if immediate:
+        return immediate[:3]
+    second = []
+    for nb in adjacency.get(key, []):
+        for nb2 in adjacency.get(nb, []):
+            if nb2 in keys_with_data and nb2 not in second:
+                second.append(nb2)
+    return second[:3]
+
+def consolidation_note(hosts: list, view_type: str) -> str:
+    if not hosts:
+        return "No individual results available for this election."
+    if view_type == "Election District":
+        labels = [h.replace("Buffalo ", "") for h in hosts]
+    else:
+        labels = hosts
+    joined = ", ".join(labels)
+    return f"No data · votes likely in: {joined} (est. — see note below)"
+
 
 def get_candidates(df: pd.DataFrame) -> list[str]:
     return [
@@ -102,6 +145,8 @@ for key, default in [
 base_eds     = load_base_eds()
 elections_df = load_elections()
 nbhd_geo     = build_nbhd_geo(base_eds)
+ed_adj       = build_ed_adjacency(base_eds)
+nbhd_adj     = build_nbhd_adjacency(nbhd_geo)
 
 available = (
     elections_df[["year", "election_type"]]
@@ -203,6 +248,23 @@ for c in candidates:
         for v, p in zip(votes_col, pct_col)
     ]
 
+# ── Consolidation notes for missing areas ────────────────────────────────────
+keys_with_data = set(sel_elections["shapefile_key"].dropna())
+if view == "Election District":
+    geo["_note"] = [
+        consolidation_note(find_hosts(row["ed_key"], keys_with_data, ed_adj), view)
+        if row["ed_key"] not in keys_with_data else ""
+        for _, row in geo.iterrows()
+    ]
+else:
+    nbhd_has_data = set(base_eds[base_eds["ed_key"].isin(keys_with_data)]["nbhdname"])
+    geo["_note"] = [
+        consolidation_note(find_hosts(row["nbhdname"], nbhd_has_data, nbhd_adj), view)
+        if row["nbhdname"] not in nbhd_has_data else ""
+        for _, row in geo.iterrows()
+    ]
+has_missing = geo["_note"].str.len().gt(0).any()
+
 geo_json = json.loads(geo.to_json())
 
 # ── Area multiselect (fill sidebar placeholder) ───────────────────────────────
@@ -225,11 +287,11 @@ st.markdown(
     f"### {sel_year} {'Democratic Primary' if sel_type == 'primary' else 'General Election'}"
 )
 
-if sel_type == "primary" and view == "Election District":
+if sel_type == "primary" and has_missing:
+    n_missing = int(geo["_note"].str.len().gt(0).sum())
     st.info(
-        "Primary ballots use consolidated polling districts — grey polygons "
-        "indicate EDs merged into a neighbouring district for this race. "
-        "Switch to Neighborhood view for complete coverage.",
+        f"{n_missing} area(s) have no individual results — ballots were consolidated "
+        f"for this primary. Hover over grey areas for likely host districts.",
         icon="ℹ️",
     )
 
@@ -249,6 +311,17 @@ map_col, right_col = st.columns([3, 2])
 
 with map_col:
     hover_h = {f"_h_{c}": True for c in candidates if f"_h_{c}" in geo.columns}
+    hover_data_map = {
+        **hover_h,
+        color_col:  False,
+        "_total":   False,
+        id_col:     False,
+        name_col:   False,
+        "nbhdnum":  False,
+        **{f"pct_{c}": False for c in candidates},
+    }
+    if has_missing:
+        hover_data_map["_note"] = True
 
     fig_map = px.choropleth_map(
         geo,
@@ -263,16 +336,8 @@ with map_col:
         center=BUFFALO_CENTER,
         opacity=0.75,
         hover_name=name_col,
-        hover_data={
-            **hover_h,
-            color_col:  False,
-            "_total":   False,
-            id_col:     False,
-            name_col:   False,
-            "nbhdnum":  False,
-            **{f"pct_{c}": False for c in candidates},
-        },
-        labels={f"_h_{c}": c for c in candidates},
+        hover_data=hover_data_map,
+        labels={**{f"_h_{c}": c for c in candidates}, "_note": "ℹ️"},
         title=f"{sel_candidate} — % of votes",
         height=560,
     )
@@ -330,6 +395,27 @@ with map_col:
 
     if not st.session_state.sel_areas:
         st.caption("Click a polygon or use the sidebar to compare areas.")
+
+    if has_missing:
+        with st.expander("ℹ️ About missing areas", expanded=False):
+            st.markdown(
+                """
+                **Why are some areas grey with no data?**
+
+                For primary elections, the Board of Elections physically consolidates
+                multiple election districts into a single polling place. Only the *host*
+                district gets its own row in the official canvass book — the merged
+                districts have no individually published results.
+
+                **How the "votes likely in" estimates work**
+
+                Grey areas are matched to adjacent districts that *do* have data using
+                geographic proximity in the shapefile. These are **spatial estimates only**,
+                not official BOE consolidation records. The actual host district may differ.
+                When no immediate neighbor has data, the nearest district by centroid
+                distance is used as a fallback.
+                """
+            )
 
 
 # ── Right panel ───────────────────────────────────────────────────────────────
