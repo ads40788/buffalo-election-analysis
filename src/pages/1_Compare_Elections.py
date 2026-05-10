@@ -372,7 +372,7 @@ with scatter_col:
         joined,
         x="x_val", y="y_val",
         hover_name=id_col,
-        hover_data={"x_val": False, "y_val": False, "x_total": False, "y_total": False, id_col: False, "nbhdnum": False},
+        hover_data={"x_val": False, "y_val": False, "x_total": False, "y_total": False, id_col: False},
         labels={
             "x_val": f"X: {x_label}{' (%)' if x_met == 'Vote %' else ''}",
             "y_val": f"Y: {y_label}{' (%)' if y_met == 'Vote %' else ''}",
