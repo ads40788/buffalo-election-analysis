@@ -1,0 +1,62 @@
+year,election_type,district,ward,ed_num,ed_label,shapefile_key,Gerhardt J. Yaskow,Mitch Nowakowski,Tina Sanders,Pharoah V. Paige,"Blank, Void & Scattering",Total,Bryan J. Bollman,Esther Smothers,Nathan L. Boyd,Ulysees O. Wingo,Jennifer L. Strickland,Veronica Golden,Kathryn E. A. Franco,Rasheed N. Wyatt
+2019,primary,fillmore,FIL,1,FIL 1,Buffalo FIL 1,34.0,54.0,10.0,1.0,0,99,,,,,,,,
+2019,primary,fillmore,FIL,2,"FIL 2 (4 ,6, 7)",Buffalo FIL 2,61.0,90.0,32.0,5.0,2,190,,,,,,,,
+2019,primary,fillmore,FIL,3,FIL 3,Buffalo FIL 3,9.0,32.0,9.0,0.0,0,50,,,,,,,,
+2019,primary,fillmore,FIL,5,FIL 5,Buffalo FIL 5,19.0,48.0,11.0,5.0,0,83,,,,,,,,
+2019,primary,fillmore,FIL,8,FIL 8,Buffalo FIL 8,56.0,69.0,17.0,14.0,2,158,,,,,,,,
+2019,primary,fillmore,FIL,9,FIL 9,Buffalo FIL 9,0.0,3.0,12.0,26.0,0,41,,,,,,,,
+2019,primary,fillmore,FIL,10,FIL 10,Buffalo FIL 10,10.0,11.0,24.0,38.0,4,87,,,,,,,,
+2019,primary,fillmore,FIL,11,FIL 11 (35),Buffalo FIL 11,22.0,16.0,96.0,54.0,4,192,,,,,,,,
+2019,primary,fillmore,FIL,12,FIL 12 (13),Buffalo FIL 12,33.0,115.0,3.0,7.0,0,158,,,,,,,,
+2019,primary,fillmore,FIL,14,FIL 14,Buffalo FIL 14,62.0,30.0,2.0,1.0,0,95,,,,,,,,
+2019,primary,fillmore,FIL,15,FIL 15 (18),Buffalo FIL 15,40.0,31.0,30.0,9.0,1,111,,,,,,,,
+2019,primary,fillmore,FIL,16,FIL 16,Buffalo FIL 16,13.0,3.0,1.0,1.0,0,18,,,,,,,,
+2019,primary,fillmore,FIL,17,FIL 17,Buffalo FIL 17,2.0,2.0,0.0,0.0,1,5,,,,,,,,
+2019,primary,fillmore,FIL,19,FIL 19,Buffalo FIL 19,59.0,17.0,1.0,0.0,4,81,,,,,,,,
+2019,primary,fillmore,FIL,20,"FIL 20 (22, 34)",Buffalo FIL 20,13.0,37.0,63.0,15.0,1,129,,,,,,,,
+2019,primary,fillmore,FIL,21,FIL 21 (24),Buffalo FIL 21,11.0,14.0,11.0,3.0,0,39,,,,,,,,
+2019,primary,fillmore,FIL,23,"FIL 23 (26, 27)",Buffalo FIL 23,16.0,47.0,33.0,7.0,6,109,,,,,,,,
+2019,primary,fillmore,FIL,25,FIL 25 (28),Buffalo FIL 25,15.0,22.0,17.0,7.0,0,61,,,,,,,,
+2019,primary,fillmore,FIL,29,FIL 29 (30),Buffalo FIL 29,12.0,27.0,43.0,44.0,11,137,,,,,,,,
+2019,primary,fillmore,FIL,31,FIL 31,Buffalo FIL 31,8.0,11.0,20.0,3.0,3,45,,,,,,,,
+2019,primary,fillmore,FIL,32,FIL 32 (33),Buffalo FIL 32,7.0,13.0,26.0,10.0,2,58,,,,,,,,
+2019,primary,lovejoy,LOV,1,"LOV 1 (2, 3)",Buffalo LOV 1,,,,,11,124,32.0,81.0,,,,,,
+2019,primary,lovejoy,LOV,4,LOV 4 (5),Buffalo LOV 4,,,,,7,127,40.0,80.0,,,,,,
+2019,primary,lovejoy,LOV,6,"LOV 6 (7, 8, 9, 10)",Buffalo LOV 6,,,,,11,220,100.0,109.0,,,,,,
+2019,primary,lovejoy,LOV,11,"LOV 11 (12, 13, 14)",Buffalo LOV 11,,,,,8,251,127.0,116.0,,,,,,
+2019,primary,lovejoy,LOV,15,"LOV 15 (16, 17, 18, 19)",Buffalo LOV 15,,,,,4,179,133.0,42.0,,,,,,
+2019,primary,lovejoy,LOV,20,LOV 20 (21),Buffalo LOV 20,,,,,1,59,51.0,7.0,,,,,,
+2019,primary,lovejoy,LOV,22,LOV 22,Buffalo LOV 22,,,,,0,9,9.0,0.0,,,,,,
+2019,primary,lovejoy,LOV,23,LOV 23,Buffalo LOV 23,,,,,0,23,23.0,0.0,,,,,,
+2019,primary,lovejoy,LOV,24,LOV 24 (28),Buffalo LOV 24,,,,,2,122,102.0,18.0,,,,,,
+2019,primary,lovejoy,LOV,25,LOV 25,Buffalo LOV 25,,,,,0,1,1.0,0.0,,,,,,
+2019,primary,lovejoy,LOV,26,LOV 26,Buffalo LOV 26,,,,,0,16,13.0,3.0,,,,,,
+2019,primary,lovejoy,LOV,27,LOV 27 (31),Buffalo LOV 27,,,,,1,55,48.0,6.0,,,,,,
+2019,primary,lovejoy,LOV,29,"LOV 29 (30, 32)",Buffalo LOV 29,,,,,1,157,148.0,8.0,,,,,,
+2019,primary,masten,MAS,1,"MAS 1 (3, 8, 9, 10)",Buffalo MAS 1,,,,,24,333,,,63.0,188.0,46.0,12.0,,
+2019,primary,masten,MAS,2,MAS 2,Buffalo MAS 2,,,,,1,36,,,7.0,4.0,6.0,18.0,,
+2019,primary,masten,MAS,4,MAS 4 (11),Buffalo MAS 4,,,,,10,169,,,49.0,89.0,13.0,8.0,,
+2019,primary,masten,MAS,5,"MAS 5 (6, 7)",Buffalo MAS 5,,,,,8,134,,,50.0,57.0,12.0,7.0,,
+2019,primary,masten,MAS,12,"MAS 12 (17, 18)",Buffalo MAS 12,,,,,13,229,,,58.0,115.0,20.0,23.0,,
+2019,primary,masten,MAS,13,MAS 13 (20),Buffalo MAS 13,,,,,10,182,,,38.0,97.0,17.0,20.0,,
+2019,primary,masten,MAS,14,"MAS 14 (15, 21, 22)",Buffalo MAS 14,,,,,7,217,,,48.0,97.0,44.0,21.0,,
+2019,primary,masten,MAS,16,MAS 16 (24),Buffalo MAS 16,,,,,12,174,,,36.0,72.0,12.0,42.0,,
+2019,primary,masten,MAS,19,"MAS 19 (23, 25, 26)",Buffalo MAS 19,,,,,21,298,,,93.0,112.0,25.0,47.0,,
+2019,primary,masten,MAS,27,MAS 27 (34),Buffalo MAS 27,,,,,13,161,,,60.0,56.0,19.0,13.0,,
+2019,primary,masten,MAS,28,MAS 28 (29),Buffalo MAS 28,,,,,10,171,,,46.0,63.0,16.0,36.0,,
+2019,primary,masten,MAS,30,"MAS 30 (39, 40)",Buffalo MAS 30,,,,,4,101,,,30.0,47.0,12.0,8.0,,
+2019,primary,masten,MAS,31,MAS 31 (32),Buffalo MAS 31,,,,,2,96,,,36.0,43.0,8.0,7.0,,
+2019,primary,masten,MAS,33,MAS 33,Buffalo MAS 33,,,,,7,88,,,24.0,40.0,9.0,8.0,,
+2019,primary,masten,MAS,35,"MAS 35 (36, 37, 38)",Buffalo MAS 35,,,,,14,202,,,54.0,104.0,16.0,14.0,,
+2019,primary,masten,MAS,41,MAS 41 (42),Buffalo MAS 41,,,,,8,95,,,21.0,47.0,13.0,6.0,,
+2019,primary,university,UNI,1,"UNI 1 (5, 7)",Buffalo UNI 1,,,,,6,203,,,,,,,127.0,70.0
+2019,primary,university,UNI,2,UNI 2 (3),Buffalo UNI 2,,,,,1,184,,,,,,,124.0,59.0
+2019,primary,university,UNI,4,"UNI 4 (6, 8)",Buffalo UNI 4,,,,,1,124,,,,,,,55.0,68.0
+2019,primary,university,UNI,9,UNI 9,Buffalo UNI 9,,,,,1,29,,,,,,,15.0,13.0
+2019,primary,university,UNI,10,"UNI 10 (11, 13)",Buffalo UNI 10,,,,,12,357,,,,,,,118.0,227.0
+2019,primary,university,UNI,12,"UNI 12 (14, 17, 20)",Buffalo UNI 12,,,,,8,381,,,,,,,92.0,281.0
+2019,primary,university,UNI,15,UNI 15 (18),Buffalo UNI 15,,,,,4,125,,,,,,,27.0,94.0
+2019,primary,university,UNI,16,"UNI 16 (19, 21)",Buffalo UNI 16,,,,,7,263,,,,,,,48.0,208.0
+2019,primary,university,UNI,22,UNI 22 (23),Buffalo UNI 22,,,,,4,159,,,,,,,30.0,125.0
+2019,primary,university,UNI,24,UNI 24,Buffalo UNI 24,,,,,3,112,,,,,,,14.0,95.0
+2019,primary,university,UNI,25,"UNI 25 (26, 27)",Buffalo UNI 25,,,,,10,272,,,,,,,53.0,209.0
