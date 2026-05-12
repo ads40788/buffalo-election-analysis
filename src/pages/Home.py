@@ -162,9 +162,6 @@ election_labels = [
 # ── Sidebar ───────────────────────────────────────────────────────────────────
 
 with st.sidebar:
-    st.title("Buffalo Mayoral\nElections")
-    st.divider()
-
     sel_label = st.selectbox("Election", election_labels, index=len(election_labels) - 1)
     sel_year, sel_type = sel_label.split(" ", 1)
     sel_type = sel_type.lower()

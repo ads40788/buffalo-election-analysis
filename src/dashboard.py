@@ -22,8 +22,9 @@ pg = st.navigation([
     st.Page("pages/Home.py",                title="Dashboard",         icon="🗳️"),
     st.Page("pages/1_Compare_Elections.py", title="Compare Elections", icon="📊"),
     st.Page("pages/2_Coalition_Analysis.py",title="Coalition Analysis",icon="🔍"),
+    st.Page("pages/3_Council_Districts.py", title="Council Districts",  icon="🏛️"),
     # Preliminary Results — hidden until ready for public release
-    # st.Page("pages/3_Preliminary_Results.py", title="Preliminary Results", icon="📈"),
+    # st.Page("pages/4_Preliminary_Results.py", title="Preliminary Results", icon="📈"),
 ])
 pg.run()
 add_footer()

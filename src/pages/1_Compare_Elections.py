@@ -1,7 +1,7 @@
 """
-Buffalo Mayoral Elections — Compare Elections
-Two choropleth maps (one per axis) + scatter plot linking them.
-Clicking a scatter point highlights the area on both maps.
+Buffalo Elections — Compare Elections
+Two choropleth maps + scatter plot. Works across mayoral and council races.
+When a council election is selected the maps zoom to that district.
 """
 
 import json
@@ -40,13 +40,22 @@ def last_name(full: str) -> str:
         return parts[-2]
     return parts[-1] if parts else full
 
+def normalize_name(name: str) -> str:
+    name = re.sub(r"\s+\.", ".", str(name).strip())
+    return re.sub(r"\s+", " ", name).strip()
+
 
 BUFFALO_CENTER = {"lat": 42.886, "lon": -78.878}
-META_COLS = {"year", "election_type", "ward", "ed_num", "ed_label", "shapefile_key"}
+META_COLS = {"year", "election_type", "district", "ward", "ed_num", "ed_label", "shapefile_key"}
 NOISE_RE  = re.compile(r"\b(blank|void|scatter|total)", re.IGNORECASE)
 SEL_COLOR  = "#e41a1c"
 GRID_COLOR = "rgba(0,0,0,0.07)"
-AXIS_COLOR = "rgba(0,0,0,0.15)"
+
+WARD_CODES = {
+    "delaware":   "DEL", "ellicott":   "ELL", "fillmore":  "FIL",
+    "lovejoy":    "LOV", "masten":     "MAS", "niagara":   "NIA",
+    "north":      "NOR", "south":      "SOU", "university": "UNI",
+}
 
 
 # ── Data loading ───────────────────────────────────────────────────────────────
@@ -56,13 +65,100 @@ def load_base_eds() -> gpd.GeoDataFrame:
     return gpd.read_file(GEO_DIR / "buffalo_eds.geojson")
 
 @st.cache_data
-def load_elections() -> pd.DataFrame:
+def load_mayoral() -> pd.DataFrame:
     return pd.read_csv(DATA_DIR / "mayoral_all.csv", dtype={"year": str})
+
+@st.cache_data
+def load_council() -> pd.DataFrame:
+    df = pd.read_csv(DATA_DIR / "council_all.csv", dtype={"year": str})
+    return df
 
 @st.cache_data
 def build_nbhd_geo(_eds: gpd.GeoDataFrame) -> gpd.GeoDataFrame:
     return _eds.dissolve(by="nbhdname").reset_index()[["nbhdname", "nbhdnum", "geometry"]]
 
+@st.cache_data
+def district_eds(_base_eds: gpd.GeoDataFrame, ward_code: str) -> gpd.GeoDataFrame:
+    return _base_eds[
+        _base_eds["ed_key"].str.contains(f" {ward_code} ", regex=False)
+    ].copy()
+
+@st.cache_data
+def district_nbhd(_dist_eds: gpd.GeoDataFrame) -> gpd.GeoDataFrame:
+    return _dist_eds.dissolve(by="nbhdname").reset_index()[["nbhdname", "geometry"]]
+
+
+# ── Election registry ──────────────────────────────────────────────────────────
+
+@st.cache_data
+def build_registry(_mayoral: pd.DataFrame, _council: pd.DataFrame) -> dict:
+    """Label → metadata dict for all available elections."""
+    reg = {}
+    for yr, etype in _mayoral[["year", "election_type"]].drop_duplicates().itertuples(index=False):
+        label = f"{yr} {etype.title()} — Mayor"
+        reg[label] = {"race": "mayor", "year": yr, "etype": etype, "district": None}
+    for yr, etype, dist in (
+        _council[["year", "election_type", "district"]]
+        .drop_duplicates()
+        .itertuples(index=False)
+    ):
+        label = f"{yr} {etype.title()} — {dist.title()} Council"
+        reg[label] = {"race": "council", "year": yr, "etype": etype, "district": dist}
+    return reg
+
+
+def get_elec_data(meta: dict) -> pd.DataFrame:
+    if meta["race"] == "mayor":
+        return mayoral_df[
+            (mayoral_df["year"]           == meta["year"]) &
+            (mayoral_df["election_type"]  == meta["etype"])
+        ].copy()
+    else:
+        return council_df[
+            (council_df["year"]           == meta["year"]) &
+            (council_df["election_type"]  == meta["etype"]) &
+            (council_df["district"]       == meta["district"])
+        ].copy()
+
+
+def get_geo_scope(
+    x_meta: dict, y_meta: dict, view: str
+) -> tuple[gpd.GeoDataFrame, gpd.GeoDataFrame, str | None]:
+    """
+    Return (eds_ref, nbhd_ref, scope_district).
+    scope_district is None for city-wide, or the district name for council-scoped views.
+    When both elections are council from different districts, returns (None, None, 'conflict').
+    """
+    x_council = x_meta["race"] == "council"
+    y_council = y_meta["race"] == "council"
+
+    if x_council and y_council and x_meta["district"] != y_meta["district"]:
+        return None, None, "conflict"
+
+    if x_council or y_council:
+        dist = x_meta["district"] if x_council else y_meta["district"]
+        wc   = WARD_CODES[dist]
+        eds  = district_eds(base_eds, wc)
+        nbhd = district_nbhd(eds)
+        return eds, nbhd, dist
+
+    return base_eds, nbhd_geo, None
+
+
+def map_params(gdf: gpd.GeoDataFrame) -> tuple[dict, float]:
+    if gdf is None or len(gdf) == 0:
+        return BUFFALO_CENTER, 10.8
+    b    = gdf.total_bounds
+    center = {"lat": (b[1] + b[3]) / 2, "lon": (b[0] + b[2]) / 2}
+    span = max(b[3] - b[1], (b[2] - b[0]) * 0.7)
+    zoom = (13.5 if span < 0.02 else
+            13.0 if span < 0.04 else
+            12.5 if span < 0.07 else
+            12.0 if span < 0.12 else 10.8)
+    return center, zoom
+
+
+# ── Candidates ─────────────────────────────────────────────────────────────────
 
 def get_candidates(df: pd.DataFrame) -> list[str]:
     return [
@@ -73,19 +169,21 @@ def get_candidates(df: pd.DataFrame) -> list[str]:
         and pd.to_numeric(df[c], errors="coerce").gt(0).any()
     ]
 
-
 def sorted_candidates(elections: pd.DataFrame) -> list[str]:
-    cands = get_candidates(elections)
+    cands  = get_candidates(elections)
     totals = {c: pd.to_numeric(elections[c], errors="coerce").fillna(0).sum() for c in cands}
     return sorted(cands, key=lambda c: totals[c], reverse=True)
 
 
 # ── Aggregation ────────────────────────────────────────────────────────────────
 
-def _nbhd_agg(elections: pd.DataFrame, candidate: str, metric: str) -> pd.DataFrame:
+def _nbhd_agg(
+    elections: pd.DataFrame, candidate: str, metric: str,
+    eds_ref: gpd.GeoDataFrame,
+) -> pd.DataFrame:
     cands    = get_candidates(elections)
     sel_cols = ["shapefile_key"] + [c for c in cands if c in elections.columns]
-    ed_nbhd  = base_eds[["ed_key", "nbhdname"]].merge(
+    ed_nbhd  = eds_ref[["ed_key", "nbhdname"]].merge(
         elections[sel_cols], left_on="ed_key", right_on="shapefile_key", how="left"
     )
     valid = [c for c in cands if c in ed_nbhd.columns]
@@ -101,10 +199,13 @@ def _nbhd_agg(elections: pd.DataFrame, candidate: str, metric: str) -> pd.DataFr
     return agg[["nbhdname", "val", "_total"]]
 
 
-def _ed_agg(elections: pd.DataFrame, candidate: str, metric: str) -> pd.DataFrame:
+def _ed_agg(
+    elections: pd.DataFrame, candidate: str, metric: str,
+    eds_ref: gpd.GeoDataFrame,
+) -> pd.DataFrame:
     cands    = get_candidates(elections)
     sel_cols = ["shapefile_key"] + [c for c in cands if c in elections.columns]
-    ed       = base_eds[["ed_key"]].merge(
+    ed       = eds_ref[["ed_key"]].merge(
         elections[sel_cols], left_on="ed_key", right_on="shapefile_key", how="left"
     )
     valid = [c for c in cands if c in ed.columns]
@@ -119,10 +220,9 @@ def _ed_agg(elections: pd.DataFrame, candidate: str, metric: str) -> pd.DataFram
     return ed[["ed_key", "val", "_total"]]
 
 
-# ── Boundary-outline helper ────────────────────────────────────────────────────
+# ── Boundary / highlight traces ────────────────────────────────────────────────
 
 def boundary_trace(gdf: gpd.GeoDataFrame, color: str = "#777777", width: float = 0.5) -> go.Scattermap:
-    """Scattermap line trace outlining every polygon in a GeoDataFrame."""
     lats, lons = [], []
     for geom in gdf.geometry:
         if geom is None:
@@ -139,9 +239,7 @@ def boundary_trace(gdf: gpd.GeoDataFrame, color: str = "#777777", width: float =
         hoverinfo="skip", showlegend=False,
     )
 
-
 def highlight_trace(gdf: gpd.GeoDataFrame, id_col: str, name: str) -> go.Scattermap | None:
-    """Red border trace for a single selected area."""
     mask = gdf[id_col] == name
     if not mask.any():
         return None
@@ -160,9 +258,15 @@ def make_choropleth(
     unit: str,
     other_col: str,
     other_label: str,
+    center: dict,
+    zoom: float,
     height: int = 380,
 ) -> go.Figure:
     geo_json = json.loads(geo.to_json())
+    hover_data = {color_col: True, other_col: True, id_col: False}
+    if "nbhdnum" in geo.columns:
+        hover_data["nbhdnum"] = False
+
     fig = px.choropleth_map(
         geo,
         geojson=geo_json,
@@ -172,11 +276,11 @@ def make_choropleth(
         color_continuous_scale="Blues",
         range_color=color_range,
         map_style="carto-positron",
-        zoom=10.8,
-        center=BUFFALO_CENTER,
+        zoom=zoom,
+        center=center,
         opacity=0.75,
         hover_name=id_col,
-        hover_data={color_col: True, other_col: True, id_col: False, "nbhdnum": False},
+        hover_data=hover_data,
         labels={color_col: label, other_col: other_label},
         title=title,
         height=height,
@@ -184,14 +288,11 @@ def make_choropleth(
     fig.update_layout(
         margin={"r": 0, "t": 36, "l": 0, "b": 0},
         coloraxis_colorbar=dict(
-            thickness=12,
-            len=0.6,
+            thickness=12, len=0.6,
             title=dict(text=unit or "votes", side="right"),
-            ticksuffix=unit,
-            tickfont=dict(size=11),
+            ticksuffix=unit, tickfont=dict(size=11),
         ),
     )
-    # Fix hover: replace "colname=value" default with clean template
     fig.update_traces(
         hovertemplate=(
             "<b>%{location}</b><br>"
@@ -207,18 +308,21 @@ def make_choropleth(
 
 # ── Load data ──────────────────────────────────────────────────────────────────
 
-base_eds     = load_base_eds()
-elections_df = load_elections()
-nbhd_geo     = build_nbhd_geo(base_eds)
+base_eds   = load_base_eds()
+mayoral_df = load_mayoral()
+council_df = load_council()
+nbhd_geo   = build_nbhd_geo(base_eds)
 
-available = (
-    elections_df[["year", "election_type"]]
-    .drop_duplicates()
-    .sort_values(["year", "election_type"])
+registry      = build_registry(mayoral_df, council_df)
+all_labels    = sorted(
+    registry.keys(),
+    key=lambda l: (-int(l[:4]), l),
 )
-election_labels = [f"{r.year} {r.election_type.title()}" for r in available.itertuples()]
-default_x = max(0, len(election_labels) - 2)
-default_y = len(election_labels) - 1
+
+# Defaults: most recent two mayoral elections
+mayor_labels = [l for l in all_labels if "Mayor" in l]
+default_x = all_labels.index(mayor_labels[1]) if len(mayor_labels) > 1 else max(0, len(all_labels) - 2)
+default_y = all_labels.index(mayor_labels[0]) if mayor_labels else len(all_labels) - 1
 
 
 # ── Session state ──────────────────────────────────────────────────────────────
@@ -235,25 +339,46 @@ with st.sidebar:
     st.divider()
 
     st.markdown("**Map 1** · left on desktop, top on mobile")
-    x_sel  = st.selectbox("Election", election_labels, index=default_x, key="x_election")
-    x_year, x_type = x_sel.split(" ", 1);  x_type = x_type.lower()
-    x_elec = elections_df[(elections_df["year"] == x_year) & (elections_df["election_type"] == x_type)].copy()
-    x_cand = st.selectbox("Candidate", sorted_candidates(x_elec), key="x_cand")
+    x_sel  = st.selectbox("Election", all_labels, index=default_x, key="x_election")
+    x_meta = registry[x_sel]
+    x_elec = get_elec_data(x_meta)
+    x_cand = st.selectbox("Candidate", sorted_candidates(x_elec), key="x_cand",
+                           format_func=normalize_name)
     x_met  = st.radio("Metric", ["Vote %", "Raw votes"], key="x_metric", horizontal=True)
 
     st.divider()
 
     st.markdown("**Map 2** · right on desktop, bottom on mobile")
-    y_sel  = st.selectbox("Election", election_labels, index=default_y, key="y_election")
-    y_year, y_type = y_sel.split(" ", 1);  y_type = y_type.lower()
-    y_elec = elections_df[(elections_df["year"] == y_year) & (elections_df["election_type"] == y_type)].copy()
-    y_cand = st.selectbox("Candidate", sorted_candidates(y_elec), key="y_cand")
+    y_sel  = st.selectbox("Election", all_labels, index=default_y, key="y_election")
+    y_meta = registry[y_sel]
+    y_elec = get_elec_data(y_meta)
+    y_cand = st.selectbox("Candidate", sorted_candidates(y_elec), key="y_cand",
+                           format_func=normalize_name)
     y_met  = st.radio("Metric", ["Vote %", "Raw votes"], key="y_metric", horizontal=True)
 
     st.divider()
     show_trend = st.checkbox("Scatter trend line", value=True)
     st.divider()
     st.caption("Data: Erie County Board of Elections · NYS GIS")
+
+
+# ── Geographic scope ───────────────────────────────────────────────────────────
+
+eds_ref, nbhd_ref, scope_district = get_geo_scope(x_meta, y_meta, view)
+
+if scope_district == "conflict":
+    st.title("Compare Elections")
+    st.warning(
+        "The two selected elections are from different council districts "
+        f"({x_meta['district'].title()} and {y_meta['district'].title()}). "
+        "Their election districts don't overlap, so there's no data to compare. "
+        "Choose elections from the same district, or mix a council election with a mayoral one."
+    )
+    st.stop()
+
+map_center, map_zoom = map_params(
+    eds_ref if view == "Election District" else nbhd_ref
+)
 
 
 # ── Reset on settings change ───────────────────────────────────────────────────
@@ -268,15 +393,15 @@ if st.session_state.get("_cmp_key") != cmp_key:
 # ── Build joined dataset ───────────────────────────────────────────────────────
 
 if view == "Neighborhood":
-    x_raw = _nbhd_agg(x_elec, x_cand, x_met)
-    y_raw = _nbhd_agg(y_elec, y_cand, y_met)
+    x_raw  = _nbhd_agg(x_elec, x_cand, x_met, eds_ref)
+    y_raw  = _nbhd_agg(y_elec, y_cand, y_met, eds_ref)
     id_col   = "nbhdname"
-    geo_base = nbhd_geo
+    geo_base = nbhd_ref
 else:
-    x_raw = _ed_agg(x_elec, x_cand, x_met)
-    y_raw = _ed_agg(y_elec, y_cand, y_met)
+    x_raw  = _ed_agg(x_elec, x_cand, x_met, eds_ref)
+    y_raw  = _ed_agg(y_elec, y_cand, y_met, eds_ref)
     id_col   = "ed_key"
-    geo_base = base_eds[["ed_key", "geometry"]]
+    geo_base = eds_ref[["ed_key", "geometry"]]
 
 joined = (
     x_raw[[id_col, "val", "_total"]].rename(columns={"val": "x_val", "_total": "x_total"})
@@ -296,36 +421,40 @@ geo_cmp = geo_base.merge(joined, on=id_col, how="right")
 x_unit  = "%" if x_met == "Vote %" else ""
 y_unit  = "%" if y_met == "Vote %" else ""
 
-def fmt_label(cand, year, etype):
-    return f"{cand}  ({year} {etype.replace('primary','Primary').replace('general','General')})"
+def fmt_label(cand, meta):
+    yr   = meta["year"]
+    etype = meta["etype"].replace("primary", "Primary").replace("general", "General")
+    race  = "Mayor" if meta["race"] == "mayor" else f"{meta['district'].title()} Council"
+    return f"{normalize_name(cand)}  ({yr} {etype}, {race})"
 
-x_label = fmt_label(x_cand, x_year, x_type)
-y_label = fmt_label(y_cand, y_year, y_type)
+x_label = fmt_label(x_cand, x_meta)
+y_label = fmt_label(y_cand, y_meta)
 corr    = joined["x_val"].corr(joined["y_val"])
 
 
 # ── Page header ────────────────────────────────────────────────────────────────
 
 st.title("Compare Elections")
+scope_note = f" · {scope_district.title()} District" if scope_district else ""
 st.caption(
     f"**X:** {x_label}{' (%)' if x_met == 'Vote %' else ''}   ·   "
     f"**Y:** {y_label}{' (%)' if y_met == 'Vote %' else ''}   ·   "
-    f"{view} · n={len(joined)}"
+    f"{view}{scope_note} · n={len(joined)}"
 )
 
 c1, c2, c3 = st.columns(3)
 c1.metric("Pearson r", f"{corr:.3f}", help="Correlation between X and Y across areas")
-c2.metric(f"X avg · {last_name(x_cand)}",
+c2.metric(f"X avg · {last_name(normalize_name(x_cand))}",
           f"{joined['x_val'].mean():.1f}{x_unit}" if x_met == "Vote %" else f"{int(joined['x_val'].sum()):,}")
-c3.metric(f"Y avg · {last_name(y_cand)}",
+c3.metric(f"Y avg · {last_name(normalize_name(y_cand))}",
           f"{joined['y_val'].mean():.1f}{y_unit}" if y_met == "Vote %" else f"{int(joined['y_val'].sum()):,}")
 
 st.divider()
 
 
-# ── Two maps (top) ─────────────────────────────────────────────────────────────
+# ── Two maps ───────────────────────────────────────────────────────────────────
 
-selected_area = st.session_state.cmp_selected
+selected_area  = st.session_state.cmp_selected
 x_map_col, y_map_col = st.columns(2)
 
 color_range_x = [0, 100] if x_met == "Vote %" else None
@@ -335,32 +464,32 @@ with x_map_col:
     fig_x = make_choropleth(
         geo_cmp, id_col,
         color_col="x_val", color_range=color_range_x,
-        title=f"X: {x_label}",
-        label=f"X{x_unit}",
-        unit=x_unit,
+        title=f"X: {normalize_name(x_cand)}",
+        label=f"X{x_unit}", unit=x_unit,
         other_col="y_val", other_label=f"Y{y_unit}",
+        center=map_center, zoom=map_zoom,
     )
     ht = highlight_trace(geo_cmp, id_col, selected_area) if selected_area else None
     if ht:
         fig_x.add_trace(ht)
-    st.plotly_chart(fig_x, width="stretch", config={"displaylogo": False})
+    st.plotly_chart(fig_x, use_container_width=True, config={"displaylogo": False})
 
 with y_map_col:
     fig_y = make_choropleth(
         geo_cmp, id_col,
         color_col="y_val", color_range=color_range_y,
-        title=f"Y: {y_label}",
-        label=f"Y{y_unit}",
-        unit=y_unit,
+        title=f"Y: {normalize_name(y_cand)}",
+        label=f"Y{y_unit}", unit=y_unit,
         other_col="x_val", other_label=f"X{x_unit}",
+        center=map_center, zoom=map_zoom,
     )
     ht = highlight_trace(geo_cmp, id_col, selected_area) if selected_area else None
     if ht:
         fig_y.add_trace(ht)
-    st.plotly_chart(fig_y, width="stretch", config={"displaylogo": False})
+    st.plotly_chart(fig_y, use_container_width=True, config={"displaylogo": False})
 
 
-# ── Scatter (bottom) ───────────────────────────────────────────────────────────
+# ── Scatter ────────────────────────────────────────────────────────────────────
 
 scatter_col, info_col = st.columns([4, 1])
 
@@ -371,8 +500,8 @@ with scatter_col:
         hover_name=id_col,
         hover_data={"x_val": False, "y_val": False, "x_total": False, "y_total": False, id_col: False},
         labels={
-            "x_val": f"X: {x_label}{' (%)' if x_met == 'Vote %' else ''}",
-            "y_val": f"Y: {y_label}{' (%)' if y_met == 'Vote %' else ''}",
+            "x_val": f"X: {normalize_name(x_cand)}{' (%)' if x_met == 'Vote %' else ''}",
+            "y_val": f"Y: {normalize_name(y_cand)}{' (%)' if y_met == 'Vote %' else ''}",
         },
         trendline="ols" if show_trend else None,
         trendline_color_override="#ff7f0e",
@@ -391,7 +520,6 @@ with scatter_col:
         ),
     )
 
-    # y=x reference line when both axes are percentages
     if x_met == "Vote %" and y_met == "Vote %":
         lo = min(joined["x_val"].min(), joined["y_val"].min()) * 0.9
         hi = max(joined["x_val"].max(), joined["y_val"].max()) * 1.05
@@ -400,7 +528,6 @@ with scatter_col:
         fig_sc.add_annotation(x=hi, y=hi, text="y = x", showarrow=False,
                                font=dict(color="#aaaaaa", size=11), xanchor="left")
 
-    # Red ring on selected point
     if selected_area and selected_area in joined[id_col].values:
         sel_pt = joined[joined[id_col] == selected_area].iloc[0]
         fig_sc.add_trace(go.Scatter(
@@ -418,12 +545,14 @@ with scatter_col:
         plot_bgcolor="white",
         paper_bgcolor="white",
         clickmode="event+select",
-        dragmode="select",   # enables single-click point selection
+        dragmode="select",
     )
 
-    sc_event = st.plotly_chart(fig_sc, on_select="rerun", key=f"sc_{cmp_key}", width="stretch", config={"displaylogo": False})
+    sc_event = st.plotly_chart(
+        fig_sc, on_select="rerun", key=f"sc_{cmp_key}",
+        use_container_width=True, config={"displaylogo": False},
+    )
 
-    # Handle click — only process the scatter trace (curveNumber 0), not the trendline
     if sc_event and hasattr(sc_event, "selection") and sc_event.selection and sc_event.selection.points:
         for pt in sc_event.selection.points:
             if pt.get("curveNumber", 0) != 0:
@@ -432,21 +561,20 @@ with scatter_col:
             if idx != st.session_state.cmp_last_idx and 0 <= idx < len(joined):
                 st.session_state.cmp_last_idx = idx
                 st.session_state.cmp_selected = str(joined.iloc[idx][id_col])
-                st.rerun()   # maps are above; need another pass to show the highlight
+                st.rerun()
             break
 
     st.caption("Click a point to highlight the area on both maps above. "
                "Drag to box-select multiple points.")
 
-
 with info_col:
-    st.markdown("&nbsp;")   # vertical padding
+    st.markdown("&nbsp;")
     if selected_area and selected_area in joined[id_col].values:
         sel_row = joined[joined[id_col] == selected_area].iloc[0]
         st.markdown(f"**{sel_row[id_col]}**")
-        st.metric(f"X · {last_name(x_cand)}", f"{sel_row['x_val']:.1f}{x_unit}")
+        st.metric(f"X · {last_name(normalize_name(x_cand))}", f"{sel_row['x_val']:.1f}{x_unit}")
         st.metric(
-            f"Y · {last_name(y_cand)}",
+            f"Y · {last_name(normalize_name(y_cand))}",
             f"{sel_row['y_val']:.1f}{y_unit}",
             delta=(
                 f"{sel_row['y_val'] - sel_row['x_val']:+.1f}"
