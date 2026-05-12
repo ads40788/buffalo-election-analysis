@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as components
 
 
 def add_footer() -> None:
@@ -27,15 +28,15 @@ def inject_ga() -> None:
     if not ga_id:
         return
 
-    st.html(f"""
+    # st.html() runs in a sandboxed srcdoc iframe — window.location.href resolves
+    # to about:srcdoc and GA4 rejects the hit. components.html(height=0) uses a
+    # proper hidden iframe where gtag.js fires correctly.
+    components.html(f"""
     <script async src="https://www.googletagmanager.com/gtag/js?id={ga_id}"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){{dataLayer.push(arguments);}}
       gtag('js', new Date());
-      gtag('config', '{ga_id}', {{
-        page_title: document.title,
-        page_location: window.location.href
-      }});
+      gtag('config', '{ga_id}');
     </script>
-    """)
+    """, height=0)
