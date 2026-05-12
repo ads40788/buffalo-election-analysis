@@ -41,8 +41,17 @@ def last_name(full: str) -> str:
     return parts[-1] if parts else full
 
 def normalize_name(name: str) -> str:
+    """Normalize candidate name: fix OCR artifacts and strip middle initials."""
     name = re.sub(r"\s+\.", ".", str(name).strip())
-    return re.sub(r"\s+", " ", name).strip()
+    name = re.sub(r"\s+", " ", name).strip()
+    parts = name.split()
+    if len(parts) >= 3:
+        parts = [
+            p for i, p in enumerate(parts)
+            if not (0 < i < len(parts) - 1 and re.match(r"^[A-Z]\.?$", p))
+        ]
+        name = " ".join(parts)
+    return name
 
 
 BUFFALO_CENTER = {"lat": 42.886, "lon": -78.878}

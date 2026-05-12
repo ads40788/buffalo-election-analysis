@@ -49,9 +49,18 @@ def last_name(full: str) -> str:
     return parts[-1] if parts else full
 
 def normalize_name(name: str) -> str:
-    """Fix minor OCR spacing/punctuation inconsistencies, e.g. 'A .Fontana'."""
+    """Normalize candidate name: fix OCR artifacts and strip middle initials."""
     name = re.sub(r"\s+\.", ".", str(name).strip())
-    return re.sub(r"\s+", " ", name).strip()
+    name = re.sub(r"\s+", " ", name).strip()
+    # Strip middle initials: single capital letter (± period) between first and last name
+    parts = name.split()
+    if len(parts) >= 3:
+        parts = [
+            p for i, p in enumerate(parts)
+            if not (0 < i < len(parts) - 1 and re.match(r"^[A-Z]\.?$", p))
+        ]
+        name = " ".join(parts)
+    return name
 
 
 # ── Data loading ───────────────────────────────────────────────────────────────
@@ -110,7 +119,8 @@ def build_timeline(df: pd.DataFrame, district: str) -> pd.DataFrame:
 
 # ── Line chart ─────────────────────────────────────────────────────────────────
 
-def make_line_chart(timeline: pd.DataFrame, district: str) -> go.Figure:
+def make_line_chart(timeline: pd.DataFrame, title: str) -> go.Figure:
+    """Render a vote-share line chart for a single election type."""
     if timeline.empty:
         return go.Figure()
 
@@ -118,6 +128,8 @@ def make_line_chart(timeline: pd.DataFrame, district: str) -> go.Figure:
     max_pct = timeline.groupby("candidate")["vote_pct"].max()
     keep    = max_pct[max_pct >= 2].index
     data    = timeline[timeline["candidate"].isin(keep)].copy()
+    if data.empty:
+        return go.Figure()
 
     # Stable candidate order: sort by total votes descending
     order = (
@@ -131,40 +143,24 @@ def make_line_chart(timeline: pd.DataFrame, district: str) -> go.Figure:
 
     for i, cand in enumerate(order):
         color = LINE_COLORS[i % len(LINE_COLORS)]
-        # Track whether we've added the legend entry for this candidate
-        legend_added = False
-        for etype, dash in [("general", "solid"), ("primary", "dash")]:
-            sub = data[(data["candidate"] == cand) & (data["election_type"] == etype)]
-            if sub.empty:
-                continue
-            sub = sub.sort_values("year")
-            fig.add_trace(go.Scatter(
-                x=sub["year"], y=sub["vote_pct"],
-                mode="lines+markers",
-                name=cand,
-                legendgroup=cand,
-                showlegend=not legend_added,
-                line=dict(color=color, dash=dash, width=2.5),
-                marker=dict(size=8),
-                customdata=sub[["votes", "total_votes", "election_type"]].values,
-                hovertemplate=(
-                    f"<b>{cand}</b><br>"
-                    "%{customdata[2]|capitalize} %{x}<br>"
-                    "%{y:.1f}%  (%{customdata[0]:,} / %{customdata[1]:,} votes)"
-                    "<extra></extra>"
-                ),
-            ))
-            legend_added = True
-
-    # Annotation distinguishing line styles
-    fig.add_annotation(
-        x=0.01, y=0.97, xref="paper", yref="paper",
-        text="Solid = General   Dashed = Primary",
-        showarrow=False, font=dict(size=10, color="#888888"),
-        align="left", xanchor="left",
-    )
+        sub   = data[data["candidate"] == cand].sort_values("year")
+        fig.add_trace(go.Scatter(
+            x=sub["year"], y=sub["vote_pct"],
+            mode="lines+markers",
+            name=cand,
+            line=dict(color=color, width=2.5),
+            marker=dict(size=8),
+            customdata=sub[["votes", "total_votes"]].values,
+            hovertemplate=(
+                f"<b>{cand}</b><br>"
+                "%{x}<br>"
+                "%{y:.1f}%  (%{customdata[0]:,} / %{customdata[1]:,} votes)"
+                "<extra></extra>"
+            ),
+        ))
 
     fig.update_layout(
+        title=title,
         xaxis=dict(
             title="Year",
             tickvals=all_years,
@@ -179,9 +175,8 @@ def make_line_chart(timeline: pd.DataFrame, district: str) -> go.Figure:
         plot_bgcolor="white",
         paper_bgcolor="white",
         legend=dict(orientation="v", x=1.01, y=1, xanchor="left"),
-        margin=dict(t=30, b=40, l=50, r=10),
-        height=360,
-        title=f"{district.title()} District — vote share by cycle",
+        margin=dict(t=40, b=40, l=50, r=10),
+        height=320,
     )
     return fig
 
@@ -375,10 +370,23 @@ if not gen_data.empty:
 st.divider()
 
 
-# ── Line chart ─────────────────────────────────────────────────────────────────
+# ── Line charts (general + primary) ───────────────────────────────────────────
 
-fig_line = make_line_chart(timeline, district)
-st.plotly_chart(fig_line, use_container_width=True, config={"displaylogo": False})
+gen_timeline = timeline[timeline["election_type"] == "general"]
+pri_timeline = timeline[timeline["election_type"] == "primary"]
+
+fig_gen = make_line_chart(
+    gen_timeline,
+    title=f"{district.title()} District — General elections",
+)
+st.plotly_chart(fig_gen, use_container_width=True, config={"displaylogo": False})
+
+if not pri_timeline.empty:
+    fig_pri = make_line_chart(
+        pri_timeline,
+        title=f"{district.title()} District — Democratic primaries",
+    )
+    st.plotly_chart(fig_pri, use_container_width=True, config={"displaylogo": False})
 
 st.divider()
 
