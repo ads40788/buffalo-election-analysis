@@ -18,29 +18,24 @@ st.set_page_config(
 )
 inject_ga()
 
-# Global mobile styles — apply to every page
+# Try to make the collapsed-sidebar toggle more visible on mobile.
+# Streamlit changes data-testid values between versions, so we cast a wide net.
 st.markdown("""
 <style>
-/* Make the collapsed-sidebar toggle button obvious on mobile */
 @media (max-width: 768px) {
-    div[data-testid="collapsedControl"] {
+    [data-testid="collapsedControl"],
+    [data-testid="stSidebarCollapsedControl"],
+    [data-testid="stSidebarNavLink"] ~ button {
         background-color: #1d4ed8 !important;
         border-radius: 0 8px 8px 0 !important;
         box-shadow: 2px 4px 10px rgba(0,0,0,0.25) !important;
-        padding: 0.65rem 0.55rem !important;
     }
-    div[data-testid="collapsedControl"] svg {
+    [data-testid="collapsedControl"] svg,
+    [data-testid="stSidebarCollapsedControl"] svg {
         fill: white !important;
     }
-    .mobile-nav-hint { display: flex !important; }
 }
-.mobile-nav-hint { display: none; }
 </style>
-<div class="mobile-nav-hint" style="align-items:center;gap:0.4rem;
-     background:#eff6ff;border:1px solid #bfdbfe;border-radius:6px;
-     padding:0.35rem 0.8rem;font-size:0.78rem;color:#1e40af;margin-bottom:0.5rem;">
-  &#9776;&nbsp; Tap the blue arrow on the left to open controls &amp; switch pages
-</div>
 """, unsafe_allow_html=True)
 
 pg = st.navigation([
@@ -52,4 +47,11 @@ pg = st.navigation([
     # st.Page("pages/4_Preliminary_Results.py", title="Preliminary Results", icon="📈"),
 ])
 pg.run()
+
+# Sidebar navigation hint — added after pg.run() so it appears at the bottom
+# of the sidebar on every page, after all page-specific controls.
+with st.sidebar:
+    st.divider()
+    st.caption("Tap the **>** arrow (top-left) to open this menu · Use the links above to switch pages")
+
 add_footer()

@@ -394,6 +394,8 @@ if scope_district == "conflict":
     )
     st.stop()
 
+st.title("Compare Elections")
+
 map_center, map_zoom = map_params(
     eds_ref if view == "Election District" else nbhd_ref
 )
