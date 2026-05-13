@@ -6,6 +6,7 @@ Line chart across all cycles + choropleth for a selected election.
 import json
 import re
 import streamlit as st
+from utils.analytics import mobile_hint
 import geopandas as gpd
 import pandas as pd
 import plotly.express as px
@@ -344,6 +345,7 @@ timeline = build_timeline(council_df, district)
 
 # ── Page header ────────────────────────────────────────────────────────────────
 
+mobile_hint()
 st.title(f"{district.title()} District")
 
 # Top metrics from the most recent general election

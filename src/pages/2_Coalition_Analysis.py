@@ -7,6 +7,7 @@ Visualizes Byron Brown's neighborhood-level coalition inversion across
 import json
 import re
 import streamlit as st
+from utils.analytics import mobile_hint
 import pandas as pd
 import geopandas as gpd
 import plotly.graph_objects as go
@@ -272,6 +273,7 @@ else:
 
 # ── Page header ────────────────────────────────────────────────────────────────
 
+mobile_hint()
 st.title("Coalition Shift Analysis")
 st.caption(
     "Byron Brown lost the 2021 Democratic primary to India Walton, then won the general "

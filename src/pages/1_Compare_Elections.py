@@ -7,6 +7,7 @@ When a council election is selected the maps zoom to that district.
 import json
 import re
 import streamlit as st
+from utils.analytics import mobile_hint
 import geopandas as gpd
 import pandas as pd
 import plotly.express as px
@@ -394,7 +395,7 @@ if scope_district == "conflict":
     )
     st.stop()
 
-st.title("Compare Elections")
+mobile_hint()
 
 map_center, map_zoom = map_params(
     eds_ref if view == "Election District" else nbhd_ref

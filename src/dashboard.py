@@ -47,11 +47,4 @@ pg = st.navigation([
     # st.Page("pages/4_Preliminary_Results.py", title="Preliminary Results", icon="📈"),
 ])
 pg.run()
-
-# Sidebar navigation hint — added after pg.run() so it appears at the bottom
-# of the sidebar on every page, after all page-specific controls.
-with st.sidebar:
-    st.divider()
-    st.caption("Tap the **>** arrow (top-left) to open this menu · Use the links above to switch pages")
-
 add_footer()

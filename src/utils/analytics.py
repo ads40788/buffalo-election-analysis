@@ -18,6 +18,35 @@ def add_footer() -> None:
     )
 
 
+def mobile_hint() -> None:
+    """Render a mobile-only banner prompting users to open the sidebar.
+    Call once near the top of each page's main content."""
+    st.markdown(
+        """
+        <div id="mob-hint" style="display:none;">
+          &#9776;&ensp;Tap the <strong>&rsaquo;</strong> arrow in the top-left
+          to open controls &amp; switch pages
+        </div>
+        <style>
+        @media (max-width: 768px) {
+            #mob-hint {
+                display: flex !important;
+                align-items: center;
+                background: #eff6ff;
+                border: 1px solid #bfdbfe;
+                border-radius: 6px;
+                padding: 0.35rem 0.85rem;
+                font-size: 0.8rem;
+                color: #1e40af;
+                margin-bottom: 0.6rem;
+            }
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
 def inject_ga() -> None:
     """Inject GA4 tracking snippet if a measurement ID is configured."""
     try:

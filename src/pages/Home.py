@@ -5,6 +5,7 @@ Buffalo Mayoral Elections — Home / Election Explorer
 import re
 import json
 import streamlit as st
+from utils.analytics import mobile_hint
 import geopandas as gpd
 import pandas as pd
 import plotly.express as px
@@ -301,6 +302,8 @@ if sel_type == "primary" and has_missing:
         icon="ℹ️",
     )
 
+
+mobile_hint()
 
 # ── Top metrics ───────────────────────────────────────────────────────────────
 
