@@ -27,8 +27,11 @@ h3 { font-weight: 600 !important; color: #222 !important;
 section[data-testid="stSidebar"] h1 { font-size: 1.25rem !important; letter-spacing: 0; }
 div[data-testid="stMetricValue"] { font-size: 1.5rem !important; font-weight: 700 !important; }
 @media (max-width: 768px) {
-    .block-container { padding-left: 0.75rem !important; padding-right: 0.75rem !important; padding-top: 1rem !important; }
-    div[data-testid="stMetricValue"] { font-size: 1.2rem !important; }
+    .block-container { padding-left: 0.5rem !important; padding-right: 0.5rem !important; padding-top: 0.5rem !important; }
+    h1 { font-size: 1.4rem !important; }
+    h2 { font-size: 1.1rem !important; }
+    div[data-testid="stMetricValue"] { font-size: 1.1rem !important; }
+    div[data-testid="stMetricLabel"] { font-size: 0.75rem !important; }
 }
 </style>
 """, unsafe_allow_html=True)
@@ -281,11 +284,30 @@ r_main  = joined["brown_17g"].corr(joined["brown_21g"])
 r_prime = joined["brown_17g"].corr(joined["brown_21p"]) if joined["brown_21p"].notna().sum() > 3 else float("nan")
 avg_shift = joined["delta_pg"].mean()
 
-c1, c2, c3, c4 = st.columns(4)
-c1.metric("Pearson r  (2017G vs 2021G)",       f"{r_main:.3f}",   help="Negative = coalition inversion")
-c2.metric("Pearson r  (2017G vs 2021 primary)", f"{r_prime:.3f}" if not np.isnan(r_prime) else "n/a")
-c3.metric("Avg primary→general shift",          f"{avg_shift:+.1f}%")
-c4.metric("Election districts" if view == "Election District" else "Neighborhoods", n)
+_unit_label = "Election districts" if view == "Election District" else "Neighborhoods"
+_metrics = [
+    ("2017G vs 2021G (r)",         f"{r_main:.3f}"),
+    ("2017G vs 2021 primary (r)",  f"{r_prime:.3f}" if not np.isnan(r_prime) else "n/a"),
+    ("Avg primary→general shift",  f"{avg_shift:+.1f}%"),
+    (_unit_label,                  str(n)),
+]
+_card_style = (
+    "flex:1;min-width:100px;background:#f8f9fa;border-radius:8px;"
+    "padding:0.6rem 0.75rem;border:1px solid #e8e8e8;"
+)
+_cards = "".join(
+    f'<div style="{_card_style}">'
+    f'<div style="font-size:0.72rem;color:#666;font-weight:500;'
+    f'white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{lbl}</div>'
+    f'<div style="font-size:1.25rem;font-weight:700;color:#111;">{val}</div>'
+    f'</div>'
+    for lbl, val in _metrics
+)
+st.markdown(
+    f'<div style="display:flex;gap:0.5rem;flex-wrap:nowrap;overflow-x:auto;'
+    f'margin-bottom:0.75rem;padding-bottom:0.25rem;">{_cards}</div>',
+    unsafe_allow_html=True,
+)
 
 st.divider()
 

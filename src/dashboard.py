@@ -18,6 +18,31 @@ st.set_page_config(
 )
 inject_ga()
 
+# Global mobile styles — apply to every page
+st.markdown("""
+<style>
+/* Make the collapsed-sidebar toggle button obvious on mobile */
+@media (max-width: 768px) {
+    div[data-testid="collapsedControl"] {
+        background-color: #1d4ed8 !important;
+        border-radius: 0 8px 8px 0 !important;
+        box-shadow: 2px 4px 10px rgba(0,0,0,0.25) !important;
+        padding: 0.65rem 0.55rem !important;
+    }
+    div[data-testid="collapsedControl"] svg {
+        fill: white !important;
+    }
+    .mobile-nav-hint { display: flex !important; }
+}
+.mobile-nav-hint { display: none; }
+</style>
+<div class="mobile-nav-hint" style="align-items:center;gap:0.4rem;
+     background:#eff6ff;border:1px solid #bfdbfe;border-radius:6px;
+     padding:0.35rem 0.8rem;font-size:0.78rem;color:#1e40af;margin-bottom:0.5rem;">
+  &#9776;&nbsp; Tap the blue arrow on the left to open controls &amp; switch pages
+</div>
+""", unsafe_allow_html=True)
+
 pg = st.navigation([
     st.Page("pages/Home.py",                title="Dashboard",         icon="🗳️"),
     st.Page("pages/1_Compare_Elections.py", title="Compare Elections", icon="📊"),
