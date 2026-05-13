@@ -29,7 +29,6 @@ div[data-testid="stMetricValue"] { font-size: 1.5rem !important; font-weight: 70
     h2 { font-size: 1.1rem !important; }
     div[data-testid="stMetricValue"] { font-size: 1.1rem !important; }
     div[data-testid="stMetricLabel"] { font-size: 0.75rem !important; }
-    div[data-testid="column"] { min-width: 100% !important; }
 }
 </style>
 """, unsafe_allow_html=True)
@@ -363,12 +362,25 @@ if not gen_data.empty:
     grand  = sum(totals.values())
     winner = max(totals, key=totals.get) if totals else "—"
 
-    c1, c2, c3 = st.columns(3)
-    c1.metric("Most recent general", str(latest_yr))
-    c2.metric("Winner", last_name(winner))
-    c3.metric(
-        "Vote share",
-        f"{totals[winner]/grand*100:.1f}%" if grand > 0 else "—",
+    winner_pct = f"{totals[winner]/grand*100:.1f}%" if grand > 0 else "—"
+    _metric_items = [
+        ("Most recent", str(latest_yr)),
+        ("Winner", last_name(winner)),
+        ("Vote share", winner_pct),
+    ]
+    _cards = "".join(
+        f'<div style="flex:1;min-width:88px;background:#f8f9fa;border-radius:8px;'
+        f'padding:0.6rem 0.75rem;border:1px solid #e8e8e8;">'
+        f'<div style="font-size:0.72rem;color:#666;font-weight:500;'
+        f'white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{lbl}</div>'
+        f'<div style="font-size:1.25rem;font-weight:700;color:#111;'
+        f'white-space:nowrap;">{val}</div></div>'
+        for lbl, val in _metric_items
+    )
+    st.markdown(
+        f'<div style="display:flex;gap:0.5rem;flex-wrap:nowrap;overflow-x:auto;'
+        f'margin-bottom:0.75rem;padding-bottom:0.25rem;">{_cards}</div>',
+        unsafe_allow_html=True,
     )
 
 st.divider()

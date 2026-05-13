@@ -31,7 +31,6 @@ div[data-testid="stMetricValue"] { font-size: 1.5rem !important; font-weight: 70
     h2 { font-size: 1.1rem !important; }
     div[data-testid="stMetricValue"] { font-size: 1.1rem !important; }
     div[data-testid="stMetricLabel"] { font-size: 0.75rem !important; }
-    div[data-testid="column"] { min-width: 100% !important; }
 }
 </style>
 """, unsafe_allow_html=True)

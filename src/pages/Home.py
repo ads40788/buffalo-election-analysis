@@ -29,7 +29,6 @@ div[data-testid="stMetricValue"] { font-size: 1.5rem !important; font-weight: 70
     h2 { font-size: 1.1rem !important; }
     div[data-testid="stMetricValue"] { font-size: 1.1rem !important; }
     div[data-testid="stMetricLabel"] { font-size: 0.75rem !important; }
-    div[data-testid="column"] { min-width: 100% !important; }
 }
 </style>
 """, unsafe_allow_html=True)
@@ -306,10 +305,23 @@ if sel_type == "primary" and has_missing:
 # ── Top metrics ───────────────────────────────────────────────────────────────
 
 sorted_cands = sorted(city_avg.items(), key=lambda x: x[1], reverse=True)
-metric_cols  = st.columns(min(len(sorted_cands), 4))
-for i, (cand, pct) in enumerate(sorted_cands[:4]):
+_cards = ""
+for cand, pct in sorted_cands[:4]:
     votes = pd.to_numeric(sel_elections[cand], errors="coerce").fillna(0).sum()
-    metric_cols[i].metric(last_name(cand), f"{votes:,.0f}", f"{pct:.1f}%")
+    _cards += f"""
+    <div style="flex:1;min-width:88px;background:#f8f9fa;border-radius:8px;
+                padding:0.6rem 0.75rem;border:1px solid #e8e8e8;">
+        <div style="font-size:0.72rem;color:#666;font-weight:500;
+                    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{last_name(cand)}</div>
+        <div style="font-size:1.25rem;font-weight:700;color:#111;
+                    white-space:nowrap;">{int(votes):,}</div>
+        <div style="font-size:0.75rem;color:#444;margin-top:2px;">{pct:.1f}%</div>
+    </div>"""
+st.markdown(
+    f'<div style="display:flex;gap:0.5rem;flex-wrap:nowrap;overflow-x:auto;'
+    f'margin-bottom:0.75rem;padding-bottom:0.25rem;">{_cards}</div>',
+    unsafe_allow_html=True,
+)
 
 
 # ── Map + right panel ─────────────────────────────────────────────────────────
