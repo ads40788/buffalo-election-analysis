@@ -24,8 +24,12 @@ h3 { font-weight: 600 !important; color: #222 !important;
      margin-top: 1.1rem !important; margin-bottom: 0.4rem !important; }
 div[data-testid="stMetricValue"] { font-size: 1.5rem !important; font-weight: 700 !important; }
 @media (max-width: 768px) {
-    .block-container { padding-left: 0.75rem !important; padding-right: 0.75rem !important; padding-top: 1rem !important; }
-    div[data-testid="stMetricValue"] { font-size: 1.2rem !important; }
+    .block-container { padding-left: 0.5rem !important; padding-right: 0.5rem !important; padding-top: 0.5rem !important; }
+    h1 { font-size: 1.4rem !important; }
+    h2 { font-size: 1.1rem !important; }
+    div[data-testid="stMetricValue"] { font-size: 1.1rem !important; }
+    div[data-testid="stMetricLabel"] { font-size: 0.75rem !important; }
+    div[data-testid="column"] { min-width: 100% !important; }
 }
 </style>
 """, unsafe_allow_html=True)
@@ -287,7 +291,7 @@ with st.sidebar:
         council_df[council_df["district"] == district]
         [["year", "election_type"]]
         .drop_duplicates()
-        .sort_values(["year", "election_type"], ascending=[False, True])
+        .sort_values(["year", "election_type"], ascending=[False, False])
     )
     election_opts = [
         f"{int(r.year)} {r.election_type.title()}"
@@ -444,7 +448,7 @@ map_title = f"{norm_cand} · {district.title()} {map_etype.title()} {map_year}"
 with map_col:
     fig_map = make_choropleth(
         geo_map, id_col, "val", center, zoom,
-        title=map_title, cand_label=norm_cand,
+        title=map_title, cand_label=norm_cand, height=380,
     )
     st.plotly_chart(fig_map, use_container_width=True, config={"displaylogo": False})
 

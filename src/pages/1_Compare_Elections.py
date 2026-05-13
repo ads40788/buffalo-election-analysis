@@ -26,8 +26,12 @@ h3 { font-weight: 600 !important; color: #222 !important;
 section[data-testid="stSidebar"] h1 { font-size: 1.25rem !important; letter-spacing: 0; }
 div[data-testid="stMetricValue"] { font-size: 1.5rem !important; font-weight: 700 !important; }
 @media (max-width: 768px) {
-    .block-container { padding-left: 0.75rem !important; padding-right: 0.75rem !important; padding-top: 1rem !important; }
-    div[data-testid="stMetricValue"] { font-size: 1.2rem !important; }
+    .block-container { padding-left: 0.5rem !important; padding-right: 0.5rem !important; padding-top: 0.5rem !important; }
+    h1 { font-size: 1.4rem !important; }
+    h2 { font-size: 1.1rem !important; }
+    div[data-testid="stMetricValue"] { font-size: 1.1rem !important; }
+    div[data-testid="stMetricLabel"] { font-size: 0.75rem !important; }
+    div[data-testid="column"] { min-width: 100% !important; }
 }
 </style>
 """, unsafe_allow_html=True)
@@ -328,10 +332,16 @@ all_labels    = sorted(
     key=lambda l: (-int(l[:4]), l),
 )
 
-# Defaults: most recent two mayoral elections
+# Defaults: 2021 General (Map 1) vs 2017 General (Map 2)
+def _mayor_idx(year: str, etype: str = "general") -> int | None:
+    label = f"{year} {etype.title()} — Mayor"
+    return all_labels.index(label) if label in all_labels else None
+
 mayor_labels = [l for l in all_labels if "Mayor" in l]
-default_x = all_labels.index(mayor_labels[1]) if len(mayor_labels) > 1 else max(0, len(all_labels) - 2)
-default_y = all_labels.index(mayor_labels[0]) if mayor_labels else len(all_labels) - 1
+_x = _mayor_idx("2021")
+_y = _mayor_idx("2017")
+default_x = _x if _x is not None else (all_labels.index(mayor_labels[1]) if len(mayor_labels) > 1 else 0)
+default_y = _y if _y is not None else (all_labels.index(mayor_labels[0]) if mayor_labels else len(all_labels) - 1)
 
 
 # ── Session state ──────────────────────────────────────────────────────────────

@@ -24,9 +24,12 @@ h3 { font-weight: 600 !important; color: #222 !important;
 section[data-testid="stSidebar"] h1 { font-size: 1.25rem !important; letter-spacing: 0; }
 div[data-testid="stMetricValue"] { font-size: 1.5rem !important; font-weight: 700 !important; }
 @media (max-width: 768px) {
-    .block-container { padding-left: 0.75rem !important; padding-right: 0.75rem !important; padding-top: 1rem !important; }
-    div[data-testid="stMetricValue"] { font-size: 1.2rem !important; }
+    .block-container { padding-left: 0.5rem !important; padding-right: 0.5rem !important; padding-top: 0.5rem !important; }
+    h1 { font-size: 1.4rem !important; }
+    h2 { font-size: 1.1rem !important; }
+    div[data-testid="stMetricValue"] { font-size: 1.1rem !important; }
     div[data-testid="stMetricLabel"] { font-size: 0.75rem !important; }
+    div[data-testid="column"] { min-width: 100% !important; }
 }
 </style>
 """, unsafe_allow_html=True)
@@ -161,8 +164,15 @@ election_labels = [
 
 # ── Sidebar ───────────────────────────────────────────────────────────────────
 
+_default_label = "2021 General"
+_default_idx = (
+    election_labels.index(_default_label)
+    if _default_label in election_labels
+    else len(election_labels) - 1
+)
+
 with st.sidebar:
-    sel_label = st.selectbox("Election", election_labels, index=len(election_labels) - 1)
+    sel_label = st.selectbox("Election", election_labels, index=_default_idx)
     sel_year, sel_type = sel_label.split(" ", 1)
     sel_type = sel_type.lower()
 
